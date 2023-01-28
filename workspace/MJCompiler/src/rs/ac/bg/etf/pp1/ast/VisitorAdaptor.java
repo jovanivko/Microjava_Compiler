@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 7:16:51
+// 28/0/2023 17:33:25
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,9 +11,12 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(AssignDes AssignDes) { }
     public void visit(AssignList AssignList) { }
     public void visit(FormalParamDecl FormalParamDecl) { }
+    public void visit(VarName VarName) { }
     public void visit(StatementList StatementList) { }
+    public void visit(ConstName ConstName) { }
     public void visit(Factor Factor) { }
     public void visit(CondTerm CondTerm) { }
+    public void visit(ConstNameList ConstNameList) { }
     public void visit(DeclList DeclList) { }
     public void visit(MemberDeclList MemberDeclList) { }
     public void visit(Designator Designator) { }
@@ -21,6 +24,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Condition Condition) { }
     public void visit(ClassMethodList ClassMethodList) { }
     public void visit(MulOp MulOp) { }
+    public void visit(VarNameList VarNameList) { }
     public void visit(RelOp RelOp) { }
     public void visit(ActualParamList ActualParamList) { }
     public void visit(ConstructorDeclList ConstructorDeclList) { }
@@ -80,7 +84,9 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ProcCall ProcCall) { visit(); }
     public void visit(Decr Decr) { visit(); }
     public void visit(Incr Incr) { visit(); }
+    public void visit(ErrMulAssignment ErrMulAssignment) { visit(); }
     public void visit(MulAssignment MulAssignment) { visit(); }
+    public void visit(ErrAssignment ErrAssignment) { visit(); }
     public void visit(Assignment Assignment) { visit(); }
     public void visit(PrintNum PrintNum) { visit(); }
     public void visit(PrintE PrintE) { visit(); }
@@ -102,6 +108,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FormalParamArrayDecl FormalParamArrayDecl) { visit(); }
     public void visit(FormalParamDeclSing FormalParamDeclSing) { visit(); }
     public void visit(SingleFormalParamDecl SingleFormalParamDecl) { visit(); }
+    public void visit(FormalParamListDerived1 FormalParamListDerived1) { visit(); }
     public void visit(FormalParamDecls FormalParamDecls) { visit(); }
     public void visit(NoFormParam NoFormParam) { visit(); }
     public void visit(FormParams FormParams) { visit(); }
@@ -128,8 +135,14 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(CharConst CharConst) { visit(); }
     public void visit(BoolConst BoolConst) { visit(); }
     public void visit(NumConst NumConst) { visit(); }
+    public void visit(ConstNameDerived1 ConstNameDerived1) { visit(); }
+    public void visit(ConstNameListDerived2 ConstNameListDerived2) { visit(); }
+    public void visit(ConstNameListDerived1 ConstNameListDerived1) { visit(); }
     public void visit(ConstDecl ConstDecl) { visit(); }
-    public void visit(VarArrayDecl VarArrayDecl) { visit(); }
+    public void visit(VarNameDerived2 VarNameDerived2) { visit(); }
+    public void visit(VarNameDerived1 VarNameDerived1) { visit(); }
+    public void visit(VarNameListDerived2 VarNameListDerived2) { visit(); }
+    public void visit(VarNameListDerived1 VarNameListDerived1) { visit(); }
     public void visit(VarSingleDecl VarSingleDecl) { visit(); }
     public void visit(DeclClass DeclClass) { visit(); }
     public void visit(DeclConst DeclConst) { visit(); }

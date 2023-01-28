@@ -10,6 +10,7 @@
 				<exclude name="SemanticPass.java" />
 				<exclude name="CodeGenerator.java" />
 				<exclude name="CounterVisitor.java" />
+				<exclude name="sym.java"/>
 			</fileset>
 		</delete>
 		<delete>
@@ -24,8 +25,7 @@
 		<java jar="lib/JFlex.jar" fork="true">
 			<arg value="-d"/>
 			<arg value="./src/rs/ac/bg/etf/pp1"/>
-			<arg value="spec/mjlexer.lex"/>
-			<arg value="-h"/>
+			<arg value="spec/mjlexer.flex"/>
 
 		</java>
 	</target>
@@ -38,7 +38,7 @@
 			<arg value="src.rs.ac.bg.etf.pp1.ast" />
 			<arg value="-parser" />
 			<arg value="MJParser" />
-			<arg value="-dump_states" />
+			<!--<arg value="-dump_states" />-->
 			<arg value="-buildtree"/>
 			<arg value="spec/mjparser.cup" />
 		</java>

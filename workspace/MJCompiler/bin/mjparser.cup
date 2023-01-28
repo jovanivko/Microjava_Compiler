@@ -66,7 +66,7 @@ terminal IF, ELSE, WHILE, FOREACH;
 nonterminal Program, ProgName, Designator, MethodDecl, MethodTypeName;
 nonterminal Type, Term, Expr, Factor;
 
-nonterminal MethodDeclList, DeclList, VarDecl, ConstDecl, ClassDecl, ConstVal;
+nonterminal MethodDeclList, DeclList, VarDecl, ConstDecl, ClassDecl, ConstVal, VarNameList, ConstNameList, VarName, ConstName;
 nonterminal FormalParamList, FormalParamDecl, FormPars, ActualPars, ActualParamList; 
 nonterminal StatementList, Statement, AddOp, MulOp, RelOp, Decl, DesignatorStatement;
 nonterminal ClassExtend, ClassBody, VarDeclList, ClassMethodList, ConstructorDeclList, ConstructorDecl, MemberDeclList;
@@ -97,16 +97,32 @@ Decl ::= 	(DeclVar) VarDecl
 			(DeclClass) ClassDecl
 			;
 				
-VarDecl ::= (VarSingleDecl) Type:varType IDENT:varName SEMI
+VarDecl ::= (VarSingleDecl) Type:varType VarNameList SEMI
+			;
+
+VarNameList ::= VarNameList COMMA VarName
+				|
+				VarName
+				;
+
+VarName ::= IDENT:varName
 			|
-			(VarArrayDecl) Type:arrType IDENT:arrName LBOX RBOX SEMI
+			IDENT:arrName LBOX RBOX
 			;
 
 
-ConstDecl ::=	(ConstDecl) CONST Type:constType IDENT:constName ASSIGN ConstVal:constVal SEMI
+ConstDecl ::=	(ConstDecl) CONST Type:constType ConstNameList SEMI
 				;
 
-ConstVal ::=	(NumConst) NUMCONST
+ConstNameList ::= ConstNameList COMMA ConstName
+				|
+				ConstName
+				;
+
+ConstName ::= IDENT:constName ASSIGN ConstVal:constVal
+			;
+
+ConstVal ::=(NumConst) NUMCONST
 			|
 			(BoolConst)	BOOLCONST
 			|
@@ -168,9 +184,14 @@ MethodTypeName ::= 	(MethodRetType) Type:retType
 					(MethodVoidName) VOID
 					;
 
-FormPars ::= (FormParams) FormalParamList | (NoFormParam) /* epsilon */ ;
+FormPars ::= 	(FormParams) FormalParamList 
+				| 
+				(NoFormParam) /* epsilon */ 
+				;
 
 FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
+					|
+					FormalParamList error COMMA
 					|
 					(SingleFormalParamDecl) FormalParamDecl
 					;
@@ -188,7 +209,7 @@ StatementList ::= (Statements) StatementList Statement
 				  (NoStmt) /* epsilon */
 				  ;
 
-Statement ::=	(SingleStatement) DesignatorStatement SEMI
+Statement ::=	(SingleStatement) DesignatorStatement
 				|
 				(Read) READ LPAREN Designator RPAREN SEMI
 				|
@@ -218,15 +239,21 @@ PrintExpr ::=	(PrintE) Expr
 				(PrintNum) Expr COMMA NUMCONST
 				;
 
-DesignatorStatement ::= (Assignment) Designator:dest EQUAL Expr:e
+DesignatorStatement ::= (Assignment) Designator:dest EQUAL Expr:e SEMI
+						|
+						(ErrAssignment) Designator EQUAL error SEMI
+			  			{: parser.log.debug("Uspesan oporavak od greske pri dodeli vrednosti."); :}
 			  			|
-			  			(MulAssignment) LBOX AssignList:des RBOX EQUAL Designator:arr
+			  			(MulAssignment) LBOX AssignList:des RBOX EQUAL Designator:arr SEMI
 			  			|
-			  			(Incr) Designator INCR
+			  			(ErrMulAssignment) LBOX AssignList:des RBOX EQUAL error SEMI
+			  			{: parser.log.debug("Uspesan oporavak od greske pri visestrukoj dodeli vrednosti."); :}
 			  			|
-			  			(Decr) Designator DECR
+			  			(Incr) Designator INCR SEMI
 			  			|
-					  	(ProcCall) Designator:func LPAREN ActualPars RPAREN
+			  			(Decr) Designator DECR SEMI
+			  			|
+					  	(ProcCall) Designator:func LPAREN ActualPars RPAREN SEMI
 					  	;
 
 

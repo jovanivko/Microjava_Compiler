@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 7:16:51
+// 28/0/2023 17:33:25
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,9 +11,12 @@ public interface Visitor {
     public void visit(AssignDes AssignDes);
     public void visit(AssignList AssignList);
     public void visit(FormalParamDecl FormalParamDecl);
+    public void visit(VarName VarName);
     public void visit(StatementList StatementList);
+    public void visit(ConstName ConstName);
     public void visit(Factor Factor);
     public void visit(CondTerm CondTerm);
+    public void visit(ConstNameList ConstNameList);
     public void visit(DeclList DeclList);
     public void visit(MemberDeclList MemberDeclList);
     public void visit(Designator Designator);
@@ -21,6 +24,7 @@ public interface Visitor {
     public void visit(Condition Condition);
     public void visit(ClassMethodList ClassMethodList);
     public void visit(MulOp MulOp);
+    public void visit(VarNameList VarNameList);
     public void visit(RelOp RelOp);
     public void visit(ActualParamList ActualParamList);
     public void visit(ConstructorDeclList ConstructorDeclList);
@@ -80,7 +84,9 @@ public interface Visitor {
     public void visit(ProcCall ProcCall);
     public void visit(Decr Decr);
     public void visit(Incr Incr);
+    public void visit(ErrMulAssignment ErrMulAssignment);
     public void visit(MulAssignment MulAssignment);
+    public void visit(ErrAssignment ErrAssignment);
     public void visit(Assignment Assignment);
     public void visit(PrintNum PrintNum);
     public void visit(PrintE PrintE);
@@ -102,6 +108,7 @@ public interface Visitor {
     public void visit(FormalParamArrayDecl FormalParamArrayDecl);
     public void visit(FormalParamDeclSing FormalParamDeclSing);
     public void visit(SingleFormalParamDecl SingleFormalParamDecl);
+    public void visit(FormalParamListDerived1 FormalParamListDerived1);
     public void visit(FormalParamDecls FormalParamDecls);
     public void visit(NoFormParam NoFormParam);
     public void visit(FormParams FormParams);
@@ -128,8 +135,14 @@ public interface Visitor {
     public void visit(CharConst CharConst);
     public void visit(BoolConst BoolConst);
     public void visit(NumConst NumConst);
+    public void visit(ConstNameDerived1 ConstNameDerived1);
+    public void visit(ConstNameListDerived2 ConstNameListDerived2);
+    public void visit(ConstNameListDerived1 ConstNameListDerived1);
     public void visit(ConstDecl ConstDecl);
-    public void visit(VarArrayDecl VarArrayDecl);
+    public void visit(VarNameDerived2 VarNameDerived2);
+    public void visit(VarNameDerived1 VarNameDerived1);
+    public void visit(VarNameListDerived2 VarNameListDerived2);
+    public void visit(VarNameListDerived1 VarNameListDerived1);
     public void visit(VarSingleDecl VarSingleDecl);
     public void visit(DeclClass DeclClass);
     public void visit(DeclConst DeclConst);

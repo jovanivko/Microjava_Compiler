@@ -1,61 +1,369 @@
-INFO  02:01:58,260 - Compiling source file: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\test\program.mj
-INFO  02:01:58,264 - #2 program
-INFO  02:01:58,264 - #15 MJProgram
-INFO  02:01:58,264 - #15 int
-INFO  02:01:58,264 - #15 x
-INFO  02:01:58,264 - #5 ;
-INFO  02:01:58,264 - #15 int
-INFO  02:01:58,264 - #15 y
-INFO  02:01:58,264 - #5 ;
-INFO  02:01:58,265 - #3 {
-INFO  02:01:58,265 - #15 int
-INFO  02:01:58,265 - #15 k
-INFO  02:01:58,265 - #6 (
-INFO  02:01:58,265 - #7 )
-INFO  02:01:58,265 - #15 int
-INFO  02:01:58,265 - #15 c
-INFO  02:01:58,265 - #5 ;
-INFO  02:01:58,265 - #3 {
-INFO  02:01:58,265 - #15 c
-INFO  02:01:58,265 - #12 =
-INFO  02:01:58,265 - #14 1
-INFO  02:01:58,265 - #5 ;
-INFO  02:01:58,265 - #10 return
-INFO  02:01:58,266 - #15 c
-INFO  02:01:58,266 - #11 +
-INFO  02:01:58,266 - #14 2
-INFO  02:01:58,266 - #5 ;
-INFO  02:01:58,266 - #4 }
-INFO  02:01:58,266 - #15 int
-INFO  02:01:58,266 - #15 main
-INFO  02:01:58,266 - #6 (
-INFO  02:01:58,266 - #7 )
-INFO  02:01:58,266 - #3 {
-INFO  02:01:58,266 - #15 y
-INFO  02:01:58,266 - #12 =
-INFO  02:01:58,266 - #14 2
-INFO  02:01:58,266 - #5 ;
-INFO  02:01:58,266 - #15 x
-INFO  02:01:58,266 - #12 =
-INFO  02:01:58,266 - #15 y
-INFO  02:01:58,266 - #11 +
-INFO  02:01:58,266 - #14 2
-INFO  02:01:58,267 - #5 ;
-INFO  02:01:58,267 - #15 y
-INFO  02:01:58,267 - #12 =
-INFO  02:01:58,267 - #15 k
-INFO  02:01:58,267 - #6 (
-INFO  02:01:58,267 - #7 )
-INFO  02:01:58,267 - #11 +
-INFO  02:01:58,267 - #14 3
-INFO  02:01:58,267 - #5 ;
-INFO  02:01:58,267 - #9 print
-INFO  02:01:58,267 - #6 (
-INFO  02:01:58,267 - #15 y
-INFO  02:01:58,267 - #7 )
-INFO  02:01:58,267 - #5 ;
-INFO  02:01:58,267 - #10 return
-INFO  02:01:58,267 - #14 0
-INFO  02:01:58,267 - #5 ;
-INFO  02:01:58,267 - #4 }
-INFO  02:01:58,267 - #4 }
+INFO  17:52:23,834 - Compiling source file: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\test\program.mj
+INFO  17:52:23,838 - #2 program java.lang.String
+INFO  17:52:23,838 - #43 p java.lang.String
+INFO  17:52:23,838 - #8 const java.lang.String
+INFO  17:52:23,838 - #43 int java.lang.String
+INFO  17:52:23,838 - #43 size java.lang.String
+INFO  17:52:23,838 - #17 = java.lang.String
+INFO  17:52:23,838 - #40 10 java.lang.Integer
+INFO  17:52:23,839 - #31 ; java.lang.String
+INFO  17:52:23,839 - #8 const java.lang.String
+INFO  17:52:23,839 - #43 char java.lang.String
+INFO  17:52:23,839 - #43 ch java.lang.String
+INFO  17:52:23,839 - #17 = java.lang.String
+INFO  17:52:23,839 - #42 a java.lang.Character
+INFO  17:52:23,839 - #31 ; java.lang.String
+INFO  17:52:23,839 - #7 class java.lang.String
+INFO  17:52:23,839 - #43 Table java.lang.String
+INFO  17:52:23,839 - #33 { java.lang.String
+INFO  17:52:23,839 - #43 int java.lang.String
+INFO  17:52:23,839 - #43 pos java.lang.String
+INFO  17:52:23,839 - #37 [ java.lang.String
+INFO  17:52:23,840 - #38 ] java.lang.String
+INFO  17:52:23,840 - #32 , java.lang.String
+INFO  17:52:23,840 - #43 neg java.lang.String
+INFO  17:52:23,840 - #37 [ java.lang.String
+INFO  17:52:23,840 - #38 ] java.lang.String
+INFO  17:52:23,840 - #32 , java.lang.String
+INFO  17:52:23,840 - #43 factor java.lang.String
+INFO  17:52:23,840 - #31 ; java.lang.String
+INFO  17:52:23,840 - #33 { java.lang.String
+INFO  17:52:23,840 - #43 Table java.lang.String
+INFO  17:52:23,840 - #35 ( java.lang.String
+INFO  17:52:23,840 - #43 int java.lang.String
+INFO  17:52:23,840 - #43 factor java.lang.String
+INFO  17:52:23,840 - #36 ) java.lang.String
+INFO  17:52:23,840 - #33 { java.lang.String
+INFO  17:52:23,840 - #43 this java.lang.String
+INFO  17:52:23,840 - #29 . java.lang.String
+INFO  17:52:23,840 - #43 factor java.lang.String
+INFO  17:52:23,840 - #17 = java.lang.String
+INFO  17:52:23,840 - #43 factor java.lang.String
+INFO  17:52:23,840 - #31 ; java.lang.String
+INFO  17:52:23,840 - #34 } java.lang.String
+INFO  17:52:23,841 - #5 void java.lang.String
+INFO  17:52:23,841 - #43 putp java.lang.String
+INFO  17:52:23,841 - #35 ( java.lang.String
+INFO  17:52:23,841 - #43 int java.lang.String
+INFO  17:52:23,841 - #43 a java.lang.String
+INFO  17:52:23,841 - #32 , java.lang.String
+INFO  17:52:23,841 - #43 int java.lang.String
+INFO  17:52:23,841 - #43 idx java.lang.String
+INFO  17:52:23,841 - #36 ) java.lang.String
+INFO  17:52:23,841 - #33 { java.lang.String
+INFO  17:52:23,841 - #43 this java.lang.String
+INFO  17:52:23,841 - #29 . java.lang.String
+INFO  17:52:23,841 - #43 pos java.lang.String
+INFO  17:52:23,841 - #37 [ java.lang.String
+INFO  17:52:23,841 - #43 idx java.lang.String
+INFO  17:52:23,841 - #38 ] java.lang.String
+INFO  17:52:23,841 - #17 = java.lang.String
+INFO  17:52:23,841 - #43 a java.lang.String
+INFO  17:52:23,841 - #31 ; java.lang.String
+INFO  17:52:23,841 - #34 } java.lang.String
+INFO  17:52:23,842 - #5 void java.lang.String
+INFO  17:52:23,842 - #43 putn java.lang.String
+INFO  17:52:23,842 - #35 ( java.lang.String
+INFO  17:52:23,842 - #43 int java.lang.String
+INFO  17:52:23,842 - #43 a java.lang.String
+INFO  17:52:23,842 - #32 , java.lang.String
+INFO  17:52:23,842 - #43 int java.lang.String
+INFO  17:52:23,842 - #43 idx java.lang.String
+INFO  17:52:23,842 - #36 ) java.lang.String
+INFO  17:52:23,842 - #33 { java.lang.String
+INFO  17:52:23,842 - #43 this java.lang.String
+INFO  17:52:23,842 - #29 . java.lang.String
+INFO  17:52:23,842 - #43 neg java.lang.String
+INFO  17:52:23,842 - #37 [ java.lang.String
+INFO  17:52:23,842 - #43 idx java.lang.String
+INFO  17:52:23,842 - #38 ] java.lang.String
+INFO  17:52:23,842 - #17 = java.lang.String
+INFO  17:52:23,842 - #43 a java.lang.String
+INFO  17:52:23,842 - #31 ; java.lang.String
+INFO  17:52:23,842 - #34 } java.lang.String
+INFO  17:52:23,842 - #43 int java.lang.String
+INFO  17:52:23,842 - #43 getp java.lang.String
+INFO  17:52:23,843 - #35 ( java.lang.String
+INFO  17:52:23,843 - #43 int java.lang.String
+INFO  17:52:23,843 - #43 idx java.lang.String
+INFO  17:52:23,843 - #36 ) java.lang.String
+INFO  17:52:23,843 - #33 { java.lang.String
+INFO  17:52:23,843 - #4 return java.lang.String
+INFO  17:52:23,843 - #43 pos java.lang.String
+INFO  17:52:23,843 - #37 [ java.lang.String
+INFO  17:52:23,843 - #43 idx java.lang.String
+INFO  17:52:23,843 - #38 ] java.lang.String
+INFO  17:52:23,843 - #31 ; java.lang.String
+INFO  17:52:23,843 - #34 } java.lang.String
+INFO  17:52:23,843 - #43 int java.lang.String
+INFO  17:52:23,843 - #43 getn java.lang.String
+INFO  17:52:23,843 - #35 ( java.lang.String
+INFO  17:52:23,843 - #43 int java.lang.String
+INFO  17:52:23,843 - #43 idx java.lang.String
+INFO  17:52:23,843 - #36 ) java.lang.String
+INFO  17:52:23,843 - #33 { java.lang.String
+INFO  17:52:23,843 - #4 return java.lang.String
+INFO  17:52:23,843 - #43 neg java.lang.String
+INFO  17:52:23,844 - #37 [ java.lang.String
+INFO  17:52:23,844 - #43 idx java.lang.String
+INFO  17:52:23,844 - #38 ] java.lang.String
+INFO  17:52:23,844 - #31 ; java.lang.String
+INFO  17:52:23,844 - #34 } java.lang.String
+INFO  17:52:23,844 - #34 } java.lang.String
+INFO  17:52:23,844 - #34 } java.lang.String
+INFO  17:52:23,844 - #43 Table java.lang.String
+INFO  17:52:23,844 - #43 val java.lang.String
+INFO  17:52:23,844 - #31 ; java.lang.String
+INFO  17:52:23,844 - #43 Int java.lang.String
+INFO  17:52:23,844 - #43 rows java.lang.String
+INFO  17:52:23,844 - #32 , java.lang.String
+INFO  17:52:23,844 - #43 columns java.lang.String
+INFO  17:52:23,844 - #31 ; java.lang.String
+INFO  17:52:23,844 - #33 { java.lang.String
+INFO  17:52:23,844 - #5 void java.lang.String
+INFO  17:52:23,844 - #43 f java.lang.String
+INFO  17:52:23,844 - #35 ( java.lang.String
+INFO  17:52:23,844 - #43 char java.lang.String
+INFO  17:52:23,844 - #43 ch java.lang.String
+INFO  17:52:23,844 - #32 , java.lang.String
+INFO  17:52:23,845 - #43 int java.lang.String
+INFO  17:52:23,845 - #43 a java.lang.String
+INFO  17:52:23,845 - #32 , java.lang.String
+INFO  17:52:23,845 - #43 int java.lang.String
+INFO  17:52:23,845 - #43 arg java.lang.String
+INFO  17:52:23,846 - #36 ) java.lang.String
+INFO  17:52:23,846 - #43 int java.lang.String
+INFO  17:52:23,846 - #43 x java.lang.String
+INFO  17:52:23,846 - #31 ; java.lang.String
+INFO  17:52:23,846 - #33 { java.lang.String
+INFO  17:52:23,846 - #43 x java.lang.String
+INFO  17:52:23,846 - #17 = java.lang.String
+INFO  17:52:23,846 - #43 arg java.lang.String
+INFO  17:52:23,846 - #31 ; java.lang.String
+INFO  17:52:23,846 - #34 } java.lang.String
+INFO  17:52:23,846 - #5 void java.lang.String
+INFO  17:52:23,846 - #43 main java.lang.String
+INFO  17:52:23,846 - #35 ( java.lang.String
+INFO  17:52:23,846 - #36 ) java.lang.String
+INFO  17:52:23,847 - #43 int java.lang.String
+INFO  17:52:23,847 - #43 x java.lang.String
+INFO  17:52:23,847 - #32 , java.lang.String
+INFO  17:52:23,847 - #43 i java.lang.String
+INFO  17:52:23,847 - #31 ; java.lang.String
+INFO  17:52:23,847 - #43 char java.lang.String
+INFO  17:52:23,847 - #43 c java.lang.String
+INFO  17:52:23,847 - #32 , java.lang.String
+INFO  17:52:23,847 - #43 int java.lang.String
+INFO  17:52:23,847 - #43 arr java.lang.String
+INFO  17:52:23,847 - #37 [ java.lang.String
+INFO  17:52:23,847 - #38 ] java.lang.String
+INFO  17:52:23,847 - #31 ; java.lang.String
+INFO  17:52:23,847 - #33 { java.lang.String
+INFO  17:52:23,847 - #43 val java.lang.String
+INFO  17:52:23,847 - #17 = java.lang.String
+INFO  17:52:23,847 - #9 new java.lang.String
+INFO  17:52:23,847 - #43 Table java.lang.String
+INFO  17:52:23,847 - #35 ( java.lang.String
+INFO  17:52:23,847 - #40 2 java.lang.Integer
+INFO  17:52:23,847 - #36 ) java.lang.String
+INFO  17:52:23,847 - #31 ; java.lang.String
+INFO  17:52:23,847 - #43 arr java.lang.String
+INFO  17:52:23,847 - #17 = java.lang.String
+INFO  17:52:23,848 - #9 new java.lang.String
+INFO  17:52:23,848 - #43 int java.lang.String
+INFO  17:52:23,848 - #37 [ java.lang.String
+INFO  17:52:23,848 - #40 3 java.lang.Integer
+INFO  17:52:23,848 - #38 ] java.lang.String
+INFO  17:52:23,848 - #31 ; java.lang.String
+INFO  17:52:23,848 - #43 i java.lang.String
+INFO  17:52:23,848 - #17 = java.lang.String
+INFO  17:52:23,848 - #40 0 java.lang.Integer
+INFO  17:52:23,848 - #31 ; java.lang.String
+INFO  17:52:23,848 - #46 while java.lang.String
+INFO  17:52:23,848 - #35 ( java.lang.String
+INFO  17:52:23,848 - #43 i java.lang.String
+INFO  17:52:23,848 - #21 < java.lang.String
+INFO  17:52:23,848 - #40 3 java.lang.Integer
+INFO  17:52:23,848 - #36 ) java.lang.String
+INFO  17:52:23,848 - #33 { java.lang.String
+INFO  17:52:23,848 - #43 arr java.lang.String
+INFO  17:52:23,848 - #37 [ java.lang.String
+INFO  17:52:23,848 - #43 i java.lang.String
+INFO  17:52:23,848 - #38 ] java.lang.String
+INFO  17:52:23,848 - #17 = java.lang.String
+INFO  17:52:23,849 - #43 i java.lang.String
+INFO  17:52:23,849 - #31 ; java.lang.String
+INFO  17:52:23,849 - #43 i java.lang.String
+INFO  17:52:23,849 - #15 ++ java.lang.String
+INFO  17:52:23,849 - #31 ; java.lang.String
+INFO  17:52:23,849 - #34 } java.lang.String
+INFO  17:52:23,849 - #43 arr java.lang.String
+INFO  17:52:23,849 - #29 . java.lang.String
+INFO  17:52:23,849 - #47 foreach java.lang.String
+INFO  17:52:23,849 - #35 ( java.lang.String
+INFO  17:52:23,849 - #43 x java.lang.String
+INFO  17:52:23,849 - #39 => java.lang.String
+INFO  17:52:23,849 - #3 print java.lang.String
+INFO  17:52:23,849 - #35 ( java.lang.String
+INFO  17:52:23,849 - #43 x java.lang.String
+INFO  17:52:23,849 - #36 ) java.lang.String
+INFO  17:52:23,849 - #31 ; java.lang.String
+INFO  17:52:23,849 - #36 ) java.lang.String
+INFO  17:52:23,849 - #31 ; java.lang.String
+INFO  17:52:23,849 - #43 val java.lang.String
+INFO  17:52:23,849 - #29 . java.lang.String
+INFO  17:52:23,849 - #43 pos java.lang.String
+INFO  17:52:23,849 - #17 = java.lang.String
+INFO  17:52:23,849 - #9 new java.lang.String
+INFO  17:52:23,849 - #43 int java.lang.String
+INFO  17:52:23,849 - #37 [ java.lang.String
+INFO  17:52:23,849 - #43 size java.lang.String
+INFO  17:52:23,849 - #38 ] java.lang.String
+INFO  17:52:23,849 - #31 ; java.lang.String
+INFO  17:52:23,850 - #43 val java.lang.String
+INFO  17:52:23,850 - #29 . java.lang.String
+INFO  17:52:23,850 - #43 neg java.lang.String
+INFO  17:52:23,850 - #17 = java.lang.String
+INFO  17:52:23,850 - #9 new java.lang.String
+INFO  17:52:23,850 - #43 int java.lang.String
+INFO  17:52:23,850 - #37 [ java.lang.String
+INFO  17:52:23,850 - #43 size java.lang.String
+INFO  17:52:23,850 - #38 ] java.lang.String
+INFO  17:52:23,850 - #31 ; java.lang.String
+INFO  17:52:23,850 - #10 read java.lang.String
+INFO  17:52:23,850 - #35 ( java.lang.String
+INFO  17:52:23,850 - #43 x java.lang.String
+INFO  17:52:23,850 - #36 ) java.lang.String
+INFO  17:52:23,850 - #31 ; java.lang.String
+INFO  17:52:23,850 - #37 [ java.lang.String
+INFO  17:52:23,850 - #43 i java.lang.String
+INFO  17:52:23,850 - #32 , java.lang.String
+INFO  17:52:23,850 - #32 , java.lang.String
+INFO  17:52:23,850 - #43 x java.lang.String
+INFO  17:52:23,850 - #38 ] java.lang.String
+INFO  17:52:23,850 - #17 = java.lang.String
+INFO  17:52:23,850 - #43 arr java.lang.String
+INFO  17:52:23,850 - #31 ; java.lang.String
+INFO  17:52:23,850 - #46 while java.lang.String
+INFO  17:52:23,850 - #35 ( java.lang.String
+INFO  17:52:23,850 - #43 i java.lang.String
+INFO  17:52:23,850 - #21 < java.lang.String
+INFO  17:52:23,850 - #43 size java.lang.String
+INFO  17:52:23,850 - #36 ) java.lang.String
+INFO  17:52:23,850 - #33 { java.lang.String
+INFO  17:52:23,851 - #43 val java.lang.String
+INFO  17:52:23,851 - #29 . java.lang.String
+INFO  17:52:23,851 - #43 putp java.lang.String
+INFO  17:52:23,851 - #35 ( java.lang.String
+INFO  17:52:23,851 - #40 0 java.lang.Integer
+INFO  17:52:23,851 - #32 , java.lang.String
+INFO  17:52:23,851 - #43 i java.lang.String
+INFO  17:52:23,851 - #36 ) java.lang.String
+INFO  17:52:23,851 - #31 ; java.lang.String
+INFO  17:52:23,851 - #43 val java.lang.String
+INFO  17:52:23,851 - #29 . java.lang.String
+INFO  17:52:23,851 - #43 putn java.lang.String
+INFO  17:52:23,851 - #35 ( java.lang.String
+INFO  17:52:23,851 - #40 0 java.lang.Integer
+INFO  17:52:23,851 - #32 , java.lang.String
+INFO  17:52:23,851 - #43 i java.lang.String
+INFO  17:52:23,851 - #36 ) java.lang.String
+INFO  17:52:23,851 - #31 ; java.lang.String
+INFO  17:52:23,852 - #43 i java.lang.String
+INFO  17:52:23,852 - #15 ++ java.lang.String
+INFO  17:52:23,852 - #31 ; java.lang.String
+INFO  17:52:23,852 - #34 } java.lang.String
+INFO  17:52:23,852 - #43 f java.lang.String
+INFO  17:52:23,852 - #35 ( java.lang.String
+INFO  17:52:23,852 - #43 c java.lang.String
+INFO  17:52:23,852 - #32 , java.lang.String
+INFO  17:52:23,852 - #43 x java.lang.String
+INFO  17:52:23,852 - #32 , java.lang.String
+INFO  17:52:23,852 - #43 i java.lang.String
+INFO  17:52:23,852 - #36 ) java.lang.String
+INFO  17:52:23,852 - #31 ; java.lang.String
+INFO  17:52:23,852 - #10 read java.lang.String
+INFO  17:52:23,852 - #35 ( java.lang.String
+INFO  17:52:23,852 - #43 rows java.lang.String
+INFO  17:52:23,852 - #36 ) java.lang.String
+INFO  17:52:23,852 - #31 ; java.lang.String
+INFO  17:52:23,852 - #43 x java.lang.String
+INFO  17:52:23,852 - #17 = java.lang.String
+INFO  17:52:23,852 - #43 rows java.lang.String
+INFO  17:52:23,852 - #31 ; java.lang.String
+INFO  17:52:23,852 - #46 while java.lang.String
+INFO  17:52:23,852 - #35 ( java.lang.String
+INFO  17:52:23,852 - #41 true java.lang.Boolean
+INFO  17:52:23,852 - #36 ) java.lang.String
+INFO  17:52:23,852 - #33 { java.lang.String
+INFO  17:52:23,852 - #44 if java.lang.String
+INFO  17:52:23,852 - #35 ( java.lang.String
+INFO  17:52:23,852 - #43 x java.lang.String
+INFO  17:52:23,853 - #22 <= java.lang.String
+INFO  17:52:23,853 - #40 0 java.lang.Integer
+INFO  17:52:23,853 - #36 ) java.lang.String
+INFO  17:52:23,853 - #6 break java.lang.String
+INFO  17:52:23,853 - #31 ; java.lang.String
+INFO  17:52:23,853 - #44 if java.lang.String
+INFO  17:52:23,853 - #35 ( java.lang.String
+INFO  17:52:23,853 - #40 0 java.lang.Integer
+INFO  17:52:23,853 - #22 <= java.lang.String
+INFO  17:52:23,853 - #43 x java.lang.String
+INFO  17:52:23,853 - #27 && java.lang.String
+INFO  17:52:23,853 - #43 x java.lang.String
+INFO  17:52:23,853 - #21 < java.lang.String
+INFO  17:52:23,853 - #43 size java.lang.String
+INFO  17:52:23,853 - #36 ) java.lang.String
+INFO  17:52:23,853 - #33 { java.lang.String
+INFO  17:52:23,853 - #43 val java.lang.String
+INFO  17:52:23,853 - #29 . java.lang.String
+INFO  17:52:23,853 - #43 putp java.lang.String
+INFO  17:52:23,853 - #35 ( java.lang.String
+INFO  17:52:23,853 - #43 val java.lang.String
+INFO  17:52:23,853 - #29 . java.lang.String
+INFO  17:52:23,853 - #43 getp java.lang.String
+INFO  17:52:23,853 - #35 ( java.lang.String
+INFO  17:52:23,853 - #43 x java.lang.String
+INFO  17:52:23,853 - #36 ) java.lang.String
+INFO  17:52:23,853 - #13 + java.lang.String
+INFO  17:52:23,853 - #40 1 java.lang.Integer
+INFO  17:52:23,853 - #36 ) java.lang.String
+INFO  17:52:23,853 - #31 ; java.lang.String
+INFO  17:52:23,853 - #34 } java.lang.String
+INFO  17:52:23,853 - #45 else java.lang.String
+INFO  17:52:23,854 - #44 if java.lang.String
+INFO  17:52:23,854 - #35 ( java.lang.String
+INFO  17:52:23,854 - #23 - java.lang.String
+INFO  17:52:23,854 - #43 size java.lang.String
+INFO  17:52:23,854 - #21 < java.lang.String
+INFO  17:52:23,854 - #43 x java.lang.String
+INFO  17:52:23,854 - #27 && java.lang.String
+INFO  17:52:23,854 - #43 x java.lang.String
+INFO  17:52:23,854 - #21 < java.lang.String
+INFO  17:52:23,854 - #40 0 java.lang.Integer
+INFO  17:52:23,854 - #36 ) java.lang.String
+INFO  17:52:23,854 - #33 { java.lang.String
+INFO  17:52:23,854 - #43 val java.lang.String
+INFO  17:52:23,854 - #29 . java.lang.String
+INFO  17:52:23,854 - #43 putn java.lang.String
+INFO  17:52:23,854 - #35 ( java.lang.String
+INFO  17:52:23,854 - #43 val java.lang.String
+INFO  17:52:23,854 - #29 . java.lang.String
+INFO  17:52:23,854 - #43 getn java.lang.String
+INFO  17:52:23,854 - #35 ( java.lang.String
+INFO  17:52:23,854 - #23 - java.lang.String
+INFO  17:52:23,854 - #43 x java.lang.String
+INFO  17:52:23,854 - #36 ) java.lang.String
+INFO  17:52:23,854 - #13 + java.lang.String
+INFO  17:52:23,854 - #40 1 java.lang.Integer
+INFO  17:52:23,854 - #36 ) java.lang.String
+INFO  17:52:23,854 - #31 ; java.lang.String
+INFO  17:52:23,854 - #34 } java.lang.String
+INFO  17:52:23,854 - #10 read java.lang.String
+INFO  17:52:23,854 - #35 ( java.lang.String
+INFO  17:52:23,855 - #43 x java.lang.String
+INFO  17:52:23,855 - #36 ) java.lang.String
+INFO  17:52:23,855 - #31 ; java.lang.String
+INFO  17:52:23,855 - #34 } java.lang.String
+INFO  17:52:23,855 - #34 } java.lang.String
+INFO  17:52:23,855 - #34 } java.lang.String

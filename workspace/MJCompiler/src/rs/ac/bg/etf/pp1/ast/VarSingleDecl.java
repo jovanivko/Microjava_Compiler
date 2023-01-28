@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 7:16:51
+// 28/0/2023 17:33:25
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,12 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class VarSingleDecl extends VarDecl {
 
     private Type Type;
-    private String varName;
+    private VarNameList VarNameList;
 
-    public VarSingleDecl (Type Type, String varName) {
+    public VarSingleDecl (Type Type, VarNameList VarNameList) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
-        this.varName=varName;
+        this.VarNameList=VarNameList;
+        if(VarNameList!=null) VarNameList.setParent(this);
     }
 
     public Type getType() {
@@ -24,12 +25,12 @@ public class VarSingleDecl extends VarDecl {
         this.Type=Type;
     }
 
-    public String getVarName() {
-        return varName;
+    public VarNameList getVarNameList() {
+        return VarNameList;
     }
 
-    public void setVarName(String varName) {
-        this.varName=varName;
+    public void setVarNameList(VarNameList VarNameList) {
+        this.VarNameList=VarNameList;
     }
 
     public void accept(Visitor visitor) {
@@ -38,15 +39,18 @@ public class VarSingleDecl extends VarDecl {
 
     public void childrenAccept(Visitor visitor) {
         if(Type!=null) Type.accept(visitor);
+        if(VarNameList!=null) VarNameList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Type!=null) Type.traverseTopDown(visitor);
+        if(VarNameList!=null) VarNameList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Type!=null) Type.traverseBottomUp(visitor);
+        if(VarNameList!=null) VarNameList.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -61,7 +65,10 @@ public class VarSingleDecl extends VarDecl {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+varName);
+        if(VarNameList!=null)
+            buffer.append(VarNameList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
