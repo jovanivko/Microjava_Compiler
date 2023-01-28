@@ -97,29 +97,35 @@ Decl ::= 	(DeclVar) VarDecl
 			(DeclClass) ClassDecl
 			;
 				
-VarDecl ::= (VarSingleDecl) Type:varType VarNameList SEMI
+VarDecl ::= (GlobalVarDecl) Type:varType VarNameList SEMI
+			|
+			(ErrVarDecl) Type:varType VarNameList error SEMI
+			{: parser.log.debug("Uspesan oporavak od greske pri deklarisanju promenljive."); :}
 			;
 
-VarNameList ::= VarNameList COMMA VarName
+VarNameList ::= (GlobalVarList)	VarNameList COMMA VarName
 				|
-				VarName
+				(ErrVarDeclList) VarNameList error COMMA VarName
+				{: parser.log.debug("Uspesan oporavak od greske pri deklarisanju promenljive."); :}
+				|
+				(GlobalVar)	VarName
 				;
 
-VarName ::= IDENT:varName
+VarName ::= (VarSingleName)	IDENT:varName
 			|
-			IDENT:arrName LBOX RBOX
+			(VarArrayName)	IDENT:arrName LBOX RBOX
 			;
 
 
 ConstDecl ::=	(ConstDecl) CONST Type:constType ConstNameList SEMI
 				;
 
-ConstNameList ::= ConstNameList COMMA ConstName
+ConstNameList ::=(GlobalConstDeclList) ConstNameList COMMA ConstName
 				|
-				ConstName
+				(GlobalConst)	ConstName
 				;
 
-ConstName ::= IDENT:constName ASSIGN ConstVal:constVal
+ConstName ::= (GlobalConstName) IDENT:constName ASSIGN ConstVal:constVal
 			;
 
 ConstVal ::=(NumConst) NUMCONST
@@ -129,7 +135,10 @@ ConstVal ::=(NumConst) NUMCONST
 			(CharConst)	CHARCONST
 			;
 
-ClassDecl ::= (ClassDecl) CLASS IDENT:className ClassExtend LBRACE ClassBody RBRACE
+ClassDecl ::= 	(ClassDecl) CLASS IDENT:className ClassExtend LBRACE ClassBody RBRACE
+				|
+				(ErrExtendClass) CLASS IDENT:className error LBRACE ClassBody RBRACE
+				{: parser.log.debug("Uspesan oporavak od greske pri prosirivanju nadklase."); :}
 				;
 
 ClassExtend ::= (ExtendClause) EXTENDS Type:classParent
@@ -137,8 +146,11 @@ ClassExtend ::= (ExtendClause) EXTENDS Type:classParent
 				(NoClassExtend) /* epsilon */
 				;
 				
-ClassBody ::= (ClassBody) VarDeclList LBRACE ClassMethodList RBRACE
-			;
+ClassBody ::= 	(ClassBody) VarDeclList LBRACE ClassMethodList RBRACE
+				|
+				(ErrClassVarDecl) VarDeclList error LBRACE ClassMethodList RBRACE
+				{: parser.log.debug("Uspesan oporavak od greske pri deklarisanju polja unutrasnje klase."); :}
+				;
 
 VarDeclList ::= (VarDecls) VarDeclList VarDecl
 				|
@@ -176,7 +188,7 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
 					(Meth) MethodDecl
 					;
 
-MethodDecl ::= (MethodDecl) MethodTypeName IDENT:methName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE 
+MethodDecl ::= 	(MethodDecl) MethodTypeName IDENT:methName LPAREN FormPars VarDeclList LBRACE StatementList RBRACE
 			   ;
 
 MethodTypeName ::= 	(MethodRetType) Type:retType
@@ -184,14 +196,18 @@ MethodTypeName ::= 	(MethodRetType) Type:retType
 					(MethodVoidName) VOID
 					;
 
-FormPars ::= 	(FormParams) FormalParamList 
+FormPars ::= 	(FormParams) FormalParamList RPAREN
+				|
+				(ErrFormParams) FormalParamList error RPAREN
+				{: parser.log.debug("Uspesan oporavak od greske pri deklarisanju formalnog parametra funkcije."); :}
 				| 
-				(NoFormParam) /* epsilon */ 
+				(NoFormParam) RPAREN
 				;
 
 FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
 					|
-					FormalParamList error COMMA
+					(ErrFormalParamDecl) FormalParamList error COMMA FormalParamDecl
+					{: parser.log.debug("Uspesan oporavak od greske pri deklarisanju formalnog parametra funkcije."); :}
 					|
 					(SingleFormalParamDecl) FormalParamDecl
 					;
@@ -216,6 +232,9 @@ Statement ::=	(SingleStatement) DesignatorStatement
 				(Print) PRINT LPAREN PrintExpr RPAREN SEMI
 				|
 				(If) IF LPAREN Condition RPAREN Statement
+				|
+				(ErrIfCond) IF LPAREN error RPAREN Statement
+				{: parser.log.debug("Uspesan oporavak od greske uslova if iskaza."); :}
 				|
 				(IfElse) IF LPAREN Condition RPAREN Statement ELSE Statement
 				|
