@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 6:7:54
+// 28/0/2023 7:16:51
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -15,6 +15,7 @@ public interface Visitor {
     public void visit(Factor Factor);
     public void visit(CondTerm CondTerm);
     public void visit(DeclList DeclList);
+    public void visit(MemberDeclList MemberDeclList);
     public void visit(Designator Designator);
     public void visit(Term Term);
     public void visit(Condition Condition);
@@ -36,6 +37,7 @@ public interface Visitor {
     public void visit(VarDecl VarDecl);
     public void visit(CondFact CondFact);
     public void visit(MethodDeclList MethodDeclList);
+    public void visit(Program Program);
     public void visit(FormPars FormPars);
     public void visit(PrintExpr PrintExpr);
     public void visit(ModOp ModOp);
@@ -104,13 +106,17 @@ public interface Visitor {
     public void visit(NoFormParam NoFormParam);
     public void visit(FormParams FormParams);
     public void visit(MethodVoidName MethodVoidName);
-    public void visit(MethodQualName MethodQualName);
+    public void visit(MethodRetType MethodRetType);
     public void visit(MethodDecl MethodDecl);
-    public void visit(NoMethodDecl NoMethodDecl);
+    public void visit(Meth Meth);
     public void visit(MethodDeclarations MethodDeclarations);
     public void visit(ConstructorDecl ConstructorDecl);
-    public void visit(NoConstr NoConstr);
+    public void visit(Constr Constr);
     public void visit(Constructors Constructors);
+    public void visit(NoMembers NoMembers);
+    public void visit(MembersConstrNoMeth MembersConstrNoMeth);
+    public void visit(MembersNoConstrMeth MembersNoConstrMeth);
+    public void visit(MembersConstrMeth MembersConstrMeth);
     public void visit(NoClassMethods NoClassMethods);
     public void visit(ClassMethods ClassMethods);
     public void visit(NoVars NoVars);
@@ -131,6 +137,7 @@ public interface Visitor {
     public void visit(NoDecl NoDecl);
     public void visit(Declarations Declarations);
     public void visit(ProgName ProgName);
-    public void visit(Program Program);
+    public void visit(ProgramNoMeth ProgramNoMeth);
+    public void visit(ProgramMeth ProgramMeth);
 
 }

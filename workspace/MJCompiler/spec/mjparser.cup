@@ -69,7 +69,7 @@ nonterminal Type, Term, Expr, Factor;
 nonterminal MethodDeclList, DeclList, VarDecl, ConstDecl, ClassDecl, ConstVal;
 nonterminal FormalParamList, FormalParamDecl, FormPars, ActualPars, ActualParamList; 
 nonterminal StatementList, Statement, AddOp, MulOp, RelOp, Decl, DesignatorStatement;
-nonterminal ClassExtend, ClassBody, VarDeclList, ClassMethodList, ConstructorDeclList, ConstructorDecl;
+nonterminal ClassExtend, ClassBody, VarDeclList, ClassMethodList, ConstructorDeclList, ConstructorDecl, MemberDeclList;
 nonterminal PrintExpr, AssignList, AssignDes, Condition, CondTerm, CondFact;
 
 /*nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
@@ -77,7 +77,9 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor; */
 
 precedence left ELSE;
 
-Program ::= (Program) PROG ProgName:p DeclList LBRACE MethodDeclList RBRACE
+Program ::= (ProgramMeth) PROG ProgName:p DeclList LBRACE MethodDeclList RBRACE
+			|
+			(ProgramNoMeth) PROG ProgName:p DeclList LBRACE RBRACE
 ;
 
 ProgName ::= (ProgName) IDENT:pName
@@ -129,14 +131,24 @@ VarDeclList ::= (VarDecls) VarDeclList VarDecl
 				
 
 
-ClassMethodList	::= (ClassMethods)LBRACE ConstructorDeclList MethodDeclList RBRACE
+ClassMethodList	::= (ClassMethods)LBRACE MemberDeclList RBRACE
 					|
 					(NoClassMethods) /* epsilon */
+					;
+					
+
+MemberDeclList ::= (MembersConstrMeth) ConstructorDeclList MethodDeclList
+					|
+					(MembersNoConstrMeth) MethodDeclList
+					|
+					(MembersConstrNoMeth) ConstructorDeclList
+					|
+					(NoMembers) /* epsilon */
 					;
 
 ConstructorDeclList ::= (Constructors) ConstructorDeclList ConstructorDecl
 						|
-						(NoConstr) /* epsilon */
+						(Constr) ConstructorDecl
 						; 
 
 ConstructorDecl ::= (ConstructorDecl) IDENT:className LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE
@@ -145,16 +157,15 @@ ConstructorDecl ::= (ConstructorDecl) IDENT:className LPAREN FormPars RPAREN Var
 
 MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
 					|
-					(NoMethodDecl) /* epsilon */
+					(Meth) MethodDecl
 					;
 
-MethodDecl ::= (MethodDecl) MethodTypeName
-			   LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE 
+MethodDecl ::= (MethodDecl) MethodTypeName IDENT:methName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE 
 			   ;
 
-MethodTypeName ::= 	(MethodQualName) Type:retType IDENT:methName
+MethodTypeName ::= 	(MethodRetType) Type:retType
 					|
-					(MethodVoidName) VOID IDENT:methName
+					(MethodVoidName) VOID
 					;
 
 FormPars ::= (FormParams) FormalParamList | (NoFormParam) /* epsilon */ ;

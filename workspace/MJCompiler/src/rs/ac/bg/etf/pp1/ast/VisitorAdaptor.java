@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 6:7:54
+// 28/0/2023 7:16:51
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -15,6 +15,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Factor Factor) { }
     public void visit(CondTerm CondTerm) { }
     public void visit(DeclList DeclList) { }
+    public void visit(MemberDeclList MemberDeclList) { }
     public void visit(Designator Designator) { }
     public void visit(Term Term) { }
     public void visit(Condition Condition) { }
@@ -36,6 +37,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(VarDecl VarDecl) { }
     public void visit(CondFact CondFact) { }
     public void visit(MethodDeclList MethodDeclList) { }
+    public void visit(Program Program) { }
     public void visit(FormPars FormPars) { }
     public void visit(PrintExpr PrintExpr) { }
     public void visit(ModOp ModOp) { visit(); }
@@ -104,13 +106,17 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoFormParam NoFormParam) { visit(); }
     public void visit(FormParams FormParams) { visit(); }
     public void visit(MethodVoidName MethodVoidName) { visit(); }
-    public void visit(MethodQualName MethodQualName) { visit(); }
+    public void visit(MethodRetType MethodRetType) { visit(); }
     public void visit(MethodDecl MethodDecl) { visit(); }
-    public void visit(NoMethodDecl NoMethodDecl) { visit(); }
+    public void visit(Meth Meth) { visit(); }
     public void visit(MethodDeclarations MethodDeclarations) { visit(); }
     public void visit(ConstructorDecl ConstructorDecl) { visit(); }
-    public void visit(NoConstr NoConstr) { visit(); }
+    public void visit(Constr Constr) { visit(); }
     public void visit(Constructors Constructors) { visit(); }
+    public void visit(NoMembers NoMembers) { visit(); }
+    public void visit(MembersConstrNoMeth MembersConstrNoMeth) { visit(); }
+    public void visit(MembersNoConstrMeth MembersNoConstrMeth) { visit(); }
+    public void visit(MembersConstrMeth MembersConstrMeth) { visit(); }
     public void visit(NoClassMethods NoClassMethods) { visit(); }
     public void visit(ClassMethods ClassMethods) { visit(); }
     public void visit(NoVars NoVars) { visit(); }
@@ -131,7 +137,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoDecl NoDecl) { visit(); }
     public void visit(Declarations Declarations) { visit(); }
     public void visit(ProgName ProgName) { visit(); }
-    public void visit(Program Program) { visit(); }
+    public void visit(ProgramNoMeth ProgramNoMeth) { visit(); }
+    public void visit(ProgramMeth ProgramMeth) { visit(); }
 
 
     public void visit() { }

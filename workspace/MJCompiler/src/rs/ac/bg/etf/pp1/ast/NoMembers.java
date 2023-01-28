@@ -1,13 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 6:7:54
+// 28/0/2023 7:16:51
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class NoMethodDecl extends MethodDeclList {
+public class NoMembers extends MemberDeclList {
 
-    public NoMethodDecl () {
+    public NoMembers () {
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +28,10 @@ public class NoMethodDecl extends MethodDeclList {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("NoMethodDecl(\n");
+        buffer.append("NoMembers(\n");
 
         buffer.append(tab);
-        buffer.append(") [NoMethodDecl]");
+        buffer.append(") [NoMembers]");
         return buffer.toString();
     }
 }

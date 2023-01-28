@@ -97,6 +97,7 @@ nonterminal VarDeclList VarDeclList;
 nonterminal ClassMethodList ClassMethodList;
 nonterminal ConstructorDeclList ConstructorDeclList;
 nonterminal ConstructorDecl ConstructorDecl;
+nonterminal MemberDeclList MemberDeclList;
 nonterminal PrintExpr PrintExpr;
 nonterminal AssignList AssignList;
 nonterminal AssignDes AssignDes;
@@ -109,7 +110,9 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor; */
 
 precedence left ELSE;
 
-Program ::= (Program) PROG ProgName:p DeclList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, D1, M2); RESULT.setLine(pleft); :}
+Program ::= (ProgramMeth) PROG ProgName:p DeclList:D1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new ProgramMeth(p, D1, M2); RESULT.setLine(pleft); :}
+			|
+			(ProgramNoMeth) PROG ProgName:p DeclList:D1 LBRACE RBRACE {: RESULT=new ProgramNoMeth(p, D1); RESULT.setLine(pleft); :}
 ;
 
 ProgName ::= (ProgName) IDENT:pName {: RESULT=new ProgName(pName); RESULT.setLine(pNameleft); :}
@@ -161,14 +164,24 @@ VarDeclList ::= (VarDecls) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDecls(V1, 
 				
 
 
-ClassMethodList	::= (ClassMethods)LBRACE ConstructorDeclList:C1 MethodDeclList:M2 RBRACE {: RESULT=new ClassMethods(C1, M2); RESULT.setLine(C1left); :}
+ClassMethodList	::= (ClassMethods)LBRACE MemberDeclList:M1 RBRACE {: RESULT=new ClassMethods(M1); RESULT.setLine(M1left); :}
 					|
 					(NoClassMethods) {: RESULT=new NoClassMethods(); :} /* epsilon */
+					;
+					
+
+MemberDeclList ::= (MembersConstrMeth) ConstructorDeclList:C1 MethodDeclList:M2 {: RESULT=new MembersConstrMeth(C1, M2); RESULT.setLine(C1left); :}
+					|
+					(MembersNoConstrMeth) MethodDeclList:M1 {: RESULT=new MembersNoConstrMeth(M1); RESULT.setLine(M1left); :}
+					|
+					(MembersConstrNoMeth) ConstructorDeclList:C1 {: RESULT=new MembersConstrNoMeth(C1); RESULT.setLine(C1left); :}
+					|
+					(NoMembers) {: RESULT=new NoMembers(); :} /* epsilon */
 					;
 
 ConstructorDeclList ::= (Constructors) ConstructorDeclList:C1 ConstructorDecl:C2 {: RESULT=new Constructors(C1, C2); RESULT.setLine(C1left); :}
 						|
-						(NoConstr) {: RESULT=new NoConstr(); :} /* epsilon */
+						(Constr) ConstructorDecl:C1 {: RESULT=new Constr(C1); RESULT.setLine(C1left); :}
 						; 
 
 ConstructorDecl ::= (ConstructorDecl) IDENT:className LPAREN FormPars:F1 RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new ConstructorDecl(className, F1, V2, S3); RESULT.setLine(classNameleft); :}
@@ -177,16 +190,15 @@ ConstructorDecl ::= (ConstructorDecl) IDENT:className LPAREN FormPars:F1 RPAREN 
 
 MethodDeclList ::= (MethodDeclarations) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclarations(M1, M2); RESULT.setLine(M1left); :}
 					|
-					(NoMethodDecl) {: RESULT=new NoMethodDecl(); :} /* epsilon */
+					(Meth) MethodDecl:M1 {: RESULT=new Meth(M1); RESULT.setLine(M1left); :}
 					;
 
-MethodDecl ::= (MethodDecl) MethodTypeName:M1
-			   LPAREN FormPars:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodDecl(M1, F2, V3, S4); RESULT.setLine(M1left); :} 
+MethodDecl ::= (MethodDecl) MethodTypeName:M1 IDENT:methName LPAREN FormPars:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodDecl(M1, methName, F2, V3, S4); RESULT.setLine(M1left); :} 
 			   ;
 
-MethodTypeName ::= 	(MethodQualName) Type:retType IDENT:methName {: RESULT=new MethodQualName(retType, methName); RESULT.setLine(retTypeleft); :}
+MethodTypeName ::= 	(MethodRetType) Type:retType {: RESULT=new MethodRetType(retType); RESULT.setLine(retTypeleft); :}
 					|
-					(MethodVoidName) VOID IDENT:methName {: RESULT=new MethodVoidName(methName); RESULT.setLine(methNameleft); :}
+					(MethodVoidName) VOID {: RESULT=new MethodVoidName(); :}
 					;
 
 FormPars ::= (FormParams) FormalParamList:F1 {: RESULT=new FormParams(F1); RESULT.setLine(F1left); :} | (NoFormParam) {: RESULT=new NoFormParam(); :} /* epsilon */ ;

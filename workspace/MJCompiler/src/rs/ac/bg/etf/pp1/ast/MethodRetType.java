@@ -1,19 +1,17 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 6:7:54
+// 28/0/2023 7:16:51
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class MethodQualName extends MethodTypeName {
+public class MethodRetType extends MethodTypeName {
 
     private Type Type;
-    private String methName;
 
-    public MethodQualName (Type Type, String methName) {
+    public MethodRetType (Type Type) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
-        this.methName=methName;
     }
 
     public Type getType() {
@@ -22,14 +20,6 @@ public class MethodQualName extends MethodTypeName {
 
     public void setType(Type Type) {
         this.Type=Type;
-    }
-
-    public String getMethName() {
-        return methName;
-    }
-
-    public void setMethName(String methName) {
-        this.methName=methName;
     }
 
     public void accept(Visitor visitor) {
@@ -53,7 +43,7 @@ public class MethodQualName extends MethodTypeName {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("MethodQualName(\n");
+        buffer.append("MethodRetType(\n");
 
         if(Type!=null)
             buffer.append(Type.toString("  "+tab));
@@ -61,11 +51,8 @@ public class MethodQualName extends MethodTypeName {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+methName);
-        buffer.append("\n");
-
         buffer.append(tab);
-        buffer.append(") [MethodQualName]");
+        buffer.append(") [MethodRetType]");
         return buffer.toString();
     }
 }
