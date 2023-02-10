@@ -89,9 +89,9 @@ import java_cup.runtime.Symbol;
 <COMMENT> . {yybegin(COMMENT);}
 <COMMENT> "\r\n" { yybegin(YYINITIAL); }
 
-("true"|"false") 	{return new_symbol(sym.BOOLCONST, new Boolean (yytext()));}
-"'"[ -~]"'" 		{return new_symbol(sym.CHARCONST, new Character (yytext().charAt(1)));}
-[0-9]+  			{ return new_symbol(sym.NUMCONST, new Integer (yytext())); }
+("true"|"false") 	{return new_symbol(sym.BOOLCONST, Boolean.parseBoolean(yytext()));}
+"'"[ -~]"'" 		{return new_symbol(sym.CHARCONST, Character.valueOf(yytext().charAt(1)));}
+[0-9]+  			{ return new_symbol(sym.NUMCONST, Integer.parseInt(yytext())); }
 ([a-z]|[A-Z])[a-z|A-Z|0-9|_]* 	{return new_symbol (sym.IDENT, yytext()); }
 
 . { System.err.println("Leksicka greska ("+yytext()+") u liniji "+(yyline+1)+" na koloni " + (yycolumn+1)); }

@@ -1,0 +1,1019 @@
+INFO  21:22:50,668 - Compiling source file: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\test\test.mj
+INFO  21:22:50,709 - #2 program
+INFO  21:22:50,710 - #43 prog
+INFO  21:22:50,710 - #8 const
+INFO  21:22:50,710 - #43 int
+INFO  21:22:50,711 - #43 size
+INFO  21:22:50,711 - #17 =
+INFO  21:22:50,711 - #40 10
+INFO  21:22:50,711 - #31 ;
+INFO  21:22:50,712 - #8 const
+INFO  21:22:50,712 - #43 char
+INFO  21:22:50,712 - #43 ch
+INFO  21:22:50,713 - #17 =
+INFO  21:22:50,713 - #42 a
+INFO  21:22:50,713 - #32 ,
+INFO  21:22:50,713 - #43 ma
+INFO  21:22:50,713 - #17 =
+INFO  21:22:50,713 - #42 b
+INFO  21:22:50,713 - #31 ;
+INFO  21:22:50,713 - #43 int
+INFO  21:22:50,713 - #43 rows
+INFO  21:22:50,714 - #32 ,
+INFO  21:22:50,714 - #43 columns
+INFO  21:22:50,714 - #31 ;
+INFO  21:22:50,714 - #33 {
+INFO  21:22:50,715 - #5 void
+INFO  21:22:50,715 - #43 f
+INFO  21:22:50,715 - #35 (
+INFO  21:22:50,715 - #43 char
+INFO  21:22:50,715 - #43 ch
+INFO  21:22:50,715 - #32 ,
+INFO  21:22:50,715 - #43 int
+INFO  21:22:50,715 - #43 a
+INFO  21:22:50,715 - #32 ,
+INFO  21:22:50,715 - #43 int
+INFO  21:22:50,715 - #43 arg
+INFO  21:22:50,715 - #36 )
+INFO  21:22:50,715 - #43 int
+INFO  21:22:50,716 - #43 x
+INFO  21:22:50,716 - #31 ;
+INFO  21:22:50,716 - #33 {
+INFO  21:22:50,716 - #43 ch
+INFO  21:22:50,717 - #17 =
+INFO  21:22:50,717 - #15 ++
+ERROR 21:22:50,717 - 
+Sintaksna greska na liniji 7
+INFO  21:22:50,717 - #31 ;
+INFO  21:22:50,717 - #44 if
+INFO  21:22:50,717 - #35 (
+INFO  21:22:50,718 - #41 true
+ERROR 21:22:50,718 - Uspesan oporavak od greske pri dodeli vrednosti do ; u liniji 7
+INFO  21:22:50,719 - #36 )
+INFO  21:22:50,720 - #33 {
+INFO  21:22:50,720 - #43 ch
+INFO  21:22:50,720 - #16 --
+INFO  21:22:50,720 - #31 ;
+INFO  21:22:50,720 - #34 }
+INFO  21:22:50,720 - #43 ch
+INFO  21:22:50,720 - #15 ++
+INFO  21:22:50,720 - #31 ;
+INFO  21:22:50,720 - #43 ch
+INFO  21:22:50,720 - #17 =
+INFO  21:22:50,720 - #43 ma
+INFO  21:22:50,720 - #31 ;
+INFO  21:22:50,721 - #43 x
+INFO  21:22:50,721 - #17 =
+INFO  21:22:50,721 - #43 arg
+INFO  21:22:50,721 - #31 ;
+INFO  21:22:50,721 - #34 }
+INFO  21:22:50,721 - #5 void
+INFO  21:22:50,723 - #43 main
+INFO  21:22:50,723 - #35 (
+INFO  21:22:50,723 - #36 )
+INFO  21:22:50,723 - #43 int
+INFO  21:22:50,724 - #43 x
+INFO  21:22:50,724 - #32 ,
+INFO  21:22:50,724 - #43 i
+INFO  21:22:50,724 - #31 ;
+INFO  21:22:50,724 - #43 char
+INFO  21:22:50,724 - #43 c
+INFO  21:22:50,724 - #31 ;
+INFO  21:22:50,724 - #43 int
+INFO  21:22:50,724 - #43 arr
+INFO  21:22:50,724 - #37 [
+INFO  21:22:50,724 - #38 ]
+INFO  21:22:50,724 - #31 ;
+INFO  21:22:50,724 - #33 {
+INFO  21:22:50,724 - #43 arr
+INFO  21:22:50,724 - #17 =
+INFO  21:22:50,724 - #9 new
+INFO  21:22:50,725 - #43 int
+INFO  21:22:50,725 - #37 [
+INFO  21:22:50,725 - #40 3
+INFO  21:22:50,725 - #38 ]
+INFO  21:22:50,725 - #31 ;
+INFO  21:22:50,725 - #43 i
+INFO  21:22:50,725 - #17 =
+INFO  21:22:50,725 - #40 0
+INFO  21:22:50,725 - #31 ;
+INFO  21:22:50,725 - #46 while
+INFO  21:22:50,725 - #35 (
+INFO  21:22:50,725 - #43 i
+INFO  21:22:50,725 - #21 <
+INFO  21:22:50,726 - #40 3
+INFO  21:22:50,726 - #36 )
+INFO  21:22:50,726 - #33 {
+INFO  21:22:50,727 - #43 arr
+INFO  21:22:50,727 - #37 [
+INFO  21:22:50,727 - #43 i
+INFO  21:22:50,727 - #38 ]
+INFO  21:22:50,727 - #17 =
+INFO  21:22:50,727 - #43 i
+INFO  21:22:50,727 - #31 ;
+INFO  21:22:50,727 - #43 i
+INFO  21:22:50,727 - #15 ++
+INFO  21:22:50,727 - #31 ;
+INFO  21:22:50,727 - #34 }
+INFO  21:22:50,727 - #43 arr
+INFO  21:22:50,727 - #29 .
+INFO  21:22:50,727 - #47 foreach
+INFO  21:22:50,727 - #35 (
+INFO  21:22:50,727 - #43 x
+INFO  21:22:50,727 - #39 =>
+INFO  21:22:50,727 - #3 print
+INFO  21:22:50,727 - #35 (
+INFO  21:22:50,728 - #43 x
+INFO  21:22:50,728 - #36 )
+INFO  21:22:50,728 - #31 ;
+INFO  21:22:50,728 - #36 )
+INFO  21:22:50,728 - #31 ;
+INFO  21:22:50,728 - #43 arr
+INFO  21:22:50,728 - #17 =
+INFO  21:22:50,728 - #9 new
+INFO  21:22:50,728 - #43 int
+INFO  21:22:50,728 - #37 [
+INFO  21:22:50,728 - #43 size
+INFO  21:22:50,728 - #38 ]
+INFO  21:22:50,729 - #31 ;
+INFO  21:22:50,729 - #10 read
+INFO  21:22:50,729 - #35 (
+INFO  21:22:50,729 - #43 x
+INFO  21:22:50,729 - #36 )
+INFO  21:22:50,729 - #31 ;
+INFO  21:22:50,729 - #37 [
+INFO  21:22:50,729 - #43 i
+INFO  21:22:50,729 - #32 ,
+INFO  21:22:50,729 - #32 ,
+INFO  21:22:50,730 - #43 x
+INFO  21:22:50,730 - #38 ]
+INFO  21:22:50,730 - #17 =
+INFO  21:22:50,730 - #43 arr
+INFO  21:22:50,730 - #31 ;
+INFO  21:22:50,730 - #46 while
+INFO  21:22:50,730 - #35 (
+INFO  21:22:50,730 - #43 i
+INFO  21:22:50,730 - #21 <
+INFO  21:22:50,730 - #43 size
+INFO  21:22:50,730 - #36 )
+INFO  21:22:50,730 - #33 {
+INFO  21:22:50,730 - #43 i
+INFO  21:22:50,730 - #15 ++
+INFO  21:22:50,730 - #31 ;
+INFO  21:22:50,730 - #34 }
+INFO  21:22:50,730 - #43 f
+INFO  21:22:50,731 - #35 (
+INFO  21:22:50,731 - #43 c
+INFO  21:22:50,731 - #32 ,
+INFO  21:22:50,731 - #43 x
+INFO  21:22:50,731 - #32 ,
+INFO  21:22:50,731 - #43 i
+INFO  21:22:50,731 - #36 )
+INFO  21:22:50,731 - #31 ;
+INFO  21:22:50,731 - #10 read
+INFO  21:22:50,731 - #35 (
+INFO  21:22:50,731 - #43 rows
+INFO  21:22:50,731 - #36 )
+INFO  21:22:50,731 - #31 ;
+INFO  21:22:50,731 - #43 x
+INFO  21:22:50,731 - #17 =
+INFO  21:22:50,732 - #43 rows
+INFO  21:22:50,732 - #31 ;
+INFO  21:22:50,732 - #46 while
+INFO  21:22:50,732 - #35 (
+INFO  21:22:50,732 - #41 true
+INFO  21:22:50,732 - #36 )
+INFO  21:22:50,732 - #33 {
+INFO  21:22:50,732 - #44 if
+INFO  21:22:50,732 - #35 (
+INFO  21:22:50,732 - #43 x
+INFO  21:22:50,732 - #22 <=
+INFO  21:22:50,732 - #40 0
+INFO  21:22:50,732 - #36 )
+INFO  21:22:50,733 - #6 break
+INFO  21:22:50,733 - #31 ;
+INFO  21:22:50,733 - #44 if
+INFO  21:22:50,733 - #35 (
+INFO  21:22:50,733 - #40 0
+INFO  21:22:50,733 - #22 <=
+INFO  21:22:50,733 - #43 x
+INFO  21:22:50,733 - #27 &&
+INFO  21:22:50,733 - #43 x
+INFO  21:22:50,733 - #21 <
+INFO  21:22:50,733 - #43 size
+INFO  21:22:50,733 - #36 )
+INFO  21:22:50,733 - #33 {
+INFO  21:22:50,734 - #34 }
+INFO  21:22:50,734 - #45 else
+INFO  21:22:50,734 - #44 if
+INFO  21:22:50,734 - #35 (
+INFO  21:22:50,734 - #23 -
+INFO  21:22:50,734 - #43 size
+INFO  21:22:50,734 - #21 <
+INFO  21:22:50,734 - #43 x
+INFO  21:22:50,734 - #27 &&
+INFO  21:22:50,734 - #43 x
+INFO  21:22:50,734 - #21 <
+INFO  21:22:50,734 - #40 0
+INFO  21:22:50,734 - #36 )
+INFO  21:22:50,734 - #33 {
+INFO  21:22:50,734 - #34 }
+INFO  21:22:50,734 - #10 read
+INFO  21:22:50,734 - #35 (
+INFO  21:22:50,735 - #43 x
+INFO  21:22:50,735 - #36 )
+INFO  21:22:50,735 - #31 ;
+INFO  21:22:50,735 - #34 }
+INFO  21:22:50,735 - #34 }
+INFO  21:22:50,735 - #34 }
+INFO  21:22:50,742 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      Declarations(
+        NoDecl(
+        ) [NoDecl]
+        DeclConst(
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            GlobalConst(
+              ConstName(
+               size
+                NumConst(
+                 10
+                ) [NumConst]
+              ) [ConstName]
+            ) [GlobalConst]
+          ) [ConstDecl]
+        ) [DeclConst]
+      ) [Declarations]
+      DeclConst(
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+          GlobalConstDeclList(
+            GlobalConst(
+              ConstName(
+               ch
+                CharConst(
+                 a
+                ) [CharConst]
+              ) [ConstName]
+            ) [GlobalConst]
+            ConstName(
+             ma
+              CharConst(
+               b
+              ) [CharConst]
+            ) [ConstName]
+          ) [GlobalConstDeclList]
+        ) [ConstDecl]
+      ) [DeclConst]
+    ) [Declarations]
+    DeclVar(
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarList(
+          SingleVar(
+            VarSingleName(
+             rows
+            ) [VarSingleName]
+          ) [SingleVar]
+          VarSingleName(
+           columns
+          ) [VarSingleName]
+        ) [VarList]
+      ) [VarDeclaration]
+    ) [DeclVar]
+  ) [Declarations]
+  GlobalMethods(
+    MethodDeclarations(
+      Meth(
+        MethodDecl(
+          MethodVoidName(
+           f
+          ) [MethodVoidName]
+          FormParams(
+            FormalParamDecls(
+              FormalParamDecls(
+                SingleFormalParamDecl(
+                  FormalParamDeclSing(
+                    Type(
+                     char
+                    ) [Type]
+                   ch
+                  ) [FormalParamDeclSing]
+                ) [SingleFormalParamDecl]
+                FormalParamDeclSing(
+                  Type(
+                   int
+                  ) [Type]
+                 a
+                ) [FormalParamDeclSing]
+              ) [FormalParamDecls]
+              FormalParamDeclSing(
+                Type(
+                 int
+                ) [Type]
+               arg
+              ) [FormalParamDeclSing]
+            ) [FormalParamDecls]
+          ) [FormParams]
+          VarDecls(
+            NoVars(
+            ) [NoVars]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+              SingleVar(
+                VarSingleName(
+                 x
+                ) [VarSingleName]
+              ) [SingleVar]
+            ) [VarDeclaration]
+          ) [VarDecls]
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    NoStmt(
+                    ) [NoStmt]
+                    SingleStatement(
+                      ErrAssignment(
+                      ) [ErrAssignment]
+                    ) [SingleStatement]
+                  ) [Statements]
+                  If(
+                    CondORFact(
+                      CondAndFact(
+                        BoolExpr(
+                          TermExpr(
+                            TermSingle(
+                              Const(
+                                BoolConst(
+                                 true
+                                ) [BoolConst]
+                              ) [Const]
+                            ) [TermSingle]
+                          ) [TermExpr]
+                        ) [BoolExpr]
+                      ) [CondAndFact]
+                    ) [CondORFact]
+                    StatementBlock(
+                      Statements(
+                        NoStmt(
+                        ) [NoStmt]
+                        SingleStatement(
+                          Decr(
+                            Desig(
+                             ch
+                            ) [Desig]
+                          ) [Decr]
+                        ) [SingleStatement]
+                      ) [Statements]
+                    ) [StatementBlock]
+                  ) [If]
+                ) [Statements]
+                SingleStatement(
+                  Incr(
+                    Desig(
+                     ch
+                    ) [Desig]
+                  ) [Incr]
+                ) [SingleStatement]
+              ) [Statements]
+              SingleStatement(
+                Assignment(
+                  Desig(
+                   ch
+                  ) [Desig]
+                  TermExpr(
+                    TermSingle(
+                      Var(
+                        Desig(
+                         ma
+                        ) [Desig]
+                      ) [Var]
+                    ) [TermSingle]
+                  ) [TermExpr]
+                ) [Assignment]
+              ) [SingleStatement]
+            ) [Statements]
+            SingleStatement(
+              Assignment(
+                Desig(
+                 x
+                ) [Desig]
+                TermExpr(
+                  TermSingle(
+                    Var(
+                      Desig(
+                       arg
+                      ) [Desig]
+                    ) [Var]
+                  ) [TermSingle]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [SingleStatement]
+          ) [Statements]
+        ) [MethodDecl]
+      ) [Meth]
+      MethodDecl(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        NoFormParam(
+        ) [NoFormParam]
+        VarDecls(
+          VarDecls(
+            VarDecls(
+              NoVars(
+              ) [NoVars]
+              VarDeclaration(
+                Type(
+                 int
+                ) [Type]
+                VarList(
+                  SingleVar(
+                    VarSingleName(
+                     x
+                    ) [VarSingleName]
+                  ) [SingleVar]
+                  VarSingleName(
+                   i
+                  ) [VarSingleName]
+                ) [VarList]
+              ) [VarDeclaration]
+            ) [VarDecls]
+            VarDeclaration(
+              Type(
+               char
+              ) [Type]
+              SingleVar(
+                VarSingleName(
+                 c
+                ) [VarSingleName]
+              ) [SingleVar]
+            ) [VarDeclaration]
+          ) [VarDecls]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleVar(
+              VarArrayName(
+               arr
+              ) [VarArrayName]
+            ) [SingleVar]
+          ) [VarDeclaration]
+        ) [VarDecls]
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                NoStmt(
+                                ) [NoStmt]
+                                SingleStatement(
+                                  Assignment(
+                                    Desig(
+                                     arr
+                                    ) [Desig]
+                                    TermExpr(
+                                      TermSingle(
+                                        NewArray(
+                                          Type(
+                                           int
+                                          ) [Type]
+                                          TermExpr(
+                                            TermSingle(
+                                              Const(
+                                                NumConst(
+                                                 3
+                                                ) [NumConst]
+                                              ) [Const]
+                                            ) [TermSingle]
+                                          ) [TermExpr]
+                                        ) [NewArray]
+                                      ) [TermSingle]
+                                    ) [TermExpr]
+                                  ) [Assignment]
+                                ) [SingleStatement]
+                              ) [Statements]
+                              SingleStatement(
+                                Assignment(
+                                  Desig(
+                                   i
+                                  ) [Desig]
+                                  TermExpr(
+                                    TermSingle(
+                                      Const(
+                                        NumConst(
+                                         0
+                                        ) [NumConst]
+                                      ) [Const]
+                                    ) [TermSingle]
+                                  ) [TermExpr]
+                                ) [Assignment]
+                              ) [SingleStatement]
+                            ) [Statements]
+                            While(
+                              CondORFact(
+                                CondAndFact(
+                                  RelExpr(
+                                    BoolExpr(
+                                      TermExpr(
+                                        TermSingle(
+                                          Var(
+                                            Desig(
+                                             i
+                                            ) [Desig]
+                                          ) [Var]
+                                        ) [TermSingle]
+                                      ) [TermExpr]
+                                    ) [BoolExpr]
+                                    LssOp(
+                                    ) [LssOp]
+                                    TermExpr(
+                                      TermSingle(
+                                        Const(
+                                          NumConst(
+                                           3
+                                          ) [NumConst]
+                                        ) [Const]
+                                      ) [TermSingle]
+                                    ) [TermExpr]
+                                  ) [RelExpr]
+                                ) [CondAndFact]
+                              ) [CondORFact]
+                              StatementBlock(
+                                Statements(
+                                  Statements(
+                                    NoStmt(
+                                    ) [NoStmt]
+                                    SingleStatement(
+                                      Assignment(
+                                        ArrayDesignator(
+                                         arr
+                                          TermExpr(
+                                            TermSingle(
+                                              Var(
+                                                Desig(
+                                                 i
+                                                ) [Desig]
+                                              ) [Var]
+                                            ) [TermSingle]
+                                          ) [TermExpr]
+                                        ) [ArrayDesignator]
+                                        TermExpr(
+                                          TermSingle(
+                                            Var(
+                                              Desig(
+                                               i
+                                              ) [Desig]
+                                            ) [Var]
+                                          ) [TermSingle]
+                                        ) [TermExpr]
+                                      ) [Assignment]
+                                    ) [SingleStatement]
+                                  ) [Statements]
+                                  SingleStatement(
+                                    Incr(
+                                      Desig(
+                                       i
+                                      ) [Desig]
+                                    ) [Incr]
+                                  ) [SingleStatement]
+                                ) [Statements]
+                              ) [StatementBlock]
+                            ) [While]
+                          ) [Statements]
+                          ForEach(
+                            Desig(
+                             arr
+                            ) [Desig]
+                           x
+                            Print(
+                              PrintE(
+                                TermExpr(
+                                  TermSingle(
+                                    Var(
+                                      Desig(
+                                       x
+                                      ) [Desig]
+                                    ) [Var]
+                                  ) [TermSingle]
+                                ) [TermExpr]
+                              ) [PrintE]
+                            ) [Print]
+                          ) [ForEach]
+                        ) [Statements]
+                        SingleStatement(
+                          Assignment(
+                            Desig(
+                             arr
+                            ) [Desig]
+                            TermExpr(
+                              TermSingle(
+                                NewArray(
+                                  Type(
+                                   int
+                                  ) [Type]
+                                  TermExpr(
+                                    TermSingle(
+                                      Var(
+                                        Desig(
+                                         size
+                                        ) [Desig]
+                                      ) [Var]
+                                    ) [TermSingle]
+                                  ) [TermExpr]
+                                ) [NewArray]
+                              ) [TermSingle]
+                            ) [TermExpr]
+                          ) [Assignment]
+                        ) [SingleStatement]
+                      ) [Statements]
+                      Read(
+                        Desig(
+                         x
+                        ) [Desig]
+                      ) [Read]
+                    ) [Statements]
+                    SingleStatement(
+                      MulAssignment(
+                        AssignMul(
+                          AssignMul(
+                            AssignSingle(
+                              AssignDest(
+                                Desig(
+                                 i
+                                ) [Desig]
+                              ) [AssignDest]
+                            ) [AssignSingle]
+                            NoDes(
+                            ) [NoDes]
+                          ) [AssignMul]
+                          AssignDest(
+                            Desig(
+                             x
+                            ) [Desig]
+                          ) [AssignDest]
+                        ) [AssignMul]
+                        Desig(
+                         arr
+                        ) [Desig]
+                      ) [MulAssignment]
+                    ) [SingleStatement]
+                  ) [Statements]
+                  While(
+                    CondORFact(
+                      CondAndFact(
+                        RelExpr(
+                          BoolExpr(
+                            TermExpr(
+                              TermSingle(
+                                Var(
+                                  Desig(
+                                   i
+                                  ) [Desig]
+                                ) [Var]
+                              ) [TermSingle]
+                            ) [TermExpr]
+                          ) [BoolExpr]
+                          LssOp(
+                          ) [LssOp]
+                          TermExpr(
+                            TermSingle(
+                              Var(
+                                Desig(
+                                 size
+                                ) [Desig]
+                              ) [Var]
+                            ) [TermSingle]
+                          ) [TermExpr]
+                        ) [RelExpr]
+                      ) [CondAndFact]
+                    ) [CondORFact]
+                    StatementBlock(
+                      Statements(
+                        NoStmt(
+                        ) [NoStmt]
+                        SingleStatement(
+                          Incr(
+                            Desig(
+                             i
+                            ) [Desig]
+                          ) [Incr]
+                        ) [SingleStatement]
+                      ) [Statements]
+                    ) [StatementBlock]
+                  ) [While]
+                ) [Statements]
+                SingleStatement(
+                  ProcCall(
+                    Desig(
+                     f
+                    ) [Desig]
+                    Actuals(
+                      ActualParams(
+                        ActualParams(
+                          ActualParam(
+                            TermExpr(
+                              TermSingle(
+                                Var(
+                                  Desig(
+                                   c
+                                  ) [Desig]
+                                ) [Var]
+                              ) [TermSingle]
+                            ) [TermExpr]
+                          ) [ActualParam]
+                          TermExpr(
+                            TermSingle(
+                              Var(
+                                Desig(
+                                 x
+                                ) [Desig]
+                              ) [Var]
+                            ) [TermSingle]
+                          ) [TermExpr]
+                        ) [ActualParams]
+                        TermExpr(
+                          TermSingle(
+                            Var(
+                              Desig(
+                               i
+                              ) [Desig]
+                            ) [Var]
+                          ) [TermSingle]
+                        ) [TermExpr]
+                      ) [ActualParams]
+                    ) [Actuals]
+                  ) [ProcCall]
+                ) [SingleStatement]
+              ) [Statements]
+              Read(
+                Desig(
+                 rows
+                ) [Desig]
+              ) [Read]
+            ) [Statements]
+            SingleStatement(
+              Assignment(
+                Desig(
+                 x
+                ) [Desig]
+                TermExpr(
+                  TermSingle(
+                    Var(
+                      Desig(
+                       rows
+                      ) [Desig]
+                    ) [Var]
+                  ) [TermSingle]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [SingleStatement]
+          ) [Statements]
+          While(
+            CondORFact(
+              CondAndFact(
+                BoolExpr(
+                  TermExpr(
+                    TermSingle(
+                      Const(
+                        BoolConst(
+                         true
+                        ) [BoolConst]
+                      ) [Const]
+                    ) [TermSingle]
+                  ) [TermExpr]
+                ) [BoolExpr]
+              ) [CondAndFact]
+            ) [CondORFact]
+            StatementBlock(
+              Statements(
+                Statements(
+                  Statements(
+                    NoStmt(
+                    ) [NoStmt]
+                    If(
+                      CondORFact(
+                        CondAndFact(
+                          RelExpr(
+                            BoolExpr(
+                              TermExpr(
+                                TermSingle(
+                                  Var(
+                                    Desig(
+                                     x
+                                    ) [Desig]
+                                  ) [Var]
+                                ) [TermSingle]
+                              ) [TermExpr]
+                            ) [BoolExpr]
+                            LssEOp(
+                            ) [LssEOp]
+                            TermExpr(
+                              TermSingle(
+                                Const(
+                                  NumConst(
+                                   0
+                                  ) [NumConst]
+                                ) [Const]
+                              ) [TermSingle]
+                            ) [TermExpr]
+                          ) [RelExpr]
+                        ) [CondAndFact]
+                      ) [CondORFact]
+                      Break(
+                      ) [Break]
+                    ) [If]
+                  ) [Statements]
+                  IfElse(
+                    CondORFact(
+                      AndTerm(
+                        CondAndFact(
+                          RelExpr(
+                            BoolExpr(
+                              TermExpr(
+                                TermSingle(
+                                  Const(
+                                    NumConst(
+                                     0
+                                    ) [NumConst]
+                                  ) [Const]
+                                ) [TermSingle]
+                              ) [TermExpr]
+                            ) [BoolExpr]
+                            LssEOp(
+                            ) [LssEOp]
+                            TermExpr(
+                              TermSingle(
+                                Var(
+                                  Desig(
+                                   x
+                                  ) [Desig]
+                                ) [Var]
+                              ) [TermSingle]
+                            ) [TermExpr]
+                          ) [RelExpr]
+                        ) [CondAndFact]
+                        RelExpr(
+                          BoolExpr(
+                            TermExpr(
+                              TermSingle(
+                                Var(
+                                  Desig(
+                                   x
+                                  ) [Desig]
+                                ) [Var]
+                              ) [TermSingle]
+                            ) [TermExpr]
+                          ) [BoolExpr]
+                          LssOp(
+                          ) [LssOp]
+                          TermExpr(
+                            TermSingle(
+                              Var(
+                                Desig(
+                                 size
+                                ) [Desig]
+                              ) [Var]
+                            ) [TermSingle]
+                          ) [TermExpr]
+                        ) [RelExpr]
+                      ) [AndTerm]
+                    ) [CondORFact]
+                    StatementBlock(
+                      NoStmt(
+                      ) [NoStmt]
+                    ) [StatementBlock]
+                    If(
+                      CondORFact(
+                        AndTerm(
+                          CondAndFact(
+                            RelExpr(
+                              BoolExpr(
+                                NegTermExpr(
+                                  TermSingle(
+                                    Var(
+                                      Desig(
+                                       size
+                                      ) [Desig]
+                                    ) [Var]
+                                  ) [TermSingle]
+                                ) [NegTermExpr]
+                              ) [BoolExpr]
+                              LssOp(
+                              ) [LssOp]
+                              TermExpr(
+                                TermSingle(
+                                  Var(
+                                    Desig(
+                                     x
+                                    ) [Desig]
+                                  ) [Var]
+                                ) [TermSingle]
+                              ) [TermExpr]
+                            ) [RelExpr]
+                          ) [CondAndFact]
+                          RelExpr(
+                            BoolExpr(
+                              TermExpr(
+                                TermSingle(
+                                  Var(
+                                    Desig(
+                                     x
+                                    ) [Desig]
+                                  ) [Var]
+                                ) [TermSingle]
+                              ) [TermExpr]
+                            ) [BoolExpr]
+                            LssOp(
+                            ) [LssOp]
+                            TermExpr(
+                              TermSingle(
+                                Const(
+                                  NumConst(
+                                   0
+                                  ) [NumConst]
+                                ) [Const]
+                              ) [TermSingle]
+                            ) [TermExpr]
+                          ) [RelExpr]
+                        ) [AndTerm]
+                      ) [CondORFact]
+                      StatementBlock(
+                        NoStmt(
+                        ) [NoStmt]
+                      ) [StatementBlock]
+                    ) [If]
+                  ) [IfElse]
+                ) [Statements]
+                Read(
+                  Desig(
+                   x
+                  ) [Desig]
+                ) [Read]
+              ) [Statements]
+            ) [StatementBlock]
+          ) [While]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+  ) [GlobalMethods]
+) [Program]
+INFO  21:22:50,743 - ===================================
+INFO  21:22:50,745 - Deklarisana konstanta size na liniji 2
+INFO  21:22:50,746 - Deklarisana konstanta ch na liniji 3
+INFO  21:22:50,746 - Deklarisana konstanta ma na liniji 3
+INFO  21:22:50,746 - Obradjuje se funkcija f na liniji 6
+INFO  21:22:50,746 - Pronadjeno ch rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 8
+ERROR 21:22:50,746 - Greska na liniji 8 : ch nije tipa kompatibilnog za dekrementiranje! 
+INFO  21:22:50,746 - Pronadjeno ch rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 9
+ERROR 21:22:50,746 - Greska na liniji 9 : ch nije tipa kompatibilnog za inkrementiranje! 
+INFO  21:22:50,746 - Pronadjeno ch rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 10
+INFO  21:22:50,746 - Pronadjeno ma rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 10
+ERROR 21:22:50,746 - Greska na liniji 11 : ime x nije deklarisano! 
+ERROR 21:22:50,746 - Greska na liniji 11 : ime arg nije deklarisano! 
+INFO  21:22:50,746 - Obradjuje se funkcija main na liniji 13
+ERROR 21:22:50,746 - Greska na liniji 15 : ime arr nije deklarisano! 
+ERROR 21:22:50,746 - Greska na liniji 15 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 21:22:50,746 - Greska na liniji 16 : ime i nije deklarisano! 
+ERROR 21:22:50,746 - Greska na liniji 16 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 21:22:50,746 - Greska na liniji 17 : ime i nije deklarisano! 
+ERROR 21:22:50,747 - Greska na liniji 18 : ime i nije deklarisano! 
+ERROR 21:22:50,747 - Greska na liniji 18 : ime arr nije deklarisano! 
+ERROR 21:22:50,747 - Greska na liniji 18 : ime i nije deklarisano! 
+ERROR 21:22:50,747 - Greska na liniji 19 : ime i nije deklarisano! 
+ERROR 21:22:50,747 - Greska na liniji 19 : noObj nije tipa kompatibilnog za inkrementiranje! 
+ERROR 21:22:50,747 - Greska na liniji 21 : ime arr nije deklarisano! 
+ERROR 21:22:50,747 - Greska na liniji 21 : ime x nije deklarisano! 
+ERROR 21:22:50,747 - Expression mora biti primitivnog tipa! na liniji 21
+ERROR 21:22:50,747 - Greska na liniji 22 : ime arr nije deklarisano! 
+INFO  21:22:50,747 - Pronadjeno size rs.etf.pp1.symboltable.concepts.Obj@7e6cbb7a na liniji 22
+ERROR 21:22:50,747 - Greska na liniji 22 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 21:22:50,747 - Greska na liniji 23 : ime x nije deklarisano! 
+ERROR 21:22:50,747 - Designator mora biti primitivnog tipa! na liniji 23
+ERROR 21:22:50,747 - Greska na liniji 24 : ime i nije deklarisano! 
+ERROR 21:22:50,747 - Greska na liniji 24 : ime x nije deklarisano! 
+ERROR 21:22:50,747 - Greska na liniji 24 : ime arr nije deklarisano! 
+ERROR 21:22:50,747 - Promenljiva noObj mora biti tipa niza na liniji 24

@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 18:33:52
+// 7/1/2023 22:6:28
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class VarArrayName extends VarName {
 
-    private String arrName;
+    private String name;
 
-    public VarArrayName (String arrName) {
-        this.arrName=arrName;
+    public VarArrayName (String name) {
+        this.name=name;
     }
 
-    public String getArrName() {
-        return arrName;
+    public String getName() {
+        return name;
     }
 
-    public void setArrName(String arrName) {
-        this.arrName=arrName;
+    public void setName(String name) {
+        this.name=name;
     }
 
     public void accept(Visitor visitor) {
@@ -41,7 +41,7 @@ public class VarArrayName extends VarName {
         buffer.append(tab);
         buffer.append("VarArrayName(\n");
 
-        buffer.append(" "+tab+arrName);
+        buffer.append(" "+tab+name);
         buffer.append("\n");
 
         buffer.append(tab);

@@ -1,15 +1,52 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 18:33:52
+// 7/1/2023 22:6:28
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public abstract class Program implements SyntaxNode {
+public class Program implements SyntaxNode {
 
     private SyntaxNode parent;
-
     private int line;
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+
+    private ProgName ProgName;
+    private DeclList DeclList;
+    private GlobalMethodDecl GlobalMethodDecl;
+
+    public Program (ProgName ProgName, DeclList DeclList, GlobalMethodDecl GlobalMethodDecl) {
+        this.ProgName=ProgName;
+        if(ProgName!=null) ProgName.setParent(this);
+        this.DeclList=DeclList;
+        if(DeclList!=null) DeclList.setParent(this);
+        this.GlobalMethodDecl=GlobalMethodDecl;
+        if(GlobalMethodDecl!=null) GlobalMethodDecl.setParent(this);
+    }
+
+    public ProgName getProgName() {
+        return ProgName;
+    }
+
+    public void setProgName(ProgName ProgName) {
+        this.ProgName=ProgName;
+    }
+
+    public DeclList getDeclList() {
+        return DeclList;
+    }
+
+    public void setDeclList(DeclList DeclList) {
+        this.DeclList=DeclList;
+    }
+
+    public GlobalMethodDecl getGlobalMethodDecl() {
+        return GlobalMethodDecl;
+    }
+
+    public void setGlobalMethodDecl(GlobalMethodDecl GlobalMethodDecl) {
+        this.GlobalMethodDecl=GlobalMethodDecl;
+    }
 
     public SyntaxNode getParent() {
         return parent;
@@ -27,11 +64,55 @@ public abstract class Program implements SyntaxNode {
         this.line=line;
     }
 
-    public abstract void accept(Visitor visitor);
-    public abstract void childrenAccept(Visitor visitor);
-    public abstract void traverseTopDown(Visitor visitor);
-    public abstract void traverseBottomUp(Visitor visitor);
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
 
-    public String toString() { return toString(""); }
-    public abstract String toString(String tab);
+    public void childrenAccept(Visitor visitor) {
+        if(ProgName!=null) ProgName.accept(visitor);
+        if(DeclList!=null) DeclList.accept(visitor);
+        if(GlobalMethodDecl!=null) GlobalMethodDecl.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(ProgName!=null) ProgName.traverseTopDown(visitor);
+        if(DeclList!=null) DeclList.traverseTopDown(visitor);
+        if(GlobalMethodDecl!=null) GlobalMethodDecl.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(ProgName!=null) ProgName.traverseBottomUp(visitor);
+        if(DeclList!=null) DeclList.traverseBottomUp(visitor);
+        if(GlobalMethodDecl!=null) GlobalMethodDecl.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("Program(\n");
+
+        if(ProgName!=null)
+            buffer.append(ProgName.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(DeclList!=null)
+            buffer.append(DeclList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(GlobalMethodDecl!=null)
+            buffer.append(GlobalMethodDecl.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [Program]");
+        return buffer.toString();
+    }
 }

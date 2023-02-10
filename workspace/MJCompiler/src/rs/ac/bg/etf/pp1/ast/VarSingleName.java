@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 18:33:52
+// 7/1/2023 22:6:28
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class VarSingleName extends VarName {
 
-    private String varName;
+    private String name;
 
-    public VarSingleName (String varName) {
-        this.varName=varName;
+    public VarSingleName (String name) {
+        this.name=name;
     }
 
-    public String getVarName() {
-        return varName;
+    public String getName() {
+        return name;
     }
 
-    public void setVarName(String varName) {
-        this.varName=varName;
+    public void setName(String name) {
+        this.name=name;
     }
 
     public void accept(Visitor visitor) {
@@ -41,7 +41,7 @@ public class VarSingleName extends VarName {
         buffer.append(tab);
         buffer.append("VarSingleName(\n");
 
-        buffer.append(" "+tab+varName);
+        buffer.append(" "+tab+name);
         buffer.append("\n");
 
         buffer.append(tab);

@@ -2,14 +2,12 @@ package rs.ac.bg.etf.pp1;
 
 import java_cup.runtime.*;
 import org.apache.log4j.*;
-
-// import java.io.*;
 import rs.ac.bg.etf.pp1.ast.*;
 
 
 parser code {:
 	
-	boolean errorDetected = false;
+	boolean errorDetected;
 	
 	Logger log = Logger.getLogger(getClass());
    
@@ -46,6 +44,11 @@ parser code {:
     
 :}
 
+
+init with {:
+	errorDetected = false;
+:}
+
 scan with {:
 	Symbol s = this.getScanner().next_token();
 	if (s != null && s.value != null) 
@@ -63,27 +66,27 @@ terminal Character CHARCONST;
 terminal String IDENT;
 terminal IF, ELSE, WHILE, FOREACH;
 
-nonterminal Program, ProgName, Designator, MethodDecl, MethodTypeName;
-nonterminal Type, Term, Expr, Factor;
-
-nonterminal MethodDeclList, DeclList, VarDecl, ConstDecl, ClassDecl, ConstVal, VarNameList, ConstNameList, VarName, ConstName;
+nonterminal MethodDeclList, DeclList, VarDecl, ConstDecl, ClassDecl, VarNameList, VarName, Assign;
 nonterminal FormalParamList, FormalParamDecl, FormPars, ActualPars, ActualParamList; 
 nonterminal StatementList, Statement, AddOp, MulOp, RelOp, Decl, DesignatorStatement;
 nonterminal ClassExtend, ClassBody, VarDeclList, ClassMethodList, ConstructorDeclList, ConstructorDecl, MemberDeclList;
-nonterminal PrintExpr, AssignList, AssignDes, Condition, CondTerm, CondFact;
+nonterminal  AssignList, AssignDes, Condition, CondTerm, CondFact, GlobalMethodDecl;
 
-/*nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor; */
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct PrintExpr, Type, Term, Expr, Factor, ConstVal, ConstName, ConstNameList;
 
 precedence left ELSE;
 
-Program ::= (ProgramMeth) PROG ProgName:p DeclList LBRACE MethodDeclList RBRACE
-			|
-			(ProgramNoMeth) PROG ProgName:p DeclList LBRACE RBRACE
-;
+Program ::= (Program) PROG ProgName:p DeclList LBRACE GlobalMethodDecl RBRACE
+			;
 
 ProgName ::= (ProgName) IDENT:pName
-;
+			;
+
+GlobalMethodDecl ::= (GlobalMethods) MethodDeclList
+					|
+					(NoGlobalMethods) /*epsilon*/
+					;
 
 DeclList ::= (Declarations) DeclList Decl
 			|
@@ -97,23 +100,23 @@ Decl ::= 	(DeclVar) VarDecl
 			(DeclClass) ClassDecl
 			;
 				
-VarDecl ::= (GlobalVarDecl) Type:varType VarNameList SEMI
+VarDecl ::= (VarDeclaration) Type:varType VarNameList:varList SEMI
 			|
-			(ErrVarDecl) Type:varType VarNameList error SEMI
-			{: parser.log.debug("Uspesan oporavak od greske pri deklarisanju promenljive."); :}
+			(ErrVarDecl) Type:varType VarNameList error SEMI:l
+			{: parser.report_error("Uspesan oporavak od greske pri deklarisanju promenljive do ; u liniji " + lleft, null); :}
 			;
 
-VarNameList ::= (GlobalVarList)	VarNameList COMMA VarName
+VarNameList ::= (VarList)	VarNameList:vnl COMMA VarName:varName
 				|
-				(ErrVarDeclList) VarNameList error COMMA VarName
-				{: parser.log.debug("Uspesan oporavak od greske pri deklarisanju promenljive."); :}
+				(ErrVarDeclList) VarNameList:vnl error COMMA:l VarName:varName
+				{: parser.report_error("Uspesan oporavak od greske pri deklarisanju promenljive do , u liniji " + lleft, null); :}
 				|
-				(GlobalVar)	VarName
+				(SingleVar)	VarName:varName
 				;
 
-VarName ::= (VarSingleName)	IDENT:varName
+VarName ::= (VarSingleName)	IDENT:name
 			|
-			(VarArrayName)	IDENT:arrName LBOX RBOX
+			(VarArrayName)	IDENT:name LBOX RBOX
 			;
 
 
@@ -125,7 +128,7 @@ ConstNameList ::=(GlobalConstDeclList) ConstNameList COMMA ConstName
 				(GlobalConst)	ConstName
 				;
 
-ConstName ::= (GlobalConstName) IDENT:constName ASSIGN ConstVal:constVal
+ConstName ::= (ConstName) IDENT:constName ASSIGN ConstVal:constVal
 			;
 
 ConstVal ::=(NumConst) NUMCONST
@@ -135,21 +138,21 @@ ConstVal ::=(NumConst) NUMCONST
 			(CharConst)	CHARCONST
 			;
 
-ClassDecl ::= 	(ClassDecl) CLASS IDENT:className ClassExtend LBRACE ClassBody RBRACE
-				|
-				(ErrExtendClass) CLASS IDENT:className error LBRACE ClassBody RBRACE
-				{: parser.log.debug("Uspesan oporavak od greske pri prosirivanju nadklase."); :}
+ClassDecl ::= 	(ClassDeclaration) CLASS IDENT:className ClassExtend ClassBody:cb RBRACE
 				;
 
-ClassExtend ::= (ExtendClause) EXTENDS Type:classParent
+ClassExtend ::= (ExtendClause) EXTENDS Type:classParent LBRACE
 				|
-				(NoClassExtend) /* epsilon */
+				(NoClassExtend) LBRACE
+				|
+				(ErrExtendClass)  error LBRACE:l
+				{: parser.report_error("Uspesan oporavak od greske pri prosirivanju nadklase do } u liniji " + lleft, null); :}
 				;
 				
-ClassBody ::= 	(ClassBody) VarDeclList LBRACE ClassMethodList RBRACE
+ClassBody ::= 	(ClassBodyDecl) VarDeclList:vl LBRACE ClassMethodList:cml RBRACE
 				|
-				(ErrClassVarDecl) VarDeclList error LBRACE ClassMethodList RBRACE
-				{: parser.log.debug("Uspesan oporavak od greske pri deklarisanju polja unutrasnje klase."); :}
+				(ErrClassVarDecl) VarDeclList:vl error LBRACE:l ClassMethodList:cml RBRACE
+				{: parser.report_error("Uspesan oporavak od greske pri deklarisanju polja unutrasnje klase do } u liniji " + lleft, null); :}
 				;
 
 VarDeclList ::= (VarDecls) VarDeclList VarDecl
@@ -188,28 +191,28 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
 					(Meth) MethodDecl
 					;
 
-MethodDecl ::= 	(MethodDecl) MethodTypeName IDENT:methName LPAREN FormPars VarDeclList LBRACE StatementList RBRACE
+MethodDecl ::= 	(MethodDecl) MethodTypeName LPAREN FormPars VarDeclList LBRACE StatementList RBRACE
 			   ;
 
-MethodTypeName ::= 	(MethodRetType) Type:retType
+MethodTypeName ::= 	(MethodNonVoidName) Type:retType IDENT:methName
 					|
-					(MethodVoidName) VOID
+					(MethodVoidName) VOID IDENT:methName
 					;
 
-FormPars ::= 	(FormParams) FormalParamList RPAREN
+FormPars ::= 	(FormParams) FormalParamList:fpl RPAREN
 				|
-				(ErrFormParams) FormalParamList error RPAREN
-				{: parser.log.debug("Uspesan oporavak od greske pri deklarisanju formalnog parametra funkcije."); :}
+				(ErrFormParams) FormalParamList:fpl error RPAREN:l
+				{: parser.report_error("Uspesan oporavak od greske pri deklarisanju formalnog parametra funkcije do ) u liniji " + lleft, null); :}
 				| 
 				(NoFormParam) RPAREN
 				;
 
-FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
+FormalParamList ::= (FormalParamDecls) FormalParamList:fl COMMA FormalParamDecl:fpd
 					|
-					(ErrFormalParamDecl) FormalParamList error COMMA FormalParamDecl
-					{: parser.log.debug("Uspesan oporavak od greske pri deklarisanju formalnog parametra funkcije."); :}
+					(ErrFormalParamDecl) FormalParamList:fl error COMMA:l FormalParamDecl:fpd
+					{: parser.report_error("Uspesan oporavak od greske pri deklarisanju formalnog parametra funkcije do , u liniji " + lleft, null); :}
 					|
-					(SingleFormalParamDecl) FormalParamDecl
+					(SingleFormalParamDecl) FormalParamDecl:fpd
 					;
 					
 FormalParamDecl ::= (FormalParamDeclSing) Type IDENT 
@@ -233,8 +236,8 @@ Statement ::=	(SingleStatement) DesignatorStatement
 				|
 				(If) IF LPAREN Condition RPAREN Statement
 				|
-				(ErrIfCond) IF LPAREN error RPAREN Statement
-				{: parser.log.debug("Uspesan oporavak od greske uslova if iskaza."); :}
+				(ErrIfCond) IF LPAREN error RPAREN:l Statement:stmt
+				{: parser.report_error("Uspesan oporavak od greske uslova if iskaza do ) u liniji " + lleft, null); :}
 				|
 				(IfElse) IF LPAREN Condition RPAREN Statement ELSE Statement
 				|
@@ -258,15 +261,15 @@ PrintExpr ::=	(PrintE) Expr
 				(PrintNum) Expr COMMA NUMCONST
 				;
 
-DesignatorStatement ::= (Assignment) Designator:dest EQUAL Expr:e SEMI
+DesignatorStatement ::= (Assignment) Designator:dest Assign Expr:e SEMI
 						|
-						(ErrAssignment) Designator EQUAL error SEMI
-			  			{: parser.log.debug("Uspesan oporavak od greske pri dodeli vrednosti."); :}
+						(ErrAssignment) Designator Assign error SEMI:l
+			  			{: parser.report_error("Uspesan oporavak od greske pri dodeli vrednosti do ; u liniji " + lleft, null); :}
 			  			|
-			  			(MulAssignment) LBOX AssignList:des RBOX EQUAL Designator:arr SEMI
+			  			(MulAssignment) LBOX AssignList:des RBOX Assign Designator:arr SEMI
 			  			|
-			  			(ErrMulAssignment) LBOX AssignList:des RBOX EQUAL error SEMI
-			  			{: parser.log.debug("Uspesan oporavak od greske pri visestrukoj dodeli vrednosti."); :}
+			  			(ErrMulAssignment) LBOX AssignList:des RBOX Assign error SEMI:l
+			  			{: parser.report_error("Uspesan oporavak od greske pri visestrukoj dodeli vrednosti do ; u liniji " + lleft, null); :}
 			  			|
 			  			(Incr) Designator INCR SEMI
 			  			|
@@ -319,9 +322,9 @@ Expr ::= (AddExpr) Expr:te AddOp Term:t
 		 (NegTermExpr) MINUS Term:t
 		 ;
 
-Term ::= 	(MulTerm) Term:tt MulOp Factor:t
+Term ::= 	(MulTerm) Term:term MulOp Factor:factor
 			|
-			(TermSingle) Factor:t
+			(TermSingle) Factor:factor
 			;
 
 Factor ::= (Const) ConstVal
@@ -330,7 +333,7 @@ Factor ::= (Const) ConstVal
 		   	|
 		   (ArgCall) LPAREN Expr RPAREN
 		   |
-		   (NewObj) NEW Type LBOX Expr RBOX
+		   (NewArray) NEW Type LBOX Expr RBOX
 		    |
 		   (FuncCall) Designator:func LPAREN ActualPars RPAREN
 		   ;
@@ -339,14 +342,16 @@ Designator ::= 	(Desig) IDENT:name
 				|
 				(ArrayDesignator) IDENT:name LBOX Expr RBOX
 				;
-				
+
+Assign ::= ASSIGN;
+	
 RelOp ::=	(EqOp) EQUAL
 			|
 			(NeqOp) NEQUAL
 			|
 			(LssOp) LSS
 			|
-			(LsEOp) LSSE
+			(LssEOp) LSSE
 			|
 			(GrtOp) GRT
 			|

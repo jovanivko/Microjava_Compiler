@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2023 18:33:52
+// 7/1/2023 22:6:28
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,10 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class ErrMulAssignment extends DesignatorStatement {
 
     private AssignList AssignList;
+    private Assign Assign;
 
-    public ErrMulAssignment (AssignList AssignList) {
+    public ErrMulAssignment (AssignList AssignList, Assign Assign) {
         this.AssignList=AssignList;
         if(AssignList!=null) AssignList.setParent(this);
+        this.Assign=Assign;
+        if(Assign!=null) Assign.setParent(this);
     }
 
     public AssignList getAssignList() {
@@ -22,21 +25,32 @@ public class ErrMulAssignment extends DesignatorStatement {
         this.AssignList=AssignList;
     }
 
+    public Assign getAssign() {
+        return Assign;
+    }
+
+    public void setAssign(Assign Assign) {
+        this.Assign=Assign;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
         if(AssignList!=null) AssignList.accept(visitor);
+        if(Assign!=null) Assign.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(AssignList!=null) AssignList.traverseTopDown(visitor);
+        if(Assign!=null) Assign.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(AssignList!=null) AssignList.traverseBottomUp(visitor);
+        if(Assign!=null) Assign.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -47,6 +61,12 @@ public class ErrMulAssignment extends DesignatorStatement {
 
         if(AssignList!=null)
             buffer.append(AssignList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(Assign!=null)
+            buffer.append(Assign.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
