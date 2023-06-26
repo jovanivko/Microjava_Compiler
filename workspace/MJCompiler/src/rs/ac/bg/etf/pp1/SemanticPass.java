@@ -221,52 +221,6 @@ public class SemanticPass extends VisitorAdaptor {
 					null);
 	}
 
-	public void visit(MulAssignment ass) {
-		Struct elemType = ass.getDesignator().obj.getType().getElemType();
-		int type = ass.getDesignator().obj.getType().getKind();
-		if (type != Struct.Array) {
-			report_error("Promenljiva " + ass.getDesignator().obj.getName() + " mora biti tipa niza", ass);
-		}
-
-		for (int i = 0; i < assignNames.size(); i++) {
-			if (assignTypes.get(i) != null && elemType.assignableTo(assignTypes.get(i))) {
-				report_error("Vrednost designatora " + assignNames.get(i) + " nije kompatibilna pri dodeli", ass);
-			}
-		}
-	}
-
-	public void visit(AssignSingle ass) {
-		assignNames = new ArrayList<>();
-		assignTypes = new ArrayList<>();
-		AssignDes des = ass.getAssignDes();
-		if (des instanceof NoDes) {
-			assignNames.add(null);
-			assignTypes.add(null);
-		} else if (des instanceof AssignDest) {
-			int kind = ((AssignDest) des).getDesignator().obj.getKind();
-			if (kind != Obj.Var && kind != Obj.Elem && kind != Obj.Fld) {
-				report_error("Designator mora biti promenljiva, element niza ili polje", ass);
-			}
-			assignNames.add(((AssignDest) des).getDesignator().obj.getName());
-			assignTypes.add(((AssignDest) des).getDesignator().obj.getType());
-		}
-	}
-
-	public void visit(AssignMul ass) {
-		AssignDes des = ass.getAssignDes();
-		if (des instanceof NoDes) {
-			assignNames.add(null);
-			assignTypes.add(null);
-		} else if (des instanceof AssignDest) {
-			int kind = ((AssignDest) des).getDesignator().obj.getKind();
-			if (kind != Obj.Var && kind != Obj.Elem && kind != Obj.Fld) {
-				report_error("Designator mora biti promenljiva, element niza ili polje", ass);
-			}
-			assignNames.add(((AssignDest) des).getDesignator().obj.getName());
-			assignTypes.add(((AssignDest) des).getDesignator().obj.getType());
-		}
-	}
-
 	public void visit(Print printStmt) {
 		Struct str = printStmt.getPrintExpr().struct;
 		if (str != boolType && str != Tab.charType && str != Tab.intType) {
@@ -289,28 +243,6 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error("Designator mora biti promenljiva, element niza ili polje!", readStmt);
 		} else if (des.getType() != boolType && des.getType() != Tab.charType && des.getType() != Tab.intType) {
 			report_error("Designator mora biti primitivnog tipa!", readStmt);
-		}
-	}
-
-	public void visit(ReturnExpr returnExpr) {
-		returnFound = true;
-		Struct currMethType = currentMethod.getType();
-		if (!currMethType.compatibleWith(returnExpr.getExpr().struct)) {
-			report_error("Greska na liniji " + returnExpr.getLine() + " : "
-					+ "tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije "
-					+ currentMethod.getName(), null);
-		}
-	}
-
-	public void visit(ProcCall procCall) {
-		Obj func = procCall.getDesignator().obj;
-		if (Obj.Meth == func.getKind()) {
-			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + procCall.getLine(), null);
-			// RESULT = func.getType();
-		} else {
-			report_error("Greska na liniji " + procCall.getLine() + " : ime " + func.getName() + " nije funkcija!",
-					null);
-			// RESULT = Tab.noType;
 		}
 	}
 
@@ -375,19 +307,6 @@ public class SemanticPass extends VisitorAdaptor {
 		} else {
 			arr.struct = new Struct(Struct.Array, arr.getType().struct);
 		}
-	}
-
-	public void visit(FuncCall funcCall) {
-		Obj func = funcCall.getDesignator().obj;
-		if (Obj.Meth == func.getKind()) {
-			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
-			funcCall.struct = func.getType();
-		} else {
-			report_error("Greska na liniji " + funcCall.getLine() + " : ime " + func.getName() + " nije funkcija!",
-					null);
-			funcCall.struct = Tab.noType;
-		}
-
 	}
 
 	public void visit(Desig designator) {
