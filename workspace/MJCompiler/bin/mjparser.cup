@@ -67,10 +67,10 @@ terminal String IDENT;
 terminal IF, ELSE, WHILE, FOREACH;
 
 nonterminal MethodDeclList, DeclList, VarDecl, ConstDecl, ClassDecl, VarNameList, VarName, Assign;
-nonterminal FormalParamList, FormalParamDecl, FormPars, ActualPars, ActualParamList; 
+nonterminal FormalParamList, FormalParamDecl, FormPars, ActualParamList; 
 nonterminal StatementList, Statement, AddOp, MulOp, RelOp, Decl, DesignatorStatement;
 nonterminal ClassExtend, ClassBody, VarDeclList, ClassMethodList, ConstructorDeclList, ConstructorDecl, MemberDeclList;
-nonterminal  AssignList, AssignDes, Condition, CondTerm, CondFact, GlobalMethodDecl;
+nonterminal GlobalMethodDecl;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct PrintExpr, Type, Term, Expr, Factor, ConstVal, ConstName, ConstNameList;
@@ -96,8 +96,6 @@ DeclList ::= (Declarations) DeclList Decl
 Decl ::= 	(DeclVar) VarDecl
 			|
 			(DeclConst) ConstDecl
-			|
-			(DeclClass) ClassDecl
 			;
 				
 VarDecl ::= (VarDeclaration) Type:varType VarNameList:varList SEMI
@@ -117,6 +115,8 @@ VarNameList ::= (VarList)	VarNameList:vnl COMMA VarName:varName
 VarName ::= (VarSingleName)	IDENT:name
 			|
 			(VarArrayName)	IDENT:name LBOX RBOX
+			|
+			(VarMatrixName)	IDENT:name LBOX RBOX LBOX RBOX
 			;
 
 
@@ -137,54 +137,6 @@ ConstVal ::=(NumConst) NUMCONST
 			|
 			(CharConst)	CHARCONST
 			;
-
-ClassDecl ::= 	(ClassDeclaration) CLASS IDENT:className ClassExtend ClassBody:cb RBRACE
-				;
-
-ClassExtend ::= (ExtendClause) EXTENDS Type:classParent LBRACE
-				|
-				(NoClassExtend) LBRACE
-				|
-				(ErrExtendClass)  error LBRACE:l
-				{: parser.report_error("Uspesan oporavak od greske pri prosirivanju nadklase do } u liniji " + lleft, null); :}
-				;
-				
-ClassBody ::= 	(ClassBodyDecl) VarDeclList:vl LBRACE ClassMethodList:cml RBRACE
-				|
-				(ErrClassVarDecl) VarDeclList:vl error LBRACE:l ClassMethodList:cml RBRACE
-				{: parser.report_error("Uspesan oporavak od greske pri deklarisanju polja unutrasnje klase do } u liniji " + lleft, null); :}
-				;
-
-VarDeclList ::= (VarDecls) VarDeclList VarDecl
-				|
-				(NoVars) /* epsilon */
-				;
-				
-
-
-ClassMethodList	::= (ClassMethods)LBRACE MemberDeclList RBRACE
-					|
-					(NoClassMethods) /* epsilon */
-					;
-					
-
-MemberDeclList ::= (MembersConstrMeth) ConstructorDeclList MethodDeclList
-					|
-					(MembersNoConstrMeth) MethodDeclList
-					|
-					(MembersConstrNoMeth) ConstructorDeclList
-					|
-					(NoMembers) /* epsilon */
-					;
-
-ConstructorDeclList ::= (Constructors) ConstructorDeclList ConstructorDecl
-						|
-						(Constr) ConstructorDecl
-						; 
-
-ConstructorDecl ::= (ConstructorDecl) IDENT:className LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE
-					;
-
 
 MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
 					|
@@ -209,9 +161,6 @@ FormPars ::= 	(FormParams) FormalParamList:fpl RPAREN
 
 FormalParamList ::= (FormalParamDecls) FormalParamList:fl COMMA FormalParamDecl:fpd
 					|
-					(ErrFormalParamDecl) FormalParamList:fl error COMMA:l FormalParamDecl:fpd
-					{: parser.report_error("Uspesan oporavak od greske pri deklarisanju formalnog parametra funkcije do , u liniji " + lleft, null); :}
-					|
 					(SingleFormalParamDecl) FormalParamDecl:fpd
 					;
 					
@@ -233,27 +182,6 @@ Statement ::=	(SingleStatement) DesignatorStatement
 				(Read) READ LPAREN Designator RPAREN SEMI
 				|
 				(Print) PRINT LPAREN PrintExpr RPAREN SEMI
-				|
-				(If) IF LPAREN Condition RPAREN Statement
-				|
-				(ErrIfCond) IF LPAREN error RPAREN:l Statement:stmt
-				{: parser.report_error("Uspesan oporavak od greske uslova if iskaza do ) u liniji " + lleft, null); :}
-				|
-				(IfElse) IF LPAREN Condition RPAREN Statement ELSE Statement
-				|
-				(While) WHILE LPAREN Condition RPAREN Statement
-				|
-				(Break) BREAK SEMI
-				|
-				(Continue) CONTINUE SEMI
-				|
-				(ReturnNoExpr) RETURN SEMI
-				|
-				(ReturnExpr) RETURN Expr:t SEMI
-				|
-				(ForEach) Designator DOT FOREACH LPAREN IDENT:e DBLARROW Statement RPAREN SEMI
-				|
-				(StatementBlock) LBRACE StatementList RBRACE
 				;
 			
 PrintExpr ::=	(PrintE) Expr
@@ -266,54 +194,10 @@ DesignatorStatement ::= (Assignment) Designator:dest Assign Expr:e SEMI
 						(ErrAssignment) Designator Assign error SEMI:l
 			  			{: parser.report_error("Uspesan oporavak od greske pri dodeli vrednosti do ; u liniji " + lleft, null); :}
 			  			|
-			  			(MulAssignment) LBOX AssignList:des RBOX Assign Designator:arr SEMI
-			  			|
-			  			(ErrMulAssignment) LBOX AssignList:des RBOX Assign error SEMI:l
-			  			{: parser.report_error("Uspesan oporavak od greske pri visestrukoj dodeli vrednosti do ; u liniji " + lleft, null); :}
-			  			|
 			  			(Incr) Designator INCR SEMI
 			  			|
 			  			(Decr) Designator DECR SEMI
-			  			|
-					  	(ProcCall) Designator:func LPAREN ActualPars RPAREN SEMI
 					  	;
-
-
-
-AssignList ::=	(AssignMul) AssignList COMMA AssignDes
-				|
-				(AssignSingle) AssignDes
-				;
-
-AssignDes ::=	(AssignDest) Designator
-				|
-				(NoDes) /* epsilon */
-				;	   
-
-ActualPars ::= (Actuals) ActualParamList 
-				| 
-			   (NoActuals) /* epsilon */ 
-			   ;
-			   
-ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
-					|
-					(ActualParam) Expr
-					;
-				
-Condition ::= 	(ORTerm) Condition OR CondTerm 
-				|
-				(CondORFact) CondTerm
-				;				
-
-CondTerm ::=	(AndTerm) CondTerm AND CondFact
-				|
-				(CondAndFact) CondFact
-				;
-				
-CondFact ::= (RelExpr) CondFact RelOp Expr
-			|
-			(BoolExpr) Expr
-			;
 
 Expr ::= (AddExpr) Expr:te AddOp Term:t
 		 |
@@ -333,14 +217,16 @@ Factor ::= (Const) ConstVal
 		   	|
 		   (ArgCall) LPAREN Expr RPAREN
 		   |
-		   (NewArray) NEW Type LBOX Expr RBOX
-		    |
-		   (FuncCall) Designator:func LPAREN ActualPars RPAREN
+		   (NewArray) NEW Type LBOX Expr:e RBOX
+		   |
+		   (NewMatrix) NEW Type LBOX Expr:e1 RBOX LBOX Expr:e2 RBOX
 		   ;
 		   
 Designator ::= 	(Desig) IDENT:name
 				|
-				(ArrayDesignator) IDENT:name LBOX Expr RBOX
+				(ArrayDesignator) IDENT:name LBOX Expr:e RBOX
+				|
+				(MatrixDesignator) IDENT:name LBOX Expr:e1 RBOX LBOX Expr:e2 RBOX
 				;
 
 Assign ::= ASSIGN;
