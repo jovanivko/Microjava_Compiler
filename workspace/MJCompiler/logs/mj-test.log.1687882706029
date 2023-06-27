@@ -1,0 +1,1618 @@
+INFO  16:18:13,691 - Compiling source file: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\test\test301.mj
+INFO  16:18:13,717 - #2 program
+INFO  16:18:13,717 - #43 test301
+INFO  16:18:13,718 - #8 const
+INFO  16:18:13,718 - #43 int
+INFO  16:18:13,718 - #43 nula
+INFO  16:18:13,719 - #17 =
+INFO  16:18:13,719 - #40 0
+INFO  16:18:13,719 - #31 ;
+INFO  16:18:13,720 - #8 const
+INFO  16:18:13,720 - #43 int
+INFO  16:18:13,720 - #43 jedan
+INFO  16:18:13,720 - #17 =
+INFO  16:18:13,721 - #40 1
+INFO  16:18:13,721 - #31 ;
+INFO  16:18:13,721 - #8 const
+INFO  16:18:13,721 - #43 int
+INFO  16:18:13,721 - #43 pet
+INFO  16:18:13,721 - #17 =
+INFO  16:18:13,721 - #40 5
+INFO  16:18:13,721 - #31 ;
+INFO  16:18:13,721 - #43 int
+INFO  16:18:13,721 - #43 niz
+INFO  16:18:13,721 - #37 [
+INFO  16:18:13,721 - #38 ]
+INFO  16:18:13,722 - #32 ,
+INFO  16:18:13,722 - #43 niz2
+INFO  16:18:13,722 - #37 [
+INFO  16:18:13,722 - #38 ]
+INFO  16:18:13,722 - #32 ,
+INFO  16:18:13,722 - #43 a
+INFO  16:18:13,722 - #32 ,
+INFO  16:18:13,722 - #43 b
+INFO  16:18:13,722 - #31 ;
+INFO  16:18:13,722 - #43 char
+INFO  16:18:13,723 - #43 nizch
+INFO  16:18:13,723 - #37 [
+INFO  16:18:13,723 - #38 ]
+INFO  16:18:13,723 - #31 ;
+INFO  16:18:13,723 - #43 int
+INFO  16:18:13,723 - #43 mat
+INFO  16:18:13,723 - #37 [
+INFO  16:18:13,723 - #38 ]
+INFO  16:18:13,723 - #37 [
+INFO  16:18:13,723 - #38 ]
+INFO  16:18:13,723 - #31 ;
+INFO  16:18:13,723 - #33 {
+INFO  16:18:13,723 - #5 void
+INFO  16:18:13,723 - #43 main
+INFO  16:18:13,723 - #35 (
+INFO  16:18:13,724 - #36 )
+INFO  16:18:13,724 - #43 int
+INFO  16:18:13,724 - #43 bodovi
+INFO  16:18:13,724 - #31 ;
+INFO  16:18:13,724 - #43 bool
+INFO  16:18:13,724 - #43 bt
+INFO  16:18:13,724 - #31 ;
+INFO  16:18:13,724 - #33 {
+INFO  16:18:13,725 - #43 bodovi
+INFO  16:18:13,725 - #17 =
+INFO  16:18:13,725 - #40 0
+INFO  16:18:13,725 - #31 ;
+INFO  16:18:13,725 - #43 bodovi
+INFO  16:18:13,726 - #15 ++
+INFO  16:18:13,726 - #31 ;
+INFO  16:18:13,726 - #43 bodovi
+INFO  16:18:13,726 - #17 =
+INFO  16:18:13,726 - #43 bodovi
+INFO  16:18:13,726 - #13 +
+INFO  16:18:13,726 - #43 jedan
+INFO  16:18:13,727 - #31 ;
+INFO  16:18:13,727 - #43 bodovi
+INFO  16:18:13,727 - #17 =
+INFO  16:18:13,727 - #43 bodovi
+INFO  16:18:13,727 - #24 *
+INFO  16:18:13,728 - #43 pet
+INFO  16:18:13,728 - #31 ;
+INFO  16:18:13,728 - #43 bodovi
+INFO  16:18:13,728 - #16 --
+INFO  16:18:13,728 - #31 ;
+INFO  16:18:13,729 - #3 print
+INFO  16:18:13,729 - #35 (
+INFO  16:18:13,729 - #43 bodovi
+INFO  16:18:13,729 - #36 )
+INFO  16:18:13,729 - #31 ;
+INFO  16:18:13,729 - #43 niz
+INFO  16:18:13,729 - #17 =
+INFO  16:18:13,729 - #9 new
+INFO  16:18:13,729 - #43 int
+INFO  16:18:13,729 - #37 [
+INFO  16:18:13,729 - #40 3
+INFO  16:18:13,729 - #38 ]
+INFO  16:18:13,729 - #31 ;
+INFO  16:18:13,730 - #43 niz
+INFO  16:18:13,730 - #37 [
+INFO  16:18:13,730 - #43 nula
+INFO  16:18:13,730 - #38 ]
+INFO  16:18:13,730 - #17 =
+INFO  16:18:13,730 - #43 jedan
+INFO  16:18:13,730 - #31 ;
+INFO  16:18:13,730 - #43 niz
+INFO  16:18:13,730 - #37 [
+INFO  16:18:13,730 - #40 1
+INFO  16:18:13,730 - #38 ]
+INFO  16:18:13,730 - #17 =
+INFO  16:18:13,730 - #40 2
+INFO  16:18:13,730 - #31 ;
+INFO  16:18:13,730 - #43 niz
+INFO  16:18:13,730 - #37 [
+INFO  16:18:13,730 - #43 niz
+INFO  16:18:13,731 - #37 [
+INFO  16:18:13,731 - #43 jedan
+INFO  16:18:13,731 - #38 ]
+INFO  16:18:13,731 - #38 ]
+INFO  16:18:13,731 - #17 =
+INFO  16:18:13,731 - #43 niz
+INFO  16:18:13,731 - #37 [
+INFO  16:18:13,731 - #43 niz
+INFO  16:18:13,731 - #37 [
+INFO  16:18:13,731 - #40 0
+INFO  16:18:13,731 - #38 ]
+INFO  16:18:13,731 - #38 ]
+INFO  16:18:13,731 - #24 *
+INFO  16:18:13,731 - #40 3
+INFO  16:18:13,731 - #31 ;
+INFO  16:18:13,731 - #43 bodovi
+INFO  16:18:13,731 - #17 =
+INFO  16:18:13,731 - #43 niz
+INFO  16:18:13,731 - #37 [
+INFO  16:18:13,731 - #40 2
+INFO  16:18:13,731 - #38 ]
+INFO  16:18:13,731 - #25 /
+INFO  16:18:13,732 - #43 niz
+INFO  16:18:13,733 - #37 [
+INFO  16:18:13,733 - #40 0
+INFO  16:18:13,733 - #38 ]
+INFO  16:18:13,733 - #31 ;
+INFO  16:18:13,733 - #3 print
+INFO  16:18:13,734 - #35 (
+INFO  16:18:13,734 - #43 bodovi
+INFO  16:18:13,734 - #36 )
+INFO  16:18:13,734 - #31 ;
+INFO  16:18:13,734 - #3 print
+INFO  16:18:13,734 - #35 (
+INFO  16:18:13,734 - #43 niz
+INFO  16:18:13,734 - #37 [
+INFO  16:18:13,734 - #40 2
+INFO  16:18:13,734 - #38 ]
+INFO  16:18:13,734 - #36 )
+INFO  16:18:13,734 - #31 ;
+INFO  16:18:13,734 - #43 mat
+INFO  16:18:13,734 - #17 =
+INFO  16:18:13,734 - #9 new
+INFO  16:18:13,734 - #43 int
+INFO  16:18:13,734 - #37 [
+INFO  16:18:13,734 - #40 2
+INFO  16:18:13,734 - #38 ]
+INFO  16:18:13,734 - #37 [
+INFO  16:18:13,734 - #40 2
+INFO  16:18:13,734 - #38 ]
+INFO  16:18:13,734 - #31 ;
+INFO  16:18:13,735 - #43 mat
+INFO  16:18:13,735 - #37 [
+INFO  16:18:13,735 - #40 0
+INFO  16:18:13,735 - #38 ]
+INFO  16:18:13,735 - #37 [
+INFO  16:18:13,735 - #40 0
+INFO  16:18:13,735 - #38 ]
+INFO  16:18:13,735 - #17 =
+INFO  16:18:13,735 - #43 niz
+INFO  16:18:13,735 - #37 [
+INFO  16:18:13,735 - #43 nula
+INFO  16:18:13,735 - #38 ]
+INFO  16:18:13,735 - #31 ;
+INFO  16:18:13,735 - #43 mat
+INFO  16:18:13,735 - #37 [
+INFO  16:18:13,735 - #40 0
+INFO  16:18:13,735 - #38 ]
+INFO  16:18:13,735 - #37 [
+INFO  16:18:13,735 - #43 mat
+INFO  16:18:13,735 - #37 [
+INFO  16:18:13,736 - #40 0
+INFO  16:18:13,736 - #38 ]
+INFO  16:18:13,736 - #37 [
+INFO  16:18:13,736 - #40 0
+INFO  16:18:13,736 - #38 ]
+INFO  16:18:13,736 - #38 ]
+INFO  16:18:13,736 - #17 =
+INFO  16:18:13,736 - #40 2
+INFO  16:18:13,736 - #31 ;
+INFO  16:18:13,736 - #43 mat
+INFO  16:18:13,736 - #37 [
+INFO  16:18:13,736 - #40 1
+INFO  16:18:13,736 - #38 ]
+INFO  16:18:13,736 - #37 [
+INFO  16:18:13,736 - #43 jedan
+INFO  16:18:13,736 - #23 -
+INFO  16:18:13,736 - #43 niz
+INFO  16:18:13,737 - #37 [
+INFO  16:18:13,737 - #40 0
+INFO  16:18:13,737 - #38 ]
+INFO  16:18:13,737 - #38 ]
+INFO  16:18:13,737 - #17 =
+INFO  16:18:13,737 - #40 5
+INFO  16:18:13,737 - #31 ;
+INFO  16:18:13,737 - #43 mat
+INFO  16:18:13,737 - #37 [
+INFO  16:18:13,737 - #40 1
+INFO  16:18:13,737 - #38 ]
+INFO  16:18:13,737 - #37 [
+INFO  16:18:13,737 - #40 1
+INFO  16:18:13,737 - #38 ]
+INFO  16:18:13,737 - #17 =
+INFO  16:18:13,737 - #43 mat
+INFO  16:18:13,737 - #37 [
+INFO  16:18:13,737 - #40 0
+INFO  16:18:13,737 - #38 ]
+INFO  16:18:13,738 - #37 [
+INFO  16:18:13,738 - #40 0
+INFO  16:18:13,738 - #38 ]
+INFO  16:18:13,738 - #24 *
+INFO  16:18:13,738 - #43 mat
+INFO  16:18:13,738 - #37 [
+INFO  16:18:13,738 - #40 0
+INFO  16:18:13,738 - #38 ]
+INFO  16:18:13,738 - #37 [
+INFO  16:18:13,738 - #40 1
+INFO  16:18:13,738 - #38 ]
+INFO  16:18:13,738 - #31 ;
+INFO  16:18:13,738 - #3 print
+INFO  16:18:13,738 - #35 (
+INFO  16:18:13,738 - #43 mat
+INFO  16:18:13,738 - #37 [
+INFO  16:18:13,738 - #40 1
+INFO  16:18:13,738 - #38 ]
+INFO  16:18:13,738 - #37 [
+INFO  16:18:13,738 - #40 0
+INFO  16:18:13,738 - #38 ]
+INFO  16:18:13,738 - #36 )
+INFO  16:18:13,738 - #31 ;
+INFO  16:18:13,738 - #3 print
+INFO  16:18:13,738 - #35 (
+INFO  16:18:13,738 - #43 mat
+INFO  16:18:13,739 - #37 [
+INFO  16:18:13,739 - #40 1
+INFO  16:18:13,739 - #38 ]
+INFO  16:18:13,739 - #37 [
+INFO  16:18:13,739 - #40 1
+INFO  16:18:13,739 - #38 ]
+INFO  16:18:13,739 - #36 )
+INFO  16:18:13,739 - #31 ;
+INFO  16:18:13,739 - #43 nizch
+INFO  16:18:13,739 - #17 =
+INFO  16:18:13,739 - #9 new
+INFO  16:18:13,739 - #43 char
+INFO  16:18:13,739 - #37 [
+INFO  16:18:13,739 - #40 3
+INFO  16:18:13,739 - #38 ]
+INFO  16:18:13,739 - #31 ;
+INFO  16:18:13,739 - #43 nizch
+INFO  16:18:13,739 - #37 [
+INFO  16:18:13,739 - #40 0
+INFO  16:18:13,739 - #38 ]
+INFO  16:18:13,739 - #17 =
+INFO  16:18:13,740 - #42 a
+INFO  16:18:13,740 - #31 ;
+INFO  16:18:13,740 - #43 nizch
+INFO  16:18:13,740 - #37 [
+INFO  16:18:13,740 - #43 jedan
+INFO  16:18:13,740 - #38 ]
+INFO  16:18:13,740 - #17 =
+INFO  16:18:13,740 - #42 b
+INFO  16:18:13,740 - #31 ;
+INFO  16:18:13,740 - #43 nizch
+INFO  16:18:13,740 - #37 [
+INFO  16:18:13,740 - #43 pet
+INFO  16:18:13,740 - #23 -
+INFO  16:18:13,740 - #40 3
+INFO  16:18:13,740 - #38 ]
+INFO  16:18:13,740 - #17 =
+INFO  16:18:13,740 - #42 c
+INFO  16:18:13,741 - #31 ;
+INFO  16:18:13,741 - #3 print
+INFO  16:18:13,741 - #35 (
+INFO  16:18:13,741 - #43 nizch
+INFO  16:18:13,741 - #37 [
+INFO  16:18:13,741 - #40 1
+INFO  16:18:13,741 - #38 ]
+INFO  16:18:13,741 - #36 )
+INFO  16:18:13,741 - #31 ;
+INFO  16:18:13,741 - #3 print
+INFO  16:18:13,741 - #35 (
+INFO  16:18:13,741 - #43 nizch
+INFO  16:18:13,741 - #37 [
+INFO  16:18:13,741 - #43 jedan
+INFO  16:18:13,741 - #24 *
+INFO  16:18:13,741 - #40 2
+INFO  16:18:13,741 - #38 ]
+INFO  16:18:13,741 - #36 )
+INFO  16:18:13,741 - #31 ;
+INFO  16:18:13,741 - #10 read
+INFO  16:18:13,741 - #35 (
+INFO  16:18:13,741 - #43 bodovi
+INFO  16:18:13,742 - #36 )
+INFO  16:18:13,742 - #31 ;
+INFO  16:18:13,742 - #43 bodovi
+INFO  16:18:13,742 - #17 =
+INFO  16:18:13,742 - #23 -
+INFO  16:18:13,742 - #43 bodovi
+INFO  16:18:13,742 - #13 +
+INFO  16:18:13,742 - #35 (
+INFO  16:18:13,742 - #43 pet
+INFO  16:18:13,742 - #24 *
+INFO  16:18:13,742 - #43 a
+INFO  16:18:13,742 - #25 /
+INFO  16:18:13,742 - #40 2
+INFO  16:18:13,742 - #23 -
+INFO  16:18:13,742 - #43 jedan
+INFO  16:18:13,743 - #36 )
+INFO  16:18:13,743 - #24 *
+INFO  16:18:13,743 - #43 bodovi
+INFO  16:18:13,743 - #23 -
+INFO  16:18:13,743 - #35 (
+INFO  16:18:13,743 - #40 3
+INFO  16:18:13,743 - #26 %
+INFO  16:18:13,743 - #40 2
+INFO  16:18:13,744 - #13 +
+INFO  16:18:13,744 - #40 3
+INFO  16:18:13,744 - #24 *
+INFO  16:18:13,744 - #40 2
+INFO  16:18:13,744 - #23 -
+INFO  16:18:13,746 - #40 3
+INFO  16:18:13,746 - #36 )
+INFO  16:18:13,746 - #31 ;
+INFO  16:18:13,746 - #3 print
+INFO  16:18:13,746 - #35 (
+INFO  16:18:13,746 - #43 bodovi
+INFO  16:18:13,746 - #36 )
+INFO  16:18:13,746 - #31 ;
+INFO  16:18:13,746 - #34 }
+INFO  16:18:13,746 - #34 }
+INFO  16:18:13,758 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      Declarations(
+        Declarations(
+          Declarations(
+            Declarations(
+              NoDecl(
+              ) [NoDecl]
+              DeclConst(
+                ConstDecl(
+                  Type(
+                   int
+                  ) [Type]
+                  GlobalConst(
+                    ConstName(
+                     nula
+                      NumConst(
+                       0
+                      ) [NumConst]
+                    ) [ConstName]
+                  ) [GlobalConst]
+                ) [ConstDecl]
+              ) [DeclConst]
+            ) [Declarations]
+            DeclConst(
+              ConstDecl(
+                Type(
+                 int
+                ) [Type]
+                GlobalConst(
+                  ConstName(
+                   jedan
+                    NumConst(
+                     1
+                    ) [NumConst]
+                  ) [ConstName]
+                ) [GlobalConst]
+              ) [ConstDecl]
+            ) [DeclConst]
+          ) [Declarations]
+          DeclConst(
+            ConstDecl(
+              Type(
+               int
+              ) [Type]
+              GlobalConst(
+                ConstName(
+                 pet
+                  NumConst(
+                   5
+                  ) [NumConst]
+                ) [ConstName]
+              ) [GlobalConst]
+            ) [ConstDecl]
+          ) [DeclConst]
+        ) [Declarations]
+        DeclVar(
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarNameDecls(
+              VarList(
+                VarListEntries(
+                  VarListEntries(
+                    VarListEntrySingle(
+                      VarArrayName(
+                       niz
+                      ) [VarArrayName]
+                    ) [VarListEntrySingle]
+                    VarArrayName(
+                     niz2
+                    ) [VarArrayName]
+                  ) [VarListEntries]
+                  VarSingleName(
+                   a
+                  ) [VarSingleName]
+                ) [VarListEntries]
+                VarSingleName(
+                 b
+                ) [VarSingleName]
+              ) [VarList]
+            ) [VarNameDecls]
+          ) [VarDeclaration]
+        ) [DeclVar]
+      ) [Declarations]
+      DeclVar(
+        VarDeclaration(
+          Type(
+           char
+          ) [Type]
+          VarNameDecls(
+            SingleVar(
+              VarArrayName(
+               nizch
+              ) [VarArrayName]
+            ) [SingleVar]
+          ) [VarNameDecls]
+        ) [VarDeclaration]
+      ) [DeclVar]
+    ) [Declarations]
+    DeclVar(
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarNameDecls(
+          SingleVar(
+            VarMatrixName(
+             mat
+            ) [VarMatrixName]
+          ) [SingleVar]
+        ) [VarNameDecls]
+      ) [VarDeclaration]
+    ) [DeclVar]
+  ) [Declarations]
+  GlobalMethods(
+    Meth(
+      MethodDecl(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        VarDeclarations(
+          VarDeclarations(
+            NoVars(
+            ) [NoVars]
+            VarDeclaration(
+              Type(
+               int
+              ) [Type]
+              VarNameDecls(
+                SingleVar(
+                  VarSingleName(
+                   bodovi
+                  ) [VarSingleName]
+                ) [SingleVar]
+              ) [VarNameDecls]
+            ) [VarDeclaration]
+          ) [VarDeclarations]
+          VarDeclaration(
+            Type(
+             bool
+            ) [Type]
+            VarNameDecls(
+              SingleVar(
+                VarSingleName(
+                 bt
+                ) [VarSingleName]
+              ) [SingleVar]
+            ) [VarNameDecls]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      Statements(
+                                        Statements(
+                                          Statements(
+                                            Statements(
+                                              Statements(
+                                                Statements(
+                                                  Statements(
+                                                    Statements(
+                                                      Statements(
+                                                        Statements(
+                                                          Statements(
+                                                            Statements(
+                                                              Statements(
+                                                                Statements(
+                                                                  NoStmt(
+                                                                  ) [NoStmt]
+                                                                  SingleStatement(
+                                                                    Assignment(
+                                                                      Desig(
+                                                                       bodovi
+                                                                      ) [Desig]
+                                                                      AssignExpr(
+                                                                        TermExpr(
+                                                                          TermSingle(
+                                                                            Const(
+                                                                              NumConst(
+                                                                               0
+                                                                              ) [NumConst]
+                                                                            ) [Const]
+                                                                          ) [TermSingle]
+                                                                        ) [TermExpr]
+                                                                      ) [AssignExpr]
+                                                                    ) [Assignment]
+                                                                  ) [SingleStatement]
+                                                                ) [Statements]
+                                                                SingleStatement(
+                                                                  Incr(
+                                                                    Desig(
+                                                                     bodovi
+                                                                    ) [Desig]
+                                                                  ) [Incr]
+                                                                ) [SingleStatement]
+                                                              ) [Statements]
+                                                              SingleStatement(
+                                                                Assignment(
+                                                                  Desig(
+                                                                   bodovi
+                                                                  ) [Desig]
+                                                                  AssignExpr(
+                                                                    AddExpr(
+                                                                      TermExpr(
+                                                                        TermSingle(
+                                                                          Var(
+                                                                            Desig(
+                                                                             bodovi
+                                                                            ) [Desig]
+                                                                          ) [Var]
+                                                                        ) [TermSingle]
+                                                                      ) [TermExpr]
+                                                                      AddsOp(
+                                                                      ) [AddsOp]
+                                                                      TermSingle(
+                                                                        Var(
+                                                                          Desig(
+                                                                           jedan
+                                                                          ) [Desig]
+                                                                        ) [Var]
+                                                                      ) [TermSingle]
+                                                                    ) [AddExpr]
+                                                                  ) [AssignExpr]
+                                                                ) [Assignment]
+                                                              ) [SingleStatement]
+                                                            ) [Statements]
+                                                            SingleStatement(
+                                                              Assignment(
+                                                                Desig(
+                                                                 bodovi
+                                                                ) [Desig]
+                                                                AssignExpr(
+                                                                  TermExpr(
+                                                                    MulTerm(
+                                                                      TermSingle(
+                                                                        Var(
+                                                                          Desig(
+                                                                           bodovi
+                                                                          ) [Desig]
+                                                                        ) [Var]
+                                                                      ) [TermSingle]
+                                                                      MulsOp(
+                                                                      ) [MulsOp]
+                                                                      Var(
+                                                                        Desig(
+                                                                         pet
+                                                                        ) [Desig]
+                                                                      ) [Var]
+                                                                    ) [MulTerm]
+                                                                  ) [TermExpr]
+                                                                ) [AssignExpr]
+                                                              ) [Assignment]
+                                                            ) [SingleStatement]
+                                                          ) [Statements]
+                                                          SingleStatement(
+                                                            Decr(
+                                                              Desig(
+                                                               bodovi
+                                                              ) [Desig]
+                                                            ) [Decr]
+                                                          ) [SingleStatement]
+                                                        ) [Statements]
+                                                        Print(
+                                                          PrintE(
+                                                            TermExpr(
+                                                              TermSingle(
+                                                                Var(
+                                                                  Desig(
+                                                                   bodovi
+                                                                  ) [Desig]
+                                                                ) [Var]
+                                                              ) [TermSingle]
+                                                            ) [TermExpr]
+                                                          ) [PrintE]
+                                                        ) [Print]
+                                                      ) [Statements]
+                                                      SingleStatement(
+                                                        Assignment(
+                                                          Desig(
+                                                           niz
+                                                          ) [Desig]
+                                                          AssignExpr(
+                                                            TermExpr(
+                                                              TermSingle(
+                                                                NewArray(
+                                                                  Type(
+                                                                   int
+                                                                  ) [Type]
+                                                                  TermExpr(
+                                                                    TermSingle(
+                                                                      Const(
+                                                                        NumConst(
+                                                                         3
+                                                                        ) [NumConst]
+                                                                      ) [Const]
+                                                                    ) [TermSingle]
+                                                                  ) [TermExpr]
+                                                                ) [NewArray]
+                                                              ) [TermSingle]
+                                                            ) [TermExpr]
+                                                          ) [AssignExpr]
+                                                        ) [Assignment]
+                                                      ) [SingleStatement]
+                                                    ) [Statements]
+                                                    SingleStatement(
+                                                      Assignment(
+                                                        ArrayDesignator(
+                                                         niz
+                                                          TermExpr(
+                                                            TermSingle(
+                                                              Var(
+                                                                Desig(
+                                                                 nula
+                                                                ) [Desig]
+                                                              ) [Var]
+                                                            ) [TermSingle]
+                                                          ) [TermExpr]
+                                                        ) [ArrayDesignator]
+                                                        AssignExpr(
+                                                          TermExpr(
+                                                            TermSingle(
+                                                              Var(
+                                                                Desig(
+                                                                 jedan
+                                                                ) [Desig]
+                                                              ) [Var]
+                                                            ) [TermSingle]
+                                                          ) [TermExpr]
+                                                        ) [AssignExpr]
+                                                      ) [Assignment]
+                                                    ) [SingleStatement]
+                                                  ) [Statements]
+                                                  SingleStatement(
+                                                    Assignment(
+                                                      ArrayDesignator(
+                                                       niz
+                                                        TermExpr(
+                                                          TermSingle(
+                                                            Const(
+                                                              NumConst(
+                                                               1
+                                                              ) [NumConst]
+                                                            ) [Const]
+                                                          ) [TermSingle]
+                                                        ) [TermExpr]
+                                                      ) [ArrayDesignator]
+                                                      AssignExpr(
+                                                        TermExpr(
+                                                          TermSingle(
+                                                            Const(
+                                                              NumConst(
+                                                               2
+                                                              ) [NumConst]
+                                                            ) [Const]
+                                                          ) [TermSingle]
+                                                        ) [TermExpr]
+                                                      ) [AssignExpr]
+                                                    ) [Assignment]
+                                                  ) [SingleStatement]
+                                                ) [Statements]
+                                                SingleStatement(
+                                                  Assignment(
+                                                    ArrayDesignator(
+                                                     niz
+                                                      TermExpr(
+                                                        TermSingle(
+                                                          Var(
+                                                            ArrayDesignator(
+                                                             niz
+                                                              TermExpr(
+                                                                TermSingle(
+                                                                  Var(
+                                                                    Desig(
+                                                                     jedan
+                                                                    ) [Desig]
+                                                                  ) [Var]
+                                                                ) [TermSingle]
+                                                              ) [TermExpr]
+                                                            ) [ArrayDesignator]
+                                                          ) [Var]
+                                                        ) [TermSingle]
+                                                      ) [TermExpr]
+                                                    ) [ArrayDesignator]
+                                                    AssignExpr(
+                                                      TermExpr(
+                                                        MulTerm(
+                                                          TermSingle(
+                                                            Var(
+                                                              ArrayDesignator(
+                                                               niz
+                                                                TermExpr(
+                                                                  TermSingle(
+                                                                    Var(
+                                                                      ArrayDesignator(
+                                                                       niz
+                                                                        TermExpr(
+                                                                          TermSingle(
+                                                                            Const(
+                                                                              NumConst(
+                                                                               0
+                                                                              ) [NumConst]
+                                                                            ) [Const]
+                                                                          ) [TermSingle]
+                                                                        ) [TermExpr]
+                                                                      ) [ArrayDesignator]
+                                                                    ) [Var]
+                                                                  ) [TermSingle]
+                                                                ) [TermExpr]
+                                                              ) [ArrayDesignator]
+                                                            ) [Var]
+                                                          ) [TermSingle]
+                                                          MulsOp(
+                                                          ) [MulsOp]
+                                                          Const(
+                                                            NumConst(
+                                                             3
+                                                            ) [NumConst]
+                                                          ) [Const]
+                                                        ) [MulTerm]
+                                                      ) [TermExpr]
+                                                    ) [AssignExpr]
+                                                  ) [Assignment]
+                                                ) [SingleStatement]
+                                              ) [Statements]
+                                              SingleStatement(
+                                                Assignment(
+                                                  Desig(
+                                                   bodovi
+                                                  ) [Desig]
+                                                  AssignExpr(
+                                                    TermExpr(
+                                                      MulTerm(
+                                                        TermSingle(
+                                                          Var(
+                                                            ArrayDesignator(
+                                                             niz
+                                                              TermExpr(
+                                                                TermSingle(
+                                                                  Const(
+                                                                    NumConst(
+                                                                     2
+                                                                    ) [NumConst]
+                                                                  ) [Const]
+                                                                ) [TermSingle]
+                                                              ) [TermExpr]
+                                                            ) [ArrayDesignator]
+                                                          ) [Var]
+                                                        ) [TermSingle]
+                                                        DivOp(
+                                                        ) [DivOp]
+                                                        Var(
+                                                          ArrayDesignator(
+                                                           niz
+                                                            TermExpr(
+                                                              TermSingle(
+                                                                Const(
+                                                                  NumConst(
+                                                                   0
+                                                                  ) [NumConst]
+                                                                ) [Const]
+                                                              ) [TermSingle]
+                                                            ) [TermExpr]
+                                                          ) [ArrayDesignator]
+                                                        ) [Var]
+                                                      ) [MulTerm]
+                                                    ) [TermExpr]
+                                                  ) [AssignExpr]
+                                                ) [Assignment]
+                                              ) [SingleStatement]
+                                            ) [Statements]
+                                            Print(
+                                              PrintE(
+                                                TermExpr(
+                                                  TermSingle(
+                                                    Var(
+                                                      Desig(
+                                                       bodovi
+                                                      ) [Desig]
+                                                    ) [Var]
+                                                  ) [TermSingle]
+                                                ) [TermExpr]
+                                              ) [PrintE]
+                                            ) [Print]
+                                          ) [Statements]
+                                          Print(
+                                            PrintE(
+                                              TermExpr(
+                                                TermSingle(
+                                                  Var(
+                                                    ArrayDesignator(
+                                                     niz
+                                                      TermExpr(
+                                                        TermSingle(
+                                                          Const(
+                                                            NumConst(
+                                                             2
+                                                            ) [NumConst]
+                                                          ) [Const]
+                                                        ) [TermSingle]
+                                                      ) [TermExpr]
+                                                    ) [ArrayDesignator]
+                                                  ) [Var]
+                                                ) [TermSingle]
+                                              ) [TermExpr]
+                                            ) [PrintE]
+                                          ) [Print]
+                                        ) [Statements]
+                                        SingleStatement(
+                                          Assignment(
+                                            Desig(
+                                             mat
+                                            ) [Desig]
+                                            AssignExpr(
+                                              TermExpr(
+                                                TermSingle(
+                                                  NewMatrix(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                    TermExpr(
+                                                      TermSingle(
+                                                        Const(
+                                                          NumConst(
+                                                           2
+                                                          ) [NumConst]
+                                                        ) [Const]
+                                                      ) [TermSingle]
+                                                    ) [TermExpr]
+                                                    TermExpr(
+                                                      TermSingle(
+                                                        Const(
+                                                          NumConst(
+                                                           2
+                                                          ) [NumConst]
+                                                        ) [Const]
+                                                      ) [TermSingle]
+                                                    ) [TermExpr]
+                                                  ) [NewMatrix]
+                                                ) [TermSingle]
+                                              ) [TermExpr]
+                                            ) [AssignExpr]
+                                          ) [Assignment]
+                                        ) [SingleStatement]
+                                      ) [Statements]
+                                      SingleStatement(
+                                        Assignment(
+                                          MatrixDesignator(
+                                           mat
+                                            TermExpr(
+                                              TermSingle(
+                                                Const(
+                                                  NumConst(
+                                                   0
+                                                  ) [NumConst]
+                                                ) [Const]
+                                              ) [TermSingle]
+                                            ) [TermExpr]
+                                            TermExpr(
+                                              TermSingle(
+                                                Const(
+                                                  NumConst(
+                                                   0
+                                                  ) [NumConst]
+                                                ) [Const]
+                                              ) [TermSingle]
+                                            ) [TermExpr]
+                                          ) [MatrixDesignator]
+                                          AssignExpr(
+                                            TermExpr(
+                                              TermSingle(
+                                                Var(
+                                                  ArrayDesignator(
+                                                   niz
+                                                    TermExpr(
+                                                      TermSingle(
+                                                        Var(
+                                                          Desig(
+                                                           nula
+                                                          ) [Desig]
+                                                        ) [Var]
+                                                      ) [TermSingle]
+                                                    ) [TermExpr]
+                                                  ) [ArrayDesignator]
+                                                ) [Var]
+                                              ) [TermSingle]
+                                            ) [TermExpr]
+                                          ) [AssignExpr]
+                                        ) [Assignment]
+                                      ) [SingleStatement]
+                                    ) [Statements]
+                                    SingleStatement(
+                                      Assignment(
+                                        MatrixDesignator(
+                                         mat
+                                          TermExpr(
+                                            TermSingle(
+                                              Const(
+                                                NumConst(
+                                                 0
+                                                ) [NumConst]
+                                              ) [Const]
+                                            ) [TermSingle]
+                                          ) [TermExpr]
+                                          TermExpr(
+                                            TermSingle(
+                                              Var(
+                                                MatrixDesignator(
+                                                 mat
+                                                  TermExpr(
+                                                    TermSingle(
+                                                      Const(
+                                                        NumConst(
+                                                         0
+                                                        ) [NumConst]
+                                                      ) [Const]
+                                                    ) [TermSingle]
+                                                  ) [TermExpr]
+                                                  TermExpr(
+                                                    TermSingle(
+                                                      Const(
+                                                        NumConst(
+                                                         0
+                                                        ) [NumConst]
+                                                      ) [Const]
+                                                    ) [TermSingle]
+                                                  ) [TermExpr]
+                                                ) [MatrixDesignator]
+                                              ) [Var]
+                                            ) [TermSingle]
+                                          ) [TermExpr]
+                                        ) [MatrixDesignator]
+                                        AssignExpr(
+                                          TermExpr(
+                                            TermSingle(
+                                              Const(
+                                                NumConst(
+                                                 2
+                                                ) [NumConst]
+                                              ) [Const]
+                                            ) [TermSingle]
+                                          ) [TermExpr]
+                                        ) [AssignExpr]
+                                      ) [Assignment]
+                                    ) [SingleStatement]
+                                  ) [Statements]
+                                  SingleStatement(
+                                    Assignment(
+                                      MatrixDesignator(
+                                       mat
+                                        TermExpr(
+                                          TermSingle(
+                                            Const(
+                                              NumConst(
+                                               1
+                                              ) [NumConst]
+                                            ) [Const]
+                                          ) [TermSingle]
+                                        ) [TermExpr]
+                                        AddExpr(
+                                          TermExpr(
+                                            TermSingle(
+                                              Var(
+                                                Desig(
+                                                 jedan
+                                                ) [Desig]
+                                              ) [Var]
+                                            ) [TermSingle]
+                                          ) [TermExpr]
+                                          SubOp(
+                                          ) [SubOp]
+                                          TermSingle(
+                                            Var(
+                                              ArrayDesignator(
+                                               niz
+                                                TermExpr(
+                                                  TermSingle(
+                                                    Const(
+                                                      NumConst(
+                                                       0
+                                                      ) [NumConst]
+                                                    ) [Const]
+                                                  ) [TermSingle]
+                                                ) [TermExpr]
+                                              ) [ArrayDesignator]
+                                            ) [Var]
+                                          ) [TermSingle]
+                                        ) [AddExpr]
+                                      ) [MatrixDesignator]
+                                      AssignExpr(
+                                        TermExpr(
+                                          TermSingle(
+                                            Const(
+                                              NumConst(
+                                               5
+                                              ) [NumConst]
+                                            ) [Const]
+                                          ) [TermSingle]
+                                        ) [TermExpr]
+                                      ) [AssignExpr]
+                                    ) [Assignment]
+                                  ) [SingleStatement]
+                                ) [Statements]
+                                SingleStatement(
+                                  Assignment(
+                                    MatrixDesignator(
+                                     mat
+                                      TermExpr(
+                                        TermSingle(
+                                          Const(
+                                            NumConst(
+                                             1
+                                            ) [NumConst]
+                                          ) [Const]
+                                        ) [TermSingle]
+                                      ) [TermExpr]
+                                      TermExpr(
+                                        TermSingle(
+                                          Const(
+                                            NumConst(
+                                             1
+                                            ) [NumConst]
+                                          ) [Const]
+                                        ) [TermSingle]
+                                      ) [TermExpr]
+                                    ) [MatrixDesignator]
+                                    AssignExpr(
+                                      TermExpr(
+                                        MulTerm(
+                                          TermSingle(
+                                            Var(
+                                              MatrixDesignator(
+                                               mat
+                                                TermExpr(
+                                                  TermSingle(
+                                                    Const(
+                                                      NumConst(
+                                                       0
+                                                      ) [NumConst]
+                                                    ) [Const]
+                                                  ) [TermSingle]
+                                                ) [TermExpr]
+                                                TermExpr(
+                                                  TermSingle(
+                                                    Const(
+                                                      NumConst(
+                                                       0
+                                                      ) [NumConst]
+                                                    ) [Const]
+                                                  ) [TermSingle]
+                                                ) [TermExpr]
+                                              ) [MatrixDesignator]
+                                            ) [Var]
+                                          ) [TermSingle]
+                                          MulsOp(
+                                          ) [MulsOp]
+                                          Var(
+                                            MatrixDesignator(
+                                             mat
+                                              TermExpr(
+                                                TermSingle(
+                                                  Const(
+                                                    NumConst(
+                                                     0
+                                                    ) [NumConst]
+                                                  ) [Const]
+                                                ) [TermSingle]
+                                              ) [TermExpr]
+                                              TermExpr(
+                                                TermSingle(
+                                                  Const(
+                                                    NumConst(
+                                                     1
+                                                    ) [NumConst]
+                                                  ) [Const]
+                                                ) [TermSingle]
+                                              ) [TermExpr]
+                                            ) [MatrixDesignator]
+                                          ) [Var]
+                                        ) [MulTerm]
+                                      ) [TermExpr]
+                                    ) [AssignExpr]
+                                  ) [Assignment]
+                                ) [SingleStatement]
+                              ) [Statements]
+                              Print(
+                                PrintE(
+                                  TermExpr(
+                                    TermSingle(
+                                      Var(
+                                        MatrixDesignator(
+                                         mat
+                                          TermExpr(
+                                            TermSingle(
+                                              Const(
+                                                NumConst(
+                                                 1
+                                                ) [NumConst]
+                                              ) [Const]
+                                            ) [TermSingle]
+                                          ) [TermExpr]
+                                          TermExpr(
+                                            TermSingle(
+                                              Const(
+                                                NumConst(
+                                                 0
+                                                ) [NumConst]
+                                              ) [Const]
+                                            ) [TermSingle]
+                                          ) [TermExpr]
+                                        ) [MatrixDesignator]
+                                      ) [Var]
+                                    ) [TermSingle]
+                                  ) [TermExpr]
+                                ) [PrintE]
+                              ) [Print]
+                            ) [Statements]
+                            Print(
+                              PrintE(
+                                TermExpr(
+                                  TermSingle(
+                                    Var(
+                                      MatrixDesignator(
+                                       mat
+                                        TermExpr(
+                                          TermSingle(
+                                            Const(
+                                              NumConst(
+                                               1
+                                              ) [NumConst]
+                                            ) [Const]
+                                          ) [TermSingle]
+                                        ) [TermExpr]
+                                        TermExpr(
+                                          TermSingle(
+                                            Const(
+                                              NumConst(
+                                               1
+                                              ) [NumConst]
+                                            ) [Const]
+                                          ) [TermSingle]
+                                        ) [TermExpr]
+                                      ) [MatrixDesignator]
+                                    ) [Var]
+                                  ) [TermSingle]
+                                ) [TermExpr]
+                              ) [PrintE]
+                            ) [Print]
+                          ) [Statements]
+                          SingleStatement(
+                            Assignment(
+                              Desig(
+                               nizch
+                              ) [Desig]
+                              AssignExpr(
+                                TermExpr(
+                                  TermSingle(
+                                    NewArray(
+                                      Type(
+                                       char
+                                      ) [Type]
+                                      TermExpr(
+                                        TermSingle(
+                                          Const(
+                                            NumConst(
+                                             3
+                                            ) [NumConst]
+                                          ) [Const]
+                                        ) [TermSingle]
+                                      ) [TermExpr]
+                                    ) [NewArray]
+                                  ) [TermSingle]
+                                ) [TermExpr]
+                              ) [AssignExpr]
+                            ) [Assignment]
+                          ) [SingleStatement]
+                        ) [Statements]
+                        SingleStatement(
+                          Assignment(
+                            ArrayDesignator(
+                             nizch
+                              TermExpr(
+                                TermSingle(
+                                  Const(
+                                    NumConst(
+                                     0
+                                    ) [NumConst]
+                                  ) [Const]
+                                ) [TermSingle]
+                              ) [TermExpr]
+                            ) [ArrayDesignator]
+                            AssignExpr(
+                              TermExpr(
+                                TermSingle(
+                                  Const(
+                                    CharConst(
+                                     a
+                                    ) [CharConst]
+                                  ) [Const]
+                                ) [TermSingle]
+                              ) [TermExpr]
+                            ) [AssignExpr]
+                          ) [Assignment]
+                        ) [SingleStatement]
+                      ) [Statements]
+                      SingleStatement(
+                        Assignment(
+                          ArrayDesignator(
+                           nizch
+                            TermExpr(
+                              TermSingle(
+                                Var(
+                                  Desig(
+                                   jedan
+                                  ) [Desig]
+                                ) [Var]
+                              ) [TermSingle]
+                            ) [TermExpr]
+                          ) [ArrayDesignator]
+                          AssignExpr(
+                            TermExpr(
+                              TermSingle(
+                                Const(
+                                  CharConst(
+                                   b
+                                  ) [CharConst]
+                                ) [Const]
+                              ) [TermSingle]
+                            ) [TermExpr]
+                          ) [AssignExpr]
+                        ) [Assignment]
+                      ) [SingleStatement]
+                    ) [Statements]
+                    SingleStatement(
+                      Assignment(
+                        ArrayDesignator(
+                         nizch
+                          AddExpr(
+                            TermExpr(
+                              TermSingle(
+                                Var(
+                                  Desig(
+                                   pet
+                                  ) [Desig]
+                                ) [Var]
+                              ) [TermSingle]
+                            ) [TermExpr]
+                            SubOp(
+                            ) [SubOp]
+                            TermSingle(
+                              Const(
+                                NumConst(
+                                 3
+                                ) [NumConst]
+                              ) [Const]
+                            ) [TermSingle]
+                          ) [AddExpr]
+                        ) [ArrayDesignator]
+                        AssignExpr(
+                          TermExpr(
+                            TermSingle(
+                              Const(
+                                CharConst(
+                                 c
+                                ) [CharConst]
+                              ) [Const]
+                            ) [TermSingle]
+                          ) [TermExpr]
+                        ) [AssignExpr]
+                      ) [Assignment]
+                    ) [SingleStatement]
+                  ) [Statements]
+                  Print(
+                    PrintE(
+                      TermExpr(
+                        TermSingle(
+                          Var(
+                            ArrayDesignator(
+                             nizch
+                              TermExpr(
+                                TermSingle(
+                                  Const(
+                                    NumConst(
+                                     1
+                                    ) [NumConst]
+                                  ) [Const]
+                                ) [TermSingle]
+                              ) [TermExpr]
+                            ) [ArrayDesignator]
+                          ) [Var]
+                        ) [TermSingle]
+                      ) [TermExpr]
+                    ) [PrintE]
+                  ) [Print]
+                ) [Statements]
+                Print(
+                  PrintE(
+                    TermExpr(
+                      TermSingle(
+                        Var(
+                          ArrayDesignator(
+                           nizch
+                            TermExpr(
+                              MulTerm(
+                                TermSingle(
+                                  Var(
+                                    Desig(
+                                     jedan
+                                    ) [Desig]
+                                  ) [Var]
+                                ) [TermSingle]
+                                MulsOp(
+                                ) [MulsOp]
+                                Const(
+                                  NumConst(
+                                   2
+                                  ) [NumConst]
+                                ) [Const]
+                              ) [MulTerm]
+                            ) [TermExpr]
+                          ) [ArrayDesignator]
+                        ) [Var]
+                      ) [TermSingle]
+                    ) [TermExpr]
+                  ) [PrintE]
+                ) [Print]
+              ) [Statements]
+              Read(
+                Desig(
+                 bodovi
+                ) [Desig]
+              ) [Read]
+            ) [Statements]
+            SingleStatement(
+              Assignment(
+                Desig(
+                 bodovi
+                ) [Desig]
+                AssignExpr(
+                  AddExpr(
+                    AddExpr(
+                      NegTermExpr(
+                        TermSingle(
+                          Var(
+                            Desig(
+                             bodovi
+                            ) [Desig]
+                          ) [Var]
+                        ) [TermSingle]
+                      ) [NegTermExpr]
+                      AddsOp(
+                      ) [AddsOp]
+                      MulTerm(
+                        TermSingle(
+                          ArgCall(
+                            AddExpr(
+                              TermExpr(
+                                MulTerm(
+                                  MulTerm(
+                                    TermSingle(
+                                      Var(
+                                        Desig(
+                                         pet
+                                        ) [Desig]
+                                      ) [Var]
+                                    ) [TermSingle]
+                                    MulsOp(
+                                    ) [MulsOp]
+                                    Var(
+                                      Desig(
+                                       a
+                                      ) [Desig]
+                                    ) [Var]
+                                  ) [MulTerm]
+                                  DivOp(
+                                  ) [DivOp]
+                                  Const(
+                                    NumConst(
+                                     2
+                                    ) [NumConst]
+                                  ) [Const]
+                                ) [MulTerm]
+                              ) [TermExpr]
+                              SubOp(
+                              ) [SubOp]
+                              TermSingle(
+                                Var(
+                                  Desig(
+                                   jedan
+                                  ) [Desig]
+                                ) [Var]
+                              ) [TermSingle]
+                            ) [AddExpr]
+                          ) [ArgCall]
+                        ) [TermSingle]
+                        MulsOp(
+                        ) [MulsOp]
+                        Var(
+                          Desig(
+                           bodovi
+                          ) [Desig]
+                        ) [Var]
+                      ) [MulTerm]
+                    ) [AddExpr]
+                    SubOp(
+                    ) [SubOp]
+                    TermSingle(
+                      ArgCall(
+                        AddExpr(
+                          AddExpr(
+                            TermExpr(
+                              MulTerm(
+                                TermSingle(
+                                  Const(
+                                    NumConst(
+                                     3
+                                    ) [NumConst]
+                                  ) [Const]
+                                ) [TermSingle]
+                                ModOp(
+                                ) [ModOp]
+                                Const(
+                                  NumConst(
+                                   2
+                                  ) [NumConst]
+                                ) [Const]
+                              ) [MulTerm]
+                            ) [TermExpr]
+                            AddsOp(
+                            ) [AddsOp]
+                            MulTerm(
+                              TermSingle(
+                                Const(
+                                  NumConst(
+                                   3
+                                  ) [NumConst]
+                                ) [Const]
+                              ) [TermSingle]
+                              MulsOp(
+                              ) [MulsOp]
+                              Const(
+                                NumConst(
+                                 2
+                                ) [NumConst]
+                              ) [Const]
+                            ) [MulTerm]
+                          ) [AddExpr]
+                          SubOp(
+                          ) [SubOp]
+                          TermSingle(
+                            Const(
+                              NumConst(
+                               3
+                              ) [NumConst]
+                            ) [Const]
+                          ) [TermSingle]
+                        ) [AddExpr]
+                      ) [ArgCall]
+                    ) [TermSingle]
+                  ) [AddExpr]
+                ) [AssignExpr]
+              ) [Assignment]
+            ) [SingleStatement]
+          ) [Statements]
+          Print(
+            PrintE(
+              TermExpr(
+                TermSingle(
+                  Var(
+                    Desig(
+                     bodovi
+                    ) [Desig]
+                  ) [Var]
+                ) [TermSingle]
+              ) [TermExpr]
+            ) [PrintE]
+          ) [Print]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [Meth]
+  ) [GlobalMethods]
+) [Program]
+INFO  16:18:13,760 - ===================================
+INFO  16:18:13,762 - Deklarisana konstanta nula na liniji 5
+INFO  16:18:13,762 - Deklarisana konstanta jedan na liniji 6
+INFO  16:18:13,762 - Deklarisana konstanta pet na liniji 7
+INFO  16:18:13,762 - Deklarisana nizovna promenljiva niz na liniji 9
+INFO  16:18:13,763 - Deklarisana nizovna promenljiva niz2 na liniji 9
+INFO  16:18:13,763 - Deklarisana promenljiva a na liniji 9
+INFO  16:18:13,763 - Deklarisana promenljiva b na liniji 9
+INFO  16:18:13,763 - Deklarisana nizovna promenljiva nizch na liniji 10
+INFO  16:18:13,763 - Deklarisana matricna promenljiva mat na liniji 11
+INFO  16:18:13,763 - Obradjuje se funkcija main na liniji 14
+INFO  16:18:13,763 - Deklarisana promenljiva bodovi na liniji 15
+INFO  16:18:13,763 - Deklarisana promenljiva bt na liniji 16
+INFO  16:18:13,763 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 18
+INFO  16:18:13,763 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 19
+INFO  16:18:13,763 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 20
+INFO  16:18:13,763 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 20
+INFO  16:18:13,763 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 20
+INFO  16:18:13,763 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 21
+INFO  16:18:13,763 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 21
+INFO  16:18:13,763 - Pronadjeno pet rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 21
+INFO  16:18:13,763 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 22
+INFO  16:18:13,763 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 23
+INFO  16:18:13,763 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 26
+INFO  16:18:13,763 - Tip niza 1 na liniji 26
+INFO  16:18:13,763 - Pronadjeno nula rs.etf.pp1.symboltable.concepts.Obj@7e6cbb7a na liniji 27
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 27
+INFO  16:18:13,764 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 27
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 28
+INFO  16:18:13,764 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 29
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 29
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 29
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 29
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 29
+INFO  16:18:13,764 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 30
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 30
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 30
+INFO  16:18:13,764 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 31
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 32
+INFO  16:18:13,764 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 34
+INFO  16:18:13,764 - Tip matrice 1 na liniji 34
+INFO  16:18:13,764 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 35
+INFO  16:18:13,764 - Pronadjeno nula rs.etf.pp1.symboltable.concepts.Obj@7e6cbb7a na liniji 35
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 35
+INFO  16:18:13,764 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 36
+INFO  16:18:13,764 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 36
+INFO  16:18:13,764 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 37
+INFO  16:18:13,764 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 37
+INFO  16:18:13,764 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 37
+INFO  16:18:13,764 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 38
+INFO  16:18:13,764 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 38
+INFO  16:18:13,764 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 38
+INFO  16:18:13,765 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 39
+INFO  16:18:13,765 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 40
+INFO  16:18:13,765 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 42
+INFO  16:18:13,765 - Tip niza 2 na liniji 42
+INFO  16:18:13,765 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 43
+INFO  16:18:13,765 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 44
+INFO  16:18:13,765 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 44
+INFO  16:18:13,765 - Pronadjeno pet rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 45
+INFO  16:18:13,765 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 45
+INFO  16:18:13,765 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 46
+INFO  16:18:13,765 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 47
+INFO  16:18:13,765 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 47
+INFO  16:18:13,765 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 50
+INFO  16:18:13,765 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 51
+INFO  16:18:13,765 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 51
+INFO  16:18:13,765 - Pronadjeno pet rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 51
+INFO  16:18:13,765 - Pronadjeno a rs.etf.pp1.symboltable.concepts.Obj@7eda2dbb na liniji 51
+INFO  16:18:13,765 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 51
+INFO  16:18:13,765 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 51
+INFO  16:18:13,765 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 52
+INFO  16:18:13,765 - ===================================
+INFO  16:18:13,765 -  Deklarisanih globalnih konstanti ima = 3
+INFO  16:18:13,765 -  Deklarisanih lokalnih promenljivih ima = 2
+INFO  16:18:13,765 -  Deklarisanih globalnih promenljivih ima = 6
+INFO  16:18:13,765 - ===================================
+INFO  16:18:13,766 - Parsiranje uspesno zavrseno!

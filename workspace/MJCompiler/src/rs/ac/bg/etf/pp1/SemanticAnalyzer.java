@@ -283,7 +283,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 
 	public void visit(Assignment assignment) {
-		if (!((AssignExpr) assignment.getAssExpr()).getExpr().struct
+		Obj des = assignment.getDesignator().obj;
+		if (des.getKind() != Obj.Var && des.getKind() != Obj.Elem && des.getKind() != Obj.Fld) {
+			report_error("Designator mora biti promenljiva, element niza ili polje!", assignment);
+		} else if (!((AssignExpr) assignment.getAssExpr()).getExpr().struct
 				.assignableTo(assignment.getDesignator().obj.getType()))
 			report_error(
 					"Greska na liniji " + assignment.getLine() + " : " + " nekompatibilni tipovi u dodeli vrednosti ",
@@ -434,14 +437,20 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 
 	public void visit(Incr incr) {
-		if (incr.getDesignator().obj.getType().getKind() != Struct.Int) {
+		int kind = incr.getDesignator().obj.getKind();
+		if (kind != Obj.Var && kind != Obj.Elem && kind != Obj.Fld) {
+			report_error("Designator mora biti promenljiva, element niza ili polje!", incr);
+		} else if (incr.getDesignator().obj.getType().getKind() != Struct.Int) {
 			report_error("Greska na liniji " + incr.getLine() + " : " + incr.getDesignator().obj.getName()
 					+ " nije tipa kompatibilnog za inkrementiranje! ", null);
 		}
 	}
 
 	public void visit(Decr decr) {
-		if (decr.getDesignator().obj.getType().getKind() != Struct.Int) {
+		int kind = decr.getDesignator().obj.getKind();
+		if (kind != Obj.Var && kind != Obj.Elem && kind != Obj.Fld) {
+			report_error("Designator mora biti promenljiva, element niza ili polje!", decr);
+		} else if (decr.getDesignator().obj.getType().getKind() != Struct.Int) {
 			report_error("Greska na liniji " + decr.getLine() + " : " + decr.getDesignator().obj.getName()
 					+ " nije tipa kompatibilnog za dekrementiranje! ", null);
 		}

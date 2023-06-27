@@ -18,3 +18,194 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ant.launching 4 1 2023-06-27 13:55:40.993
 !MESSAGE JRE version less than 11 is not supported. 
+
+!ENTRY org.eclipse.ant.launching 4 0 2023-06-27 18:21:20.761
+!MESSAGE Failure of Background Ant Build
+!STACK 1
+org.eclipse.core.runtime.CoreException: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:54: Compile failed; see the compiler error output for details.
+	at org.eclipse.ant.core.AntRunner.handleInvocationTargetException(AntRunner.java:443)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:375)
+	at org.eclipse.ant.internal.launching.launchConfigurations.AntLaunchDelegate.lambda$0(AntLaunchDelegate.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:54: Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:1373)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:1092)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1401)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1374)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.core.ant.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:34)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1264)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:716)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:369)
+	... 2 more
+!SUBENTRY 1 org.eclipse.ant.core 4 1 2023-06-27 18:21:20.762
+!MESSAGE C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:54: Compile failed; see the compiler error output for details.
+!STACK 0
+C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:54: Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:1373)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:1092)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1401)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1374)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.core.ant.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:34)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1264)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:716)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:369)
+	at org.eclipse.ant.internal.launching.launchConfigurations.AntLaunchDelegate.lambda$0(AntLaunchDelegate.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.ant.launching 4 0 2023-06-27 18:27:59.993
+!MESSAGE Failure of Background Ant Build
+!STACK 1
+org.eclipse.core.runtime.CoreException: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:54: Compile failed; see the compiler error output for details.
+	at org.eclipse.ant.core.AntRunner.handleInvocationTargetException(AntRunner.java:443)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:375)
+	at org.eclipse.ant.internal.launching.launchConfigurations.AntLaunchDelegate.lambda$0(AntLaunchDelegate.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:54: Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:1373)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:1092)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1401)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1374)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.core.ant.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:34)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1264)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:716)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:369)
+	... 2 more
+!SUBENTRY 1 org.eclipse.ant.core 4 1 2023-06-27 18:27:59.994
+!MESSAGE C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:54: Compile failed; see the compiler error output for details.
+!STACK 0
+C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:54: Compile failed; see the compiler error output for details.
+	at org.apache.tools.ant.taskdefs.Javac.compile(Javac.java:1373)
+	at org.apache.tools.ant.taskdefs.Javac.execute(Javac.java:1092)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1401)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1374)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.core.ant.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:34)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1264)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:716)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:369)
+	at org.eclipse.ant.internal.launching.launchConfigurations.AntLaunchDelegate.lambda$0(AntLaunchDelegate.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.ant.launching 4 0 2023-06-27 21:45:20.657
+!MESSAGE Failure of Background Ant Build
+!STACK 1
+org.eclipse.core.runtime.CoreException: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:66: javac doesn't support the "classname" attribute
+	at org.eclipse.ant.core.AntRunner.handleInvocationTargetException(AntRunner.java:443)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:375)
+	at org.eclipse.ant.internal.launching.launchConfigurations.AntLaunchDelegate.lambda$0(AntLaunchDelegate.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:66: javac doesn't support the "classname" attribute
+	at org.apache.tools.ant.RuntimeConfigurable.maybeConfigure(RuntimeConfigurable.java:536)
+	at org.apache.tools.ant.RuntimeConfigurable.maybeConfigure(RuntimeConfigurable.java:463)
+	at org.apache.tools.ant.Task.maybeConfigure(Task.java:203)
+	at org.apache.tools.ant.UnknownElement.configure(UnknownElement.java:202)
+	at org.apache.tools.ant.UnknownElement.maybeConfigure(UnknownElement.java:166)
+	at org.apache.tools.ant.Task.perform(Task.java:349)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1401)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1374)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.core.ant.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:34)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1264)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:716)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:369)
+	... 2 more
+Caused by: The <javac> type doesn't support the "classname" attribute.
+	at org.apache.tools.ant.IntrospectionHelper.setAttribute(IntrospectionHelper.java:414)
+	at org.apache.tools.ant.RuntimeConfigurable.maybeConfigure(RuntimeConfigurable.java:527)
+	... 21 more
+!SUBENTRY 1 org.eclipse.ant.core 4 1 2023-06-27 21:45:20.657
+!MESSAGE C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:66: javac doesn't support the "classname" attribute
+!STACK 0
+C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\build.xml:66: javac doesn't support the "classname" attribute
+	at org.apache.tools.ant.RuntimeConfigurable.maybeConfigure(RuntimeConfigurable.java:536)
+	at org.apache.tools.ant.RuntimeConfigurable.maybeConfigure(RuntimeConfigurable.java:463)
+	at org.apache.tools.ant.Task.maybeConfigure(Task.java:203)
+	at org.apache.tools.ant.UnknownElement.configure(UnknownElement.java:202)
+	at org.apache.tools.ant.UnknownElement.maybeConfigure(UnknownElement.java:166)
+	at org.apache.tools.ant.Task.perform(Task.java:349)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1401)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1374)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.core.ant.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:34)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1264)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:716)
+	at org.eclipse.ant.internal.core.ant.InternalAntRunner.run(InternalAntRunner.java:532)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.ant.core.AntRunner.run(AntRunner.java:369)
+	at org.eclipse.ant.internal.launching.launchConfigurations.AntLaunchDelegate.lambda$0(AntLaunchDelegate.java:280)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: The <javac> type doesn't support the "classname" attribute.
+	at org.apache.tools.ant.IntrospectionHelper.setAttribute(IntrospectionHelper.java:414)
+	at org.apache.tools.ant.RuntimeConfigurable.maybeConfigure(RuntimeConfigurable.java:527)
+	... 21 more

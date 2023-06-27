@@ -5,7 +5,7 @@ program test301
 	const int nula = 0;
 	const int jedan = 1;
 	const int pet = 5;
-	
+	const char c = 'c';
 	int niz[], niz2[], a, b;
 	char nizch[];
 	int mat[][];

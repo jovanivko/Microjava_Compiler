@@ -11,6 +11,7 @@
 				<exclude name="CodeGenerator.java" />
 				<exclude name="CounterVisitor.java" />
 				<exclude name="sym.java"/>
+				<exclude name="CodeGenerator.java"/>
 			</fileset>
 		</delete>
 		<delete>
@@ -63,16 +64,16 @@
 
 	<target name="disasm">
 		<java classname="rs.etf.pp1.mj.runtime.disasm">
-			<arg value="test/program.obj"/>
+			<arg value="C://Users/jovanivko/Desktop/PP1/workspace/MJCompiler/test/test301.obj" />
 			<classpath>
-				<pathelement location="lib/mj-runtime.jar"/>
+				<pathelement location="lib/mj-runtime-1.1.jar"/>
 			</classpath>
 		</java>
 	</target>
 
 	<target name="runObj" depends="disasm" >
 		<java classname="rs.etf.pp1.mj.runtime.Run">
-			<arg value="test/program.obj"/>
+			<arg value="C://Users/jovanivko/Desktop/PP1/workspace/MJCompiler/test/test301.obj" />
 			<classpath>
 				<pathelement location="lib/mj-runtime-1.1.jar"/>
 			</classpath>
