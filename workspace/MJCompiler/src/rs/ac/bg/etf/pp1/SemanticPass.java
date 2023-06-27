@@ -4,7 +4,50 @@ import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 
-import rs.ac.bg.etf.pp1.ast.*;
+import rs.ac.bg.etf.pp1.ast.AddExpr;
+import rs.ac.bg.etf.pp1.ast.ArgCall;
+import rs.ac.bg.etf.pp1.ast.ArrayDesignator;
+import rs.ac.bg.etf.pp1.ast.AssignExpr;
+import rs.ac.bg.etf.pp1.ast.Assignment;
+import rs.ac.bg.etf.pp1.ast.BoolConst;
+import rs.ac.bg.etf.pp1.ast.CharConst;
+import rs.ac.bg.etf.pp1.ast.Const;
+import rs.ac.bg.etf.pp1.ast.ConstDecl;
+import rs.ac.bg.etf.pp1.ast.ConstName;
+import rs.ac.bg.etf.pp1.ast.Decr;
+import rs.ac.bg.etf.pp1.ast.Desig;
+import rs.ac.bg.etf.pp1.ast.GlobalConst;
+import rs.ac.bg.etf.pp1.ast.GlobalConstDeclList;
+import rs.ac.bg.etf.pp1.ast.Incr;
+import rs.ac.bg.etf.pp1.ast.MethodDecl;
+import rs.ac.bg.etf.pp1.ast.MethodNonVoidName;
+import rs.ac.bg.etf.pp1.ast.MethodVoidName;
+import rs.ac.bg.etf.pp1.ast.MulTerm;
+import rs.ac.bg.etf.pp1.ast.NegTermExpr;
+import rs.ac.bg.etf.pp1.ast.NewArray;
+import rs.ac.bg.etf.pp1.ast.NumConst;
+import rs.ac.bg.etf.pp1.ast.Print;
+import rs.ac.bg.etf.pp1.ast.PrintE;
+import rs.ac.bg.etf.pp1.ast.PrintNum;
+import rs.ac.bg.etf.pp1.ast.ProgName;
+import rs.ac.bg.etf.pp1.ast.Program;
+import rs.ac.bg.etf.pp1.ast.Read;
+import rs.ac.bg.etf.pp1.ast.SingleVar;
+import rs.ac.bg.etf.pp1.ast.SyntaxNode;
+import rs.ac.bg.etf.pp1.ast.TermExpr;
+import rs.ac.bg.etf.pp1.ast.TermSingle;
+import rs.ac.bg.etf.pp1.ast.Type;
+import rs.ac.bg.etf.pp1.ast.Var;
+import rs.ac.bg.etf.pp1.ast.VarArrayName;
+import rs.ac.bg.etf.pp1.ast.VarDecl;
+import rs.ac.bg.etf.pp1.ast.VarDeclaration;
+import rs.ac.bg.etf.pp1.ast.VarList;
+import rs.ac.bg.etf.pp1.ast.VarListEntries;
+import rs.ac.bg.etf.pp1.ast.VarListEntrySingle;
+import rs.ac.bg.etf.pp1.ast.VarMatrixName;
+import rs.ac.bg.etf.pp1.ast.VarName;
+import rs.ac.bg.etf.pp1.ast.VarSingleName;
+import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
@@ -68,48 +111,6 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(ProgName progName) {
 		progName.obj = Tab.insert(Obj.Prog, progName.getPName(), Tab.noType);
 		Tab.openScope();
-	}
-
-	public void visit(SingleVar singleVar) {
-		varNames = new ArrayList<>();
-		varKinds = new ArrayList<>();
-		VarName varName = singleVar.getVarName();
-		if (varName instanceof VarSingleName) {
-			varNames.add(((VarSingleName) varName).getName());
-			varKinds.add(0);
-		} else if (varName instanceof VarArrayName) {
-			varNames.add(((VarArrayName) varName).getName());
-			varKinds.add(1);
-		}
-	}
-
-	public void visit(VarDecl varDecl) {
-		Struct type = ((VarDeclaration) varDecl).getType().struct;
-		for (int i = 0; i < varNames.size(); i++) {
-			if (Tab.find(varNames.get(i)).equals(Tab.noObj)) {
-				if (varKinds.get(i) == 0) {
-					Tab.insert(Obj.Var, varNames.get(i), type);
-					report_info("Deklarisana promenljiva " + varNames.get(i), varDecl);
-				} else {
-
-					Tab.insert(Obj.Var, varNames.get(i), new Struct(Struct.Array, type));
-					report_info("Deklarisana nizovna promenljiva " + varNames.get(i), varDecl);
-				}
-			} else {
-				report_error("Promenljiva " + varNames.get(i) + "je vec deklarisana", varDecl);
-			}
-		}
-	}
-
-	public void visit(VarList varList) {
-		VarName varName = varList.getVarName();
-		if (varName instanceof VarSingleName) {
-			varNames.add(((VarSingleName) varName).getName());
-			varKinds.add(0);
-		} else if (varName instanceof VarArrayName) {
-			varNames.add(((VarArrayName) varName).getName());
-			varKinds.add(1);
-		}
 	}
 
 	public void visit(ConstDecl constDecl) {
@@ -182,13 +183,90 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 
+	public void visit(VarDecl varDecl) {
+		Struct type = ((VarDeclaration) varDecl).getType().struct;
+		for (int i = 0; i < varNames.size(); i++) {
+			if (Tab.find(varNames.get(i)).equals(Tab.noObj)) {
+				if (varKinds.get(i) == 0) {
+					Tab.insert(Obj.Var, varNames.get(i), type);
+					report_info("Deklarisana promenljiva " + varNames.get(i), varDecl);
+				} else if (varKinds.get(i) == 1) {
+					Tab.insert(Obj.Var, varNames.get(i), new Struct(Struct.Array, type));
+					report_info("Deklarisana nizovna promenljiva " + varNames.get(i), varDecl);
+				} else {
+					Tab.insert(Obj.Var, varNames.get(i), new Struct(Struct.Array, new Struct(Struct.Array, type)));
+				}
+			} else {
+				report_error("Promenljiva " + varNames.get(i) + "je vec deklarisana", varDecl);
+			}
+		}
+	}
+
+	public void visit(SingleVar singleVar) {
+		varNames = new ArrayList<>();
+		varKinds = new ArrayList<>();
+		VarName varName = singleVar.getVarName();
+		if (varName instanceof VarSingleName) {
+			varNames.add(((VarSingleName) varName).getName());
+			varKinds.add(0);
+		} else if (varName instanceof VarArrayName) {
+			varNames.add(((VarArrayName) varName).getName());
+			varKinds.add(1);
+		} else if (varName instanceof VarMatrixName) {
+			varNames.add(((VarMatrixName) varName).getName());
+			varKinds.add(2);
+		}
+	}
+
+	public void visit(VarList varList) {
+		VarName varName = varList.getVarName();
+		if (varName instanceof VarSingleName) {
+			varNames.add(((VarSingleName) varName).getName());
+			varKinds.add(0);
+		} else if (varName instanceof VarArrayName) {
+			varNames.add(((VarArrayName) varName).getName());
+			varKinds.add(1);
+		} else if (varName instanceof VarMatrixName) {
+			varNames.add(((VarMatrixName) varName).getName());
+			varKinds.add(2);
+		}
+	}
+
+	public void visit(VarListEntries varList) {
+		VarName varName = varList.getVarName();
+		if (varName instanceof VarSingleName) {
+			varNames.add(((VarSingleName) varName).getName());
+			varKinds.add(0);
+		} else if (varName instanceof VarArrayName) {
+			varNames.add(((VarArrayName) varName).getName());
+			varKinds.add(1);
+		} else if (varName instanceof VarMatrixName) {
+			varNames.add(((VarMatrixName) varName).getName());
+			varKinds.add(2);
+		}
+	}
+
+	public void visit(VarListEntrySingle varList) {
+		VarName varName = varList.getVarName();
+		if (varName instanceof VarSingleName) {
+			varNames.add(((VarSingleName) varName).getName());
+			varKinds.add(0);
+		} else if (varName instanceof VarArrayName) {
+			varNames.add(((VarArrayName) varName).getName());
+			varKinds.add(1);
+		} else if (varName instanceof VarMatrixName) {
+			varNames.add(((VarMatrixName) varName).getName());
+			varKinds.add(2);
+		}
+	}
+
 	public void visit(MethodDecl methodDecl) {
 		if (!returnFound && currentMethod.getType() != Tab.noType) {
 			report_error("Semanticka greska na liniji " + methodDecl.getLine() + ": funcija " + currentMethod.getName()
 					+ " nema return iskaz!", null);
 		}
 
-		if (currentMethod.getName().equals("main") && methodDecl.getFormPars() instanceof NoFormParam) {
+		if (currentMethod.getName().equals("main")) {
 			mainFound = true;
 		}
 
@@ -215,7 +293,8 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 
 	public void visit(Assignment assignment) {
-		if (!assignment.getExpr().struct.assignableTo(assignment.getDesignator().obj.getType()))
+		if (!((AssignExpr) assignment.getAssExpr()).getExpr().struct
+				.assignableTo(assignment.getDesignator().obj.getType()))
 			report_error(
 					"Greska na liniji " + assignment.getLine() + " : " + " nekompatibilni tipovi u dodeli vrednosti ",
 					null);

@@ -1,36 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/5/2023 23:43:37
+// 27/5/2023 3:2:23
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ErrVarDecl extends VarDecl {
+public class ErrVarDecl extends VarNameDecl {
 
-    private Type Type;
-    private VarNameList VarNameList;
-
-    public ErrVarDecl (Type Type, VarNameList VarNameList) {
-        this.Type=Type;
-        if(Type!=null) Type.setParent(this);
-        this.VarNameList=VarNameList;
-        if(VarNameList!=null) VarNameList.setParent(this);
-    }
-
-    public Type getType() {
-        return Type;
-    }
-
-    public void setType(Type Type) {
-        this.Type=Type;
-    }
-
-    public VarNameList getVarNameList() {
-        return VarNameList;
-    }
-
-    public void setVarNameList(VarNameList VarNameList) {
-        this.VarNameList=VarNameList;
+    public ErrVarDecl () {
     }
 
     public void accept(Visitor visitor) {
@@ -38,19 +15,13 @@ public class ErrVarDecl extends VarDecl {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Type!=null) Type.accept(visitor);
-        if(VarNameList!=null) VarNameList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Type!=null) Type.traverseTopDown(visitor);
-        if(VarNameList!=null) VarNameList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Type!=null) Type.traverseBottomUp(visitor);
-        if(VarNameList!=null) VarNameList.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -58,18 +29,6 @@ public class ErrVarDecl extends VarDecl {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("ErrVarDecl(\n");
-
-        if(Type!=null)
-            buffer.append(Type.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        if(VarNameList!=null)
-            buffer.append(VarNameList.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
 
         buffer.append(tab);
         buffer.append(") [ErrVarDecl]");

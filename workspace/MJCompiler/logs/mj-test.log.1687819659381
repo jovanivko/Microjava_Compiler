@@ -1,0 +1,33 @@
+INFO  00:47:05,364 - Compiling source file: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\test\test.mj
+INFO  00:47:05,391 - #2 program
+INFO  00:47:05,391 - #43 prog
+INFO  00:47:05,391 - #8 const
+INFO  00:47:05,392 - #43 int
+INFO  00:47:05,392 - #43 size
+INFO  00:47:05,393 - #17 =
+INFO  00:47:05,393 - #40 10
+INFO  00:47:05,393 - #31 ;
+INFO  00:47:05,393 - #8 const
+INFO  00:47:05,394 - #43 char
+INFO  00:47:05,394 - #43 ch
+INFO  00:47:05,394 - #17 =
+INFO  00:47:05,395 - #42 a
+INFO  00:47:05,395 - #32 ,
+INFO  00:47:05,395 - #43 ma
+INFO  00:47:05,395 - #17 =
+INFO  00:47:05,395 - #42 b
+INFO  00:47:05,395 - #31 ;
+INFO  00:47:05,395 - #43 int
+INFO  00:47:05,395 - #43 rows
+INFO  00:47:05,395 - #32 ,
+INFO  00:47:05,395 - #43 columns
+INFO  00:47:05,396 - #31 ;
+INFO  00:47:05,396 - #33 {
+INFO  00:47:05,397 - #5 void
+INFO  00:47:05,397 - #43 main
+INFO  00:47:05,397 - #35 (
+INFO  00:47:05,397 - #36 )
+INFO  00:47:05,397 - #33 {
+ERROR 00:47:05,397 - 
+Sintaksna greska na liniji 7
+ERROR 00:47:05,397 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

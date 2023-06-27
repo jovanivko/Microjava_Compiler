@@ -1,46 +1,38 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/5/2023 23:43:37
+// 27/5/2023 3:2:23
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public interface Visitor { 
 
-    public void visit(ClassExtend ClassExtend);
-    public void visit(ConstructorDecl ConstructorDecl);
-    public void visit(FormalParamDecl FormalParamDecl);
-    public void visit(VarName VarName);
-    public void visit(StatementList StatementList);
-    public void visit(Assign Assign);
-    public void visit(Factor Factor);
-    public void visit(ConstNameList ConstNameList);
-    public void visit(DeclList DeclList);
-    public void visit(GlobalMethodDecl GlobalMethodDecl);
-    public void visit(MemberDeclList MemberDeclList);
     public void visit(Designator Designator);
-    public void visit(Term Term);
-    public void visit(ClassBody ClassBody);
-    public void visit(ClassMethodList ClassMethodList);
-    public void visit(MulOp MulOp);
-    public void visit(VarNameList VarNameList);
-    public void visit(RelOp RelOp);
-    public void visit(ActualParamList ActualParamList);
-    public void visit(ConstructorDeclList ConstructorDeclList);
-    public void visit(VarDeclList VarDeclList);
-    public void visit(FormalParamList FormalParamList);
-    public void visit(ConstVal ConstVal);
-    public void visit(Expr Expr);
-    public void visit(MethodTypeName MethodTypeName);
-    public void visit(AddOp AddOp);
+    public void visit(Factor Factor);
     public void visit(DesignatorStatement DesignatorStatement);
-    public void visit(Decl Decl);
-    public void visit(Statement Statement);
-    public void visit(VarDecl VarDecl);
+    public void visit(VarNameList VarNameList);
+    public void visit(MulOp MulOp);
+    public void visit(ConstNameList ConstNameList);
+    public void visit(Expr Expr);
+    public void visit(VarName VarName);
     public void visit(ClassDecl ClassDecl);
-    public void visit(MethodDeclList MethodDeclList);
-    public void visit(FormPars FormPars);
+    public void visit(Decl Decl);
+    public void visit(VarNameDecl VarNameDecl);
+    public void visit(VarDeclList VarDeclList);
     public void visit(PrintExpr PrintExpr);
+    public void visit(VarDecl VarDecl);
+    public void visit(MethodDeclList MethodDeclList);
+    public void visit(AssExpr AssExpr);
+    public void visit(DeclList DeclList);
+    public void visit(Statement Statement);
+    public void visit(ConstVal ConstVal);
+    public void visit(AddOp AddOp);
+    public void visit(Term Term);
+    public void visit(MethodTypeName MethodTypeName);
+    public void visit(RelOp RelOp);
+    public void visit(GlobalMethodDecl GlobalMethodDecl);
+    public void visit(VarListEntry VarListEntry);
+    public void visit(StatementList StatementList);
     public void visit(ModOp ModOp);
     public void visit(DivOp DivOp);
     public void visit(MulsOp MulsOp);
@@ -52,7 +44,6 @@ public interface Visitor {
     public void visit(LssOp LssOp);
     public void visit(NeqOp NeqOp);
     public void visit(EqOp EqOp);
-    public void visit(AssignDerived1 AssignDerived1);
     public void visit(MatrixDesignator MatrixDesignator);
     public void visit(ArrayDesignator ArrayDesignator);
     public void visit(Desig Desig);
@@ -66,9 +57,10 @@ public interface Visitor {
     public void visit(NegTermExpr NegTermExpr);
     public void visit(TermExpr TermExpr);
     public void visit(AddExpr AddExpr);
+    public void visit(ErrAssignment ErrAssignment);
+    public void visit(AssignExpr AssignExpr);
     public void visit(Decr Decr);
     public void visit(Incr Incr);
-    public void visit(ErrAssignment ErrAssignment);
     public void visit(Assignment Assignment);
     public void visit(PrintNum PrintNum);
     public void visit(PrintE PrintE);
@@ -78,13 +70,6 @@ public interface Visitor {
     public void visit(NoStmt NoStmt);
     public void visit(Statements Statements);
     public void visit(Type Type);
-    public void visit(FormalParamArrayDecl FormalParamArrayDecl);
-    public void visit(FormalParamDeclSing FormalParamDeclSing);
-    public void visit(SingleFormalParamDecl SingleFormalParamDecl);
-    public void visit(FormalParamDecls FormalParamDecls);
-    public void visit(NoFormParam NoFormParam);
-    public void visit(ErrFormParams ErrFormParams);
-    public void visit(FormParams FormParams);
     public void visit(MethodVoidName MethodVoidName);
     public void visit(MethodNonVoidName MethodNonVoidName);
     public void visit(MethodDecl MethodDecl);
@@ -100,11 +85,16 @@ public interface Visitor {
     public void visit(VarMatrixName VarMatrixName);
     public void visit(VarArrayName VarArrayName);
     public void visit(VarSingleName VarSingleName);
-    public void visit(SingleVar SingleVar);
+    public void visit(VarListEntrySingle VarListEntrySingle);
     public void visit(ErrVarDeclList ErrVarDeclList);
+    public void visit(VarListEntries VarListEntries);
+    public void visit(SingleVar SingleVar);
     public void visit(VarList VarList);
     public void visit(ErrVarDecl ErrVarDecl);
+    public void visit(VarNameDecls VarNameDecls);
     public void visit(VarDeclaration VarDeclaration);
+    public void visit(NoVars NoVars);
+    public void visit(VarDeclarations VarDeclarations);
     public void visit(DeclConst DeclConst);
     public void visit(DeclVar DeclVar);
     public void visit(NoDecl NoDecl);

@@ -1,0 +1,47 @@
+INFO  02:09:13,620 - Compiling source file: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\test\test.mj
+INFO  02:09:13,652 - #2 program
+INFO  02:09:13,652 - #43 prog
+INFO  02:09:13,652 - #8 const
+INFO  02:09:13,653 - #43 int
+INFO  02:09:13,653 - #43 size
+INFO  02:09:13,653 - #17 =
+INFO  02:09:13,654 - #40 10
+INFO  02:09:13,654 - #31 ;
+INFO  02:09:13,654 - #8 const
+INFO  02:09:13,655 - #43 char
+INFO  02:09:13,655 - #43 ch
+INFO  02:09:13,655 - #17 =
+INFO  02:09:13,655 - #42 a
+INFO  02:09:13,656 - #32 ,
+INFO  02:09:13,656 - #43 ma
+INFO  02:09:13,656 - #17 =
+INFO  02:09:13,656 - #42 b
+INFO  02:09:13,656 - #31 ;
+INFO  02:09:13,656 - #43 int
+INFO  02:09:13,656 - #43 rows
+INFO  02:09:13,656 - #32 ,
+INFO  02:09:13,656 - #43 columns
+INFO  02:09:13,657 - #31 ;
+INFO  02:09:13,657 - #33 {
+INFO  02:09:13,657 - #5 void
+INFO  02:09:13,657 - #43 main
+INFO  02:09:13,657 - #35 (
+INFO  02:09:13,657 - #36 )
+INFO  02:09:13,657 - #43 int
+INFO  02:09:13,658 - #43 x
+INFO  02:09:13,658 - #32 ,
+INFO  02:09:13,658 - #15 ++
+ERROR 02:09:13,658 - 
+Sintaksna greska na liniji 6
+INFO  02:09:13,658 - #31 ;
+INFO  02:09:13,658 - #43 bool
+INFO  02:09:13,658 - #43 cc
+INFO  02:09:13,659 - #32 ,
+ERROR 02:09:13,659 - Uspesan oporavak od greske pri deklarisanju promenljive do ; u liniji 6
+INFO  02:09:13,660 - #40 12
+ERROR 02:09:13,660 - 
+Sintaksna greska na liniji 7
+INFO  02:09:13,660 - #32 ,
+INFO  02:09:13,660 - #43 b
+INFO  02:09:13,660 - #31 ;
+INFO  02:09:13,660 - #33 {

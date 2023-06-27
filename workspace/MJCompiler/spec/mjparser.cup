@@ -66,10 +66,9 @@ terminal Character CHARCONST;
 terminal String IDENT;
 terminal IF, ELSE, WHILE, FOREACH;
 
-nonterminal MethodDeclList, DeclList, VarDecl, ConstDecl, ClassDecl, VarNameList, VarName, Assign;
-nonterminal FormalParamList, FormalParamDecl, FormPars, ActualParamList; 
+nonterminal MethodDeclList, DeclList, VarDecl, ConstDecl, ClassDecl, VarNameList, VarName, AssExpr;
 nonterminal StatementList, Statement, AddOp, MulOp, RelOp, Decl, DesignatorStatement;
-nonterminal ClassExtend, ClassBody, VarDeclList, ClassMethodList, ConstructorDeclList, ConstructorDecl, MemberDeclList;
+nonterminal VarDeclList, VarNameDecl, VarListEntry;
 nonterminal GlobalMethodDecl;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
@@ -97,19 +96,32 @@ Decl ::= 	(DeclVar) VarDecl
 			|
 			(DeclConst) ConstDecl
 			;
-				
-VarDecl ::= (VarDeclaration) Type:varType VarNameList:varList SEMI
-			|
-			(ErrVarDecl) Type:varType VarNameList error SEMI:l
-			{: parser.report_error("Uspesan oporavak od greske pri deklarisanju promenljive do ; u liniji " + lleft, null); :}
+
+VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
+				|
+				(NoVars) /* epsilon */
+				;
+	
+VarDecl ::= (VarDeclaration) Type:varType VarNameDecl
 			;
 
-VarNameList ::= (VarList)	VarNameList:vnl COMMA VarName:varName
+VarNameDecl ::= (VarNameDecls) VarNameList:varList SEMI
 				|
-				(ErrVarDeclList) VarNameList:vnl error COMMA:l VarName:varName
-				{: parser.report_error("Uspesan oporavak od greske pri deklarisanju promenljive do , u liniji " + lleft, null); :}
+				(ErrVarDecl) error SEMI:l
+				{: parser.report_error("Uspesan oporavak od greske pri deklarisanju promenljive do ; u liniji " + lleft, null); :}
+				;
+
+VarNameList ::= (VarList) VarListEntry:vnl VarName:varName
 				|
 				(SingleVar)	VarName:varName
+				;
+
+VarListEntry ::= (VarListEntries) VarListEntry VarName:varName COMMA
+				|
+				(ErrVarDeclList) error COMMA:l
+				{: parser.report_error("Uspesan oporavak od greske pri deklarisanju promenljive do , u liniji " + lleft, null); :}
+				|
+				(VarListEntrySingle) VarName:varName COMMA
 				;
 
 VarName ::= (VarSingleName)	IDENT:name
@@ -143,30 +155,12 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
 					(Meth) MethodDecl
 					;
 
-MethodDecl ::= 	(MethodDecl) MethodTypeName LPAREN FormPars VarDeclList LBRACE StatementList RBRACE
+MethodDecl ::= 	(MethodDecl) MethodTypeName LPAREN RPAREN VarDeclList LBRACE StatementList RBRACE
 			   ;
 
 MethodTypeName ::= 	(MethodNonVoidName) Type:retType IDENT:methName
 					|
 					(MethodVoidName) VOID IDENT:methName
-					;
-
-FormPars ::= 	(FormParams) FormalParamList:fpl RPAREN
-				|
-				(ErrFormParams) FormalParamList:fpl error RPAREN:l
-				{: parser.report_error("Uspesan oporavak od greske pri deklarisanju formalnog parametra funkcije do ) u liniji " + lleft, null); :}
-				| 
-				(NoFormParam) RPAREN
-				;
-
-FormalParamList ::= (FormalParamDecls) FormalParamList:fl COMMA FormalParamDecl:fpd
-					|
-					(SingleFormalParamDecl) FormalParamDecl:fpd
-					;
-					
-FormalParamDecl ::= (FormalParamDeclSing) Type IDENT 
-					|
-					(FormalParamArrayDecl) Type IDENT LBOX RBOX
 					;
 
 Type ::= (Type) IDENT:typeName
@@ -189,15 +183,18 @@ PrintExpr ::=	(PrintE) Expr
 				(PrintNum) Expr COMMA NUMCONST
 				;
 
-DesignatorStatement ::= (Assignment) Designator:dest Assign Expr:e SEMI
-						|
-						(ErrAssignment) Designator Assign error SEMI:l
-			  			{: parser.report_error("Uspesan oporavak od greske pri dodeli vrednosti do ; u liniji " + lleft, null); :}
+DesignatorStatement ::= (Assignment) Designator:dest ASSIGN AssExpr
 			  			|
 			  			(Incr) Designator INCR SEMI
 			  			|
 			  			(Decr) Designator DECR SEMI
 					  	;
+
+AssExpr ::= (AssignExpr) Expr:e SEMI
+			|
+			(ErrAssignment)error SEMI:l
+			{: parser.report_error("Uspesan oporavak od greske pri dodeli vrednosti do ; u liniji " + lleft, null); :}
+			;
 
 Expr ::= (AddExpr) Expr:te AddOp Term:t
 		 |
@@ -228,8 +225,6 @@ Designator ::= 	(Desig) IDENT:name
 				|
 				(MatrixDesignator) IDENT:name LBOX Expr:e1 RBOX LBOX Expr:e2 RBOX
 				;
-
-Assign ::= ASSIGN;
 	
 RelOp ::=	(EqOp) EQUAL
 			|

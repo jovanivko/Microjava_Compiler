@@ -1,28 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/5/2023 23:43:37
+// 27/5/2023 3:2:23
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class VarList extends VarNameList {
 
-    private VarNameList VarNameList;
+    private VarListEntry VarListEntry;
     private VarName VarName;
 
-    public VarList (VarNameList VarNameList, VarName VarName) {
-        this.VarNameList=VarNameList;
-        if(VarNameList!=null) VarNameList.setParent(this);
+    public VarList (VarListEntry VarListEntry, VarName VarName) {
+        this.VarListEntry=VarListEntry;
+        if(VarListEntry!=null) VarListEntry.setParent(this);
         this.VarName=VarName;
         if(VarName!=null) VarName.setParent(this);
     }
 
-    public VarNameList getVarNameList() {
-        return VarNameList;
+    public VarListEntry getVarListEntry() {
+        return VarListEntry;
     }
 
-    public void setVarNameList(VarNameList VarNameList) {
-        this.VarNameList=VarNameList;
+    public void setVarListEntry(VarListEntry VarListEntry) {
+        this.VarListEntry=VarListEntry;
     }
 
     public VarName getVarName() {
@@ -38,18 +38,18 @@ public class VarList extends VarNameList {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(VarNameList!=null) VarNameList.accept(visitor);
+        if(VarListEntry!=null) VarListEntry.accept(visitor);
         if(VarName!=null) VarName.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(VarNameList!=null) VarNameList.traverseTopDown(visitor);
+        if(VarListEntry!=null) VarListEntry.traverseTopDown(visitor);
         if(VarName!=null) VarName.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(VarNameList!=null) VarNameList.traverseBottomUp(visitor);
+        if(VarListEntry!=null) VarListEntry.traverseBottomUp(visitor);
         if(VarName!=null) VarName.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -59,8 +59,8 @@ public class VarList extends VarNameList {
         buffer.append(tab);
         buffer.append("VarList(\n");
 
-        if(VarNameList!=null)
-            buffer.append(VarNameList.toString("  "+tab));
+        if(VarListEntry!=null)
+            buffer.append(VarListEntry.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
