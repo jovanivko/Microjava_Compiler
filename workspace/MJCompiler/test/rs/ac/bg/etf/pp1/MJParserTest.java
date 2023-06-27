@@ -42,10 +42,12 @@ public class MJParserTest {
 			log.info(prog.toString(""));
 			log.info("===================================");
 
-			SemanticPass v = new SemanticPass();
+			SemanticAnalyzer v = new SemanticAnalyzer();
 			// ispis prepoznatih programskih konstrukcija
 			if (!p.errorDetected) {
 				prog.traverseBottomUp(v);
+
+				log.info("===================================");
 
 				log.info(" Deklarisanih globalnih konstanti ima = " + v.constDeclCount);
 

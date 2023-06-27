@@ -66,13 +66,13 @@ terminal Character CHARCONST;
 terminal String IDENT;
 terminal IF, ELSE, WHILE, FOREACH;
 
-nonterminal MethodDeclList, DeclList, VarDecl, ConstDecl, ClassDecl, VarNameList, VarName, AssExpr;
+nonterminal MethodDeclList, DeclList, VarDecl, ConstDecl, ClassDecl, VarNameList, AssExpr;
 nonterminal StatementList, Statement, AddOp, MulOp, RelOp, Decl, DesignatorStatement;
 nonterminal VarDeclList, VarNameDecl, VarListEntry;
 nonterminal GlobalMethodDecl;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct PrintExpr, Type, Term, Expr, Factor, ConstVal, ConstName, ConstNameList;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct PrintExpr, Type, Term, Expr, Factor, ConstVal, ConstName, ConstNameList, VarName;
 
 precedence left ELSE;
 

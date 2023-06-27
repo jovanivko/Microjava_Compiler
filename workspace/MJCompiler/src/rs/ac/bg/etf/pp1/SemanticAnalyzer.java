@@ -19,12 +19,14 @@ import rs.ac.bg.etf.pp1.ast.Desig;
 import rs.ac.bg.etf.pp1.ast.GlobalConst;
 import rs.ac.bg.etf.pp1.ast.GlobalConstDeclList;
 import rs.ac.bg.etf.pp1.ast.Incr;
+import rs.ac.bg.etf.pp1.ast.MatrixDesignator;
 import rs.ac.bg.etf.pp1.ast.MethodDecl;
 import rs.ac.bg.etf.pp1.ast.MethodNonVoidName;
 import rs.ac.bg.etf.pp1.ast.MethodVoidName;
 import rs.ac.bg.etf.pp1.ast.MulTerm;
 import rs.ac.bg.etf.pp1.ast.NegTermExpr;
 import rs.ac.bg.etf.pp1.ast.NewArray;
+import rs.ac.bg.etf.pp1.ast.NewMatrix;
 import rs.ac.bg.etf.pp1.ast.NumConst;
 import rs.ac.bg.etf.pp1.ast.Print;
 import rs.ac.bg.etf.pp1.ast.PrintE;
@@ -39,20 +41,18 @@ import rs.ac.bg.etf.pp1.ast.TermSingle;
 import rs.ac.bg.etf.pp1.ast.Type;
 import rs.ac.bg.etf.pp1.ast.Var;
 import rs.ac.bg.etf.pp1.ast.VarArrayName;
-import rs.ac.bg.etf.pp1.ast.VarDecl;
 import rs.ac.bg.etf.pp1.ast.VarDeclaration;
 import rs.ac.bg.etf.pp1.ast.VarList;
 import rs.ac.bg.etf.pp1.ast.VarListEntries;
 import rs.ac.bg.etf.pp1.ast.VarListEntrySingle;
 import rs.ac.bg.etf.pp1.ast.VarMatrixName;
-import rs.ac.bg.etf.pp1.ast.VarName;
 import rs.ac.bg.etf.pp1.ast.VarSingleName;
 import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
-public class SemanticPass extends VisitorAdaptor {
+public class SemanticAnalyzer extends VisitorAdaptor {
 
 	boolean errorDetected = false;
 
@@ -66,6 +66,8 @@ public class SemanticPass extends VisitorAdaptor {
 
 	ArrayList<String> varNames;
 	ArrayList<Integer> varKinds;
+	Integer varKind;
+	String varName;
 
 	ArrayList<String> constNames;
 	ArrayList<Integer> constVals;
@@ -80,6 +82,10 @@ public class SemanticPass extends VisitorAdaptor {
 	public static final Struct boolType = new Struct(Struct.Bool);
 
 	Logger log = Logger.getLogger(getClass());
+
+	static {
+		Tab.currentScope.addToLocals(new Obj(Obj.Type, "bool", boolType));
+	}
 
 	public void report_error(String message, SyntaxNode info) {
 		errorDetected = true;
@@ -183,8 +189,8 @@ public class SemanticPass extends VisitorAdaptor {
 		}
 	}
 
-	public void visit(VarDecl varDecl) {
-		Struct type = ((VarDeclaration) varDecl).getType().struct;
+	public void visit(VarDeclaration varDecl) {
+		Struct type = (varDecl).getType().struct;
 		for (int i = 0; i < varNames.size(); i++) {
 			if (Tab.find(varNames.get(i)).equals(Tab.noObj)) {
 				if (varKinds.get(i) == 0) {
@@ -195,6 +201,7 @@ public class SemanticPass extends VisitorAdaptor {
 					report_info("Deklarisana nizovna promenljiva " + varNames.get(i), varDecl);
 				} else {
 					Tab.insert(Obj.Var, varNames.get(i), new Struct(Struct.Array, new Struct(Struct.Array, type)));
+					report_info("Deklarisana matricna promenljiva " + varNames.get(i), varDecl);
 				}
 			} else {
 				report_error("Promenljiva " + varNames.get(i) + "je vec deklarisana", varDecl);
@@ -205,59 +212,42 @@ public class SemanticPass extends VisitorAdaptor {
 	public void visit(SingleVar singleVar) {
 		varNames = new ArrayList<>();
 		varKinds = new ArrayList<>();
-		VarName varName = singleVar.getVarName();
-		if (varName instanceof VarSingleName) {
-			varNames.add(((VarSingleName) varName).getName());
-			varKinds.add(0);
-		} else if (varName instanceof VarArrayName) {
-			varNames.add(((VarArrayName) varName).getName());
-			varKinds.add(1);
-		} else if (varName instanceof VarMatrixName) {
-			varNames.add(((VarMatrixName) varName).getName());
-			varKinds.add(2);
-		}
+
+		varKinds.add(varKind);
+		varNames.add(varName);
 	}
 
 	public void visit(VarList varList) {
-		VarName varName = varList.getVarName();
-		if (varName instanceof VarSingleName) {
-			varNames.add(((VarSingleName) varName).getName());
-			varKinds.add(0);
-		} else if (varName instanceof VarArrayName) {
-			varNames.add(((VarArrayName) varName).getName());
-			varKinds.add(1);
-		} else if (varName instanceof VarMatrixName) {
-			varNames.add(((VarMatrixName) varName).getName());
-			varKinds.add(2);
-		}
+		varKinds.add(varKind);
+		varNames.add(varName);
 	}
 
 	public void visit(VarListEntries varList) {
-		VarName varName = varList.getVarName();
-		if (varName instanceof VarSingleName) {
-			varNames.add(((VarSingleName) varName).getName());
-			varKinds.add(0);
-		} else if (varName instanceof VarArrayName) {
-			varNames.add(((VarArrayName) varName).getName());
-			varKinds.add(1);
-		} else if (varName instanceof VarMatrixName) {
-			varNames.add(((VarMatrixName) varName).getName());
-			varKinds.add(2);
-		}
+		varKinds.add(varKind);
+		varNames.add(varName);
 	}
 
 	public void visit(VarListEntrySingle varList) {
-		VarName varName = varList.getVarName();
-		if (varName instanceof VarSingleName) {
-			varNames.add(((VarSingleName) varName).getName());
-			varKinds.add(0);
-		} else if (varName instanceof VarArrayName) {
-			varNames.add(((VarArrayName) varName).getName());
-			varKinds.add(1);
-		} else if (varName instanceof VarMatrixName) {
-			varNames.add(((VarMatrixName) varName).getName());
-			varKinds.add(2);
-		}
+		varNames = new ArrayList<>();
+		varKinds = new ArrayList<>();
+
+		varKinds.add(varKind);
+		varNames.add(varName);
+	}
+
+	public void visit(VarSingleName var) {
+		this.varKind = 0;
+		this.varName = var.getName();
+	}
+
+	public void visit(VarArrayName var) {
+		this.varKind = 1;
+		this.varName = var.getName();
+	}
+
+	public void visit(VarMatrixName var) {
+		this.varKind = 2;
+		this.varName = var.getName();
 	}
 
 	public void visit(MethodDecl methodDecl) {
@@ -384,7 +374,18 @@ public class SemanticPass extends VisitorAdaptor {
 			report_error("Vrednost velicine niza mora biti tipa int!", arr);
 			arr.struct = Tab.noType;
 		} else {
+			report_info("Tip niza " + arr.getType().struct.getKind(), arr.getType());
 			arr.struct = new Struct(Struct.Array, arr.getType().struct);
+		}
+	}
+
+	public void visit(NewMatrix mat) {
+		if (mat.getExpr().struct != Tab.intType || mat.getExpr1().struct != Tab.intType) {
+			report_error("Vrednost velicine dimenzija matrice mora biti tipa int!", mat);
+			mat.struct = Tab.noType;
+		} else {
+			report_info("Tip matrice " + mat.getType().struct.getKind(), mat.getType());
+			mat.struct = new Struct(Struct.Array, new Struct(Struct.Array, mat.getType().struct));
 		}
 	}
 
@@ -407,7 +408,29 @@ public class SemanticPass extends VisitorAdaptor {
 		} else {
 			report_info("Pronadjeno " + designator.getName() + " " + obj.toString(), designator);
 		}
-		designator.obj = obj;
+		if (designator.getExpr().struct != Tab.intType) {
+			report_error("Vrednost pozicije elementa niza mora biti tipa int!", designator);
+			designator.obj = Tab.noObj;
+		} else {
+			designator.obj = new Obj(Obj.Elem, obj.getName(), obj.getType().getElemType());
+		}
+	}
+
+	public void visit(MatrixDesignator designator) {
+		Obj obj = Tab.find(designator.getName());
+		if (obj == Tab.noObj) {
+			report_error("Greska na liniji " + designator.getLine() + " : ime " + designator.getName()
+					+ " nije deklarisano! ", null);
+		} else {
+			report_info("Pronadjeno " + designator.getName() + " " + obj.toString(), designator);
+		}
+		if (designator.getExpr().struct != Tab.intType || designator.getExpr1().struct != Tab.intType) {
+			report_error("Vrednosti pozicija elemenata matrice mora biti tipa int!", designator);
+			designator.obj = Tab.noObj;
+		} else {
+			designator.obj = new Obj(Obj.Elem, obj.getName(), obj.getType().getElemType().getElemType());
+			;
+		}
 	}
 
 	public void visit(Incr incr) {

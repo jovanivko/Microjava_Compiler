@@ -72,7 +72,6 @@ nonterminal VarDecl VarDecl;
 nonterminal ConstDecl ConstDecl;
 nonterminal ClassDecl ClassDecl;
 nonterminal VarNameList VarNameList;
-nonterminal VarName VarName;
 nonterminal AssExpr AssExpr;
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
@@ -87,7 +86,7 @@ nonterminal VarListEntry VarListEntry;
 nonterminal GlobalMethodDecl GlobalMethodDecl;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct PrintExpr, Type, Term, Expr, Factor, ConstVal, ConstName, ConstNameList;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct PrintExpr, Type, Term, Expr, Factor, ConstVal, ConstName, ConstNameList, VarName;
 
 precedence left ELSE;
 
