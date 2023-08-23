@@ -141,8 +141,6 @@ VarListEntry ::= (VarListEntries) VarListEntry:V1 VarName:varName COMMA {: RESUL
 VarName ::= (VarSingleName)	IDENT:name {: RESULT=new VarSingleName(name); RESULT.setLine(nameleft); :}
 			|
 			(VarArrayName)	IDENT:name LBOX RBOX {: RESULT=new VarArrayName(name); RESULT.setLine(nameleft); :}
-			|
-			(VarMatrixName)	IDENT:name LBOX RBOX LBOX RBOX {: RESULT=new VarMatrixName(name); RESULT.setLine(nameleft); :}
 			;
 
 
@@ -229,15 +227,11 @@ Factor ::= (Const) ConstVal:C1 {: RESULT=new Const(C1); RESULT.setLine(C1left); 
 		   (ArgCall) LPAREN Expr:E1 RPAREN {: RESULT=new ArgCall(E1); RESULT.setLine(E1left); :}
 		   |
 		   (NewArray) NEW Type:T1 LBOX Expr:e RBOX {: RESULT=new NewArray(T1, e); RESULT.setLine(T1left); :}
-		   |
-		   (NewMatrix) NEW Type:T1 LBOX Expr:e1 RBOX LBOX Expr:e2 RBOX {: RESULT=new NewMatrix(T1, e1, e2); RESULT.setLine(T1left); :}
 		   ;
 		   
 Designator ::= 	(Desig) IDENT:name {: RESULT=new Desig(name); RESULT.setLine(nameleft); :}
 				|
-				(ArrayDesignator) IDENT:name LBOX Expr:e RBOX {: RESULT=new ArrayDesignator(name, e); RESULT.setLine(nameleft); :}
-				|
-				(MatrixDesignator) IDENT:name LBOX Expr:e1 RBOX LBOX Expr:e2 RBOX {: RESULT=new MatrixDesignator(name, e1, e2); RESULT.setLine(nameleft); :}
+				(ArrayDesignator) Designator:name LBOX Expr:e RBOX {: RESULT=new ArrayDesignator(name, e); RESULT.setLine(nameleft); :}
 				;
 	
 RelOp ::=	(EqOp) EQUAL {: RESULT=new EqOp(); :}

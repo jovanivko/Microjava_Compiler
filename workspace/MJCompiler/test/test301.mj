@@ -8,7 +8,6 @@ program test301
 	const char c = 'c';
 	int niz[], niz2[], a, b;
 	char nizch[];
-	int mat[][];
 	
 {
 	void main()	
@@ -30,14 +29,6 @@ program test301
 		bodovi = niz[2]/niz[0];
 		print(bodovi);
 		print(niz[2]);
-		
-		mat = new int[2][2];
-		mat[0][0] = niz[nula];
-		mat[0][mat[0][0]] = 2;
-		mat[1][jedan - niz[0]] = 5;
-		mat[1][1] = mat[0][0] * mat[0][1];
-		print(mat[1][0]); // 5
-		print(mat[1][1]); // 2
 		
 		nizch = new char[3];
 		nizch[0] = 'a';

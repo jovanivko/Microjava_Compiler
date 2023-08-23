@@ -1,351 +1,243 @@
-INFO  21:32:32,045 - Compiling source file: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\test\test301.mj
-INFO  21:32:32,073 - #2 program
-INFO  21:32:32,073 - #43 test301
-INFO  21:32:32,073 - #8 const
-INFO  21:32:32,074 - #43 int
-INFO  21:32:32,074 - #43 nula
-INFO  21:32:32,074 - #17 =
-INFO  21:32:32,075 - #40 0
-INFO  21:32:32,075 - #31 ;
-INFO  21:32:32,075 - #8 const
-INFO  21:32:32,076 - #43 int
-INFO  21:32:32,076 - #43 jedan
-INFO  21:32:32,076 - #17 =
-INFO  21:32:32,076 - #40 1
-INFO  21:32:32,076 - #31 ;
-INFO  21:32:32,076 - #8 const
-INFO  21:32:32,077 - #43 int
-INFO  21:32:32,077 - #43 pet
-INFO  21:32:32,077 - #17 =
-INFO  21:32:32,077 - #40 5
-INFO  21:32:32,077 - #31 ;
-INFO  21:32:32,077 - #8 const
-INFO  21:32:32,077 - #43 char
-INFO  21:32:32,077 - #43 c
-INFO  21:32:32,077 - #17 =
-INFO  21:32:32,078 - #42 c
-INFO  21:32:32,078 - #31 ;
-INFO  21:32:32,078 - #43 int
-INFO  21:32:32,078 - #43 niz
-INFO  21:32:32,078 - #37 [
-INFO  21:32:32,078 - #38 ]
-INFO  21:32:32,078 - #32 ,
-INFO  21:32:32,078 - #43 niz2
-INFO  21:32:32,079 - #37 [
-INFO  21:32:32,079 - #38 ]
-INFO  21:32:32,079 - #32 ,
-INFO  21:32:32,079 - #43 a
-INFO  21:32:32,079 - #32 ,
-INFO  21:32:32,079 - #43 b
-INFO  21:32:32,079 - #31 ;
-INFO  21:32:32,079 - #43 char
-INFO  21:32:32,079 - #43 nizch
-INFO  21:32:32,079 - #37 [
-INFO  21:32:32,079 - #38 ]
-INFO  21:32:32,080 - #31 ;
-INFO  21:32:32,080 - #43 int
-INFO  21:32:32,080 - #43 mat
-INFO  21:32:32,080 - #37 [
-INFO  21:32:32,080 - #38 ]
-INFO  21:32:32,080 - #37 [
-INFO  21:32:32,080 - #38 ]
-INFO  21:32:32,080 - #31 ;
-INFO  21:32:32,080 - #33 {
-INFO  21:32:32,080 - #5 void
-INFO  21:32:32,080 - #43 main
-INFO  21:32:32,080 - #35 (
-INFO  21:32:32,080 - #36 )
-INFO  21:32:32,080 - #43 int
-INFO  21:32:32,081 - #43 bodovi
-INFO  21:32:32,081 - #31 ;
-INFO  21:32:32,081 - #43 bool
-INFO  21:32:32,081 - #43 bt
-INFO  21:32:32,081 - #31 ;
-INFO  21:32:32,082 - #33 {
-INFO  21:32:32,082 - #43 bodovi
-INFO  21:32:32,082 - #17 =
-INFO  21:32:32,082 - #40 0
-INFO  21:32:32,082 - #31 ;
-INFO  21:32:32,083 - #43 bodovi
-INFO  21:32:32,083 - #15 ++
-INFO  21:32:32,083 - #31 ;
-INFO  21:32:32,083 - #43 bodovi
-INFO  21:32:32,083 - #17 =
-INFO  21:32:32,083 - #43 bodovi
-INFO  21:32:32,083 - #13 +
-INFO  21:32:32,083 - #43 jedan
-INFO  21:32:32,084 - #31 ;
-INFO  21:32:32,084 - #43 bodovi
-INFO  21:32:32,084 - #17 =
-INFO  21:32:32,084 - #43 bodovi
-INFO  21:32:32,084 - #24 *
-INFO  21:32:32,084 - #43 pet
-INFO  21:32:32,085 - #31 ;
-INFO  21:32:32,085 - #43 bodovi
-INFO  21:32:32,085 - #16 --
-INFO  21:32:32,085 - #31 ;
-INFO  21:32:32,086 - #3 print
-INFO  21:32:32,086 - #35 (
-INFO  21:32:32,086 - #43 bodovi
-INFO  21:32:32,086 - #36 )
-INFO  21:32:32,086 - #31 ;
-INFO  21:32:32,086 - #43 niz
-INFO  21:32:32,086 - #17 =
-INFO  21:32:32,086 - #9 new
-INFO  21:32:32,086 - #43 int
-INFO  21:32:32,086 - #37 [
-INFO  21:32:32,086 - #40 3
-INFO  21:32:32,086 - #38 ]
-INFO  21:32:32,086 - #31 ;
-INFO  21:32:32,087 - #43 niz
-INFO  21:32:32,087 - #37 [
-INFO  21:32:32,087 - #43 nula
-INFO  21:32:32,087 - #38 ]
-INFO  21:32:32,087 - #17 =
-INFO  21:32:32,087 - #43 jedan
-INFO  21:32:32,087 - #31 ;
-INFO  21:32:32,087 - #43 niz
-INFO  21:32:32,087 - #37 [
-INFO  21:32:32,087 - #40 1
-INFO  21:32:32,087 - #38 ]
-INFO  21:32:32,087 - #17 =
-INFO  21:32:32,087 - #40 2
-INFO  21:32:32,087 - #31 ;
-INFO  21:32:32,087 - #43 niz
-INFO  21:32:32,087 - #37 [
-INFO  21:32:32,087 - #43 niz
-INFO  21:32:32,088 - #37 [
-INFO  21:32:32,088 - #43 jedan
-INFO  21:32:32,088 - #38 ]
-INFO  21:32:32,088 - #38 ]
-INFO  21:32:32,088 - #17 =
-INFO  21:32:32,088 - #43 niz
-INFO  21:32:32,088 - #37 [
-INFO  21:32:32,088 - #43 niz
-INFO  21:32:32,088 - #37 [
-INFO  21:32:32,088 - #40 0
-INFO  21:32:32,088 - #38 ]
-INFO  21:32:32,088 - #38 ]
-INFO  21:32:32,088 - #24 *
-INFO  21:32:32,088 - #40 3
-INFO  21:32:32,088 - #31 ;
-INFO  21:32:32,088 - #43 bodovi
-INFO  21:32:32,088 - #17 =
-INFO  21:32:32,088 - #43 niz
-INFO  21:32:32,088 - #37 [
-INFO  21:32:32,089 - #40 2
-INFO  21:32:32,089 - #38 ]
-INFO  21:32:32,089 - #25 /
-INFO  21:32:32,089 - #43 niz
-INFO  21:32:32,089 - #37 [
-INFO  21:32:32,089 - #40 0
-INFO  21:32:32,089 - #38 ]
-INFO  21:32:32,089 - #31 ;
-INFO  21:32:32,090 - #3 print
-INFO  21:32:32,090 - #35 (
-INFO  21:32:32,090 - #43 bodovi
-INFO  21:32:32,090 - #36 )
-INFO  21:32:32,090 - #31 ;
-INFO  21:32:32,090 - #3 print
-INFO  21:32:32,090 - #35 (
-INFO  21:32:32,090 - #43 niz
-INFO  21:32:32,090 - #37 [
-INFO  21:32:32,090 - #40 2
-INFO  21:32:32,090 - #38 ]
-INFO  21:32:32,090 - #36 )
-INFO  21:32:32,090 - #31 ;
-INFO  21:32:32,090 - #43 mat
-INFO  21:32:32,090 - #17 =
-INFO  21:32:32,090 - #9 new
-INFO  21:32:32,090 - #43 int
-INFO  21:32:32,090 - #37 [
-INFO  21:32:32,090 - #40 2
-INFO  21:32:32,091 - #38 ]
-INFO  21:32:32,091 - #37 [
-INFO  21:32:32,091 - #40 2
-INFO  21:32:32,091 - #38 ]
-INFO  21:32:32,091 - #31 ;
-INFO  21:32:32,091 - #43 mat
-INFO  21:32:32,091 - #37 [
-INFO  21:32:32,091 - #40 0
-INFO  21:32:32,091 - #38 ]
-INFO  21:32:32,091 - #37 [
-INFO  21:32:32,091 - #40 0
-INFO  21:32:32,091 - #38 ]
-INFO  21:32:32,091 - #17 =
-INFO  21:32:32,091 - #43 niz
-INFO  21:32:32,091 - #37 [
-INFO  21:32:32,091 - #43 nula
-INFO  21:32:32,091 - #38 ]
-INFO  21:32:32,091 - #31 ;
-INFO  21:32:32,091 - #43 mat
-INFO  21:32:32,092 - #37 [
-INFO  21:32:32,092 - #40 0
-INFO  21:32:32,092 - #38 ]
-INFO  21:32:32,092 - #37 [
-INFO  21:32:32,092 - #43 mat
-INFO  21:32:32,092 - #37 [
-INFO  21:32:32,092 - #40 0
-INFO  21:32:32,092 - #38 ]
-INFO  21:32:32,092 - #37 [
-INFO  21:32:32,092 - #40 0
-INFO  21:32:32,092 - #38 ]
-INFO  21:32:32,092 - #38 ]
-INFO  21:32:32,092 - #17 =
-INFO  21:32:32,092 - #40 2
-INFO  21:32:32,092 - #31 ;
-INFO  21:32:32,092 - #43 mat
-INFO  21:32:32,093 - #37 [
-INFO  21:32:32,093 - #40 1
-INFO  21:32:32,093 - #38 ]
-INFO  21:32:32,093 - #37 [
-INFO  21:32:32,094 - #43 jedan
-INFO  21:32:32,094 - #23 -
-INFO  21:32:32,094 - #43 niz
-INFO  21:32:32,094 - #37 [
-INFO  21:32:32,094 - #40 0
-INFO  21:32:32,094 - #38 ]
-INFO  21:32:32,094 - #38 ]
-INFO  21:32:32,094 - #17 =
-INFO  21:32:32,094 - #40 5
-INFO  21:32:32,094 - #31 ;
-INFO  21:32:32,094 - #43 mat
-INFO  21:32:32,094 - #37 [
-INFO  21:32:32,094 - #40 1
-INFO  21:32:32,095 - #38 ]
-INFO  21:32:32,095 - #37 [
-INFO  21:32:32,095 - #40 1
-INFO  21:32:32,095 - #38 ]
-INFO  21:32:32,095 - #17 =
-INFO  21:32:32,095 - #43 mat
-INFO  21:32:32,095 - #37 [
-INFO  21:32:32,095 - #40 0
-INFO  21:32:32,095 - #38 ]
-INFO  21:32:32,095 - #37 [
-INFO  21:32:32,095 - #40 0
-INFO  21:32:32,095 - #38 ]
-INFO  21:32:32,095 - #24 *
-INFO  21:32:32,095 - #43 mat
-INFO  21:32:32,095 - #37 [
-INFO  21:32:32,095 - #40 0
-INFO  21:32:32,095 - #38 ]
-INFO  21:32:32,095 - #37 [
-INFO  21:32:32,095 - #40 1
-INFO  21:32:32,095 - #38 ]
-INFO  21:32:32,095 - #31 ;
-INFO  21:32:32,095 - #3 print
-INFO  21:32:32,095 - #35 (
-INFO  21:32:32,095 - #43 mat
-INFO  21:32:32,095 - #37 [
-INFO  21:32:32,095 - #40 1
-INFO  21:32:32,095 - #38 ]
-INFO  21:32:32,095 - #37 [
-INFO  21:32:32,096 - #40 0
-INFO  21:32:32,096 - #38 ]
-INFO  21:32:32,096 - #36 )
-INFO  21:32:32,096 - #31 ;
-INFO  21:32:32,096 - #3 print
-INFO  21:32:32,096 - #35 (
-INFO  21:32:32,096 - #43 mat
-INFO  21:32:32,096 - #37 [
-INFO  21:32:32,096 - #40 1
-INFO  21:32:32,096 - #38 ]
-INFO  21:32:32,096 - #37 [
-INFO  21:32:32,096 - #40 1
-INFO  21:32:32,096 - #38 ]
-INFO  21:32:32,096 - #36 )
-INFO  21:32:32,096 - #31 ;
-INFO  21:32:32,096 - #43 nizch
-INFO  21:32:32,096 - #17 =
-INFO  21:32:32,096 - #9 new
-INFO  21:32:32,096 - #43 char
-INFO  21:32:32,096 - #37 [
-INFO  21:32:32,097 - #40 3
-INFO  21:32:32,097 - #38 ]
-INFO  21:32:32,097 - #31 ;
-INFO  21:32:32,097 - #43 nizch
-INFO  21:32:32,097 - #37 [
-INFO  21:32:32,097 - #40 0
-INFO  21:32:32,097 - #38 ]
-INFO  21:32:32,097 - #17 =
-INFO  21:32:32,097 - #42 a
-INFO  21:32:32,097 - #31 ;
-INFO  21:32:32,097 - #43 nizch
-INFO  21:32:32,097 - #37 [
-INFO  21:32:32,097 - #43 jedan
-INFO  21:32:32,097 - #38 ]
-INFO  21:32:32,097 - #17 =
-INFO  21:32:32,097 - #42 b
-INFO  21:32:32,097 - #31 ;
-INFO  21:32:32,097 - #43 nizch
-INFO  21:32:32,097 - #37 [
-INFO  21:32:32,097 - #43 pet
-INFO  21:32:32,097 - #23 -
-INFO  21:32:32,097 - #40 3
-INFO  21:32:32,097 - #38 ]
-INFO  21:32:32,097 - #17 =
-INFO  21:32:32,097 - #42 c
-INFO  21:32:32,097 - #31 ;
-INFO  21:32:32,098 - #3 print
-INFO  21:32:32,098 - #35 (
-INFO  21:32:32,098 - #43 nizch
-INFO  21:32:32,098 - #37 [
-INFO  21:32:32,098 - #40 1
-INFO  21:32:32,098 - #38 ]
-INFO  21:32:32,098 - #36 )
-INFO  21:32:32,098 - #31 ;
-INFO  21:32:32,098 - #3 print
-INFO  21:32:32,098 - #35 (
-INFO  21:32:32,098 - #43 nizch
-INFO  21:32:32,098 - #37 [
-INFO  21:32:32,098 - #43 jedan
-INFO  21:32:32,098 - #24 *
-INFO  21:32:32,098 - #40 2
-INFO  21:32:32,098 - #38 ]
-INFO  21:32:32,098 - #36 )
-INFO  21:32:32,098 - #31 ;
-INFO  21:32:32,098 - #10 read
-INFO  21:32:32,098 - #35 (
-INFO  21:32:32,098 - #43 bodovi
-INFO  21:32:32,098 - #36 )
-INFO  21:32:32,098 - #31 ;
-INFO  21:32:32,098 - #43 bodovi
-INFO  21:32:32,098 - #17 =
-INFO  21:32:32,098 - #23 -
-INFO  21:32:32,098 - #43 bodovi
-INFO  21:32:32,099 - #13 +
-INFO  21:32:32,099 - #35 (
-INFO  21:32:32,099 - #43 pet
-INFO  21:32:32,099 - #24 *
-INFO  21:32:32,099 - #43 a
-INFO  21:32:32,099 - #25 /
-INFO  21:32:32,099 - #40 2
-INFO  21:32:32,099 - #23 -
-INFO  21:32:32,099 - #43 jedan
-INFO  21:32:32,099 - #36 )
-INFO  21:32:32,099 - #24 *
-INFO  21:32:32,099 - #43 bodovi
-INFO  21:32:32,099 - #23 -
-INFO  21:32:32,099 - #35 (
-INFO  21:32:32,099 - #40 3
-INFO  21:32:32,099 - #26 %
-INFO  21:32:32,099 - #40 2
-INFO  21:32:32,100 - #13 +
-INFO  21:32:32,100 - #40 3
-INFO  21:32:32,101 - #24 *
-INFO  21:32:32,101 - #40 2
-INFO  21:32:32,101 - #23 -
-INFO  21:32:32,101 - #40 3
-INFO  21:32:32,101 - #36 )
-INFO  21:32:32,101 - #31 ;
-INFO  21:32:32,101 - #3 print
-INFO  21:32:32,101 - #35 (
-INFO  21:32:32,101 - #43 bodovi
-INFO  21:32:32,101 - #36 )
-INFO  21:32:32,101 - #31 ;
-INFO  21:32:32,101 - #34 }
-INFO  21:32:32,101 - #34 }
-INFO  21:32:32,112 - Program(
+INFO  14:55:30,475 - Compiling source file: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\test\test301.mj
+INFO  14:55:30,500 - #2 program
+INFO  14:55:30,500 - #43 test301
+INFO  14:55:30,500 - #8 const
+INFO  14:55:30,501 - #43 int
+INFO  14:55:30,501 - #43 nula
+INFO  14:55:30,501 - #17 =
+INFO  14:55:30,501 - #40 0
+INFO  14:55:30,501 - #31 ;
+INFO  14:55:30,502 - #8 const
+INFO  14:55:30,503 - #43 int
+INFO  14:55:30,503 - #43 jedan
+INFO  14:55:30,503 - #17 =
+INFO  14:55:30,503 - #40 1
+INFO  14:55:30,503 - #31 ;
+INFO  14:55:30,503 - #8 const
+INFO  14:55:30,503 - #43 int
+INFO  14:55:30,503 - #43 pet
+INFO  14:55:30,503 - #17 =
+INFO  14:55:30,503 - #40 5
+INFO  14:55:30,503 - #31 ;
+INFO  14:55:30,503 - #8 const
+INFO  14:55:30,504 - #43 char
+INFO  14:55:30,504 - #43 c
+INFO  14:55:30,504 - #17 =
+INFO  14:55:30,504 - #42 c
+INFO  14:55:30,504 - #31 ;
+INFO  14:55:30,504 - #43 int
+INFO  14:55:30,504 - #43 niz
+INFO  14:55:30,504 - #37 [
+INFO  14:55:30,505 - #38 ]
+INFO  14:55:30,505 - #32 ,
+INFO  14:55:30,505 - #43 niz2
+INFO  14:55:30,505 - #37 [
+INFO  14:55:30,505 - #38 ]
+INFO  14:55:30,505 - #32 ,
+INFO  14:55:30,505 - #43 a
+INFO  14:55:30,505 - #32 ,
+INFO  14:55:30,505 - #43 b
+INFO  14:55:30,505 - #31 ;
+INFO  14:55:30,505 - #43 char
+INFO  14:55:30,506 - #43 nizch
+INFO  14:55:30,506 - #37 [
+INFO  14:55:30,506 - #38 ]
+INFO  14:55:30,506 - #31 ;
+INFO  14:55:30,506 - #33 {
+INFO  14:55:30,506 - #5 void
+INFO  14:55:30,506 - #43 main
+INFO  14:55:30,506 - #35 (
+INFO  14:55:30,506 - #36 )
+INFO  14:55:30,506 - #43 int
+INFO  14:55:30,507 - #43 bodovi
+INFO  14:55:30,507 - #31 ;
+INFO  14:55:30,507 - #43 bool
+INFO  14:55:30,507 - #43 bt
+INFO  14:55:30,507 - #31 ;
+INFO  14:55:30,507 - #33 {
+INFO  14:55:30,507 - #43 bodovi
+INFO  14:55:30,508 - #17 =
+INFO  14:55:30,508 - #40 0
+INFO  14:55:30,508 - #31 ;
+INFO  14:55:30,508 - #43 bodovi
+INFO  14:55:30,509 - #15 ++
+INFO  14:55:30,509 - #31 ;
+INFO  14:55:30,509 - #43 bodovi
+INFO  14:55:30,509 - #17 =
+INFO  14:55:30,509 - #43 bodovi
+INFO  14:55:30,509 - #13 +
+INFO  14:55:30,509 - #43 jedan
+INFO  14:55:30,510 - #31 ;
+INFO  14:55:30,510 - #43 bodovi
+INFO  14:55:30,510 - #17 =
+INFO  14:55:30,510 - #43 bodovi
+INFO  14:55:30,510 - #24 *
+INFO  14:55:30,510 - #43 pet
+INFO  14:55:30,511 - #31 ;
+INFO  14:55:30,511 - #43 bodovi
+INFO  14:55:30,511 - #16 --
+INFO  14:55:30,511 - #31 ;
+INFO  14:55:30,511 - #3 print
+INFO  14:55:30,511 - #35 (
+INFO  14:55:30,512 - #43 bodovi
+INFO  14:55:30,512 - #36 )
+INFO  14:55:30,512 - #31 ;
+INFO  14:55:30,512 - #43 niz
+INFO  14:55:30,512 - #17 =
+INFO  14:55:30,512 - #9 new
+INFO  14:55:30,512 - #43 int
+INFO  14:55:30,512 - #37 [
+INFO  14:55:30,512 - #40 3
+INFO  14:55:30,512 - #38 ]
+INFO  14:55:30,512 - #31 ;
+INFO  14:55:30,513 - #43 niz
+INFO  14:55:30,513 - #37 [
+INFO  14:55:30,513 - #43 nula
+INFO  14:55:30,513 - #38 ]
+INFO  14:55:30,513 - #17 =
+INFO  14:55:30,513 - #43 jedan
+INFO  14:55:30,513 - #31 ;
+INFO  14:55:30,513 - #43 niz
+INFO  14:55:30,513 - #37 [
+INFO  14:55:30,513 - #40 1
+INFO  14:55:30,513 - #38 ]
+INFO  14:55:30,514 - #17 =
+INFO  14:55:30,514 - #40 2
+INFO  14:55:30,514 - #31 ;
+INFO  14:55:30,514 - #43 niz
+INFO  14:55:30,514 - #37 [
+INFO  14:55:30,514 - #43 niz
+INFO  14:55:30,514 - #37 [
+INFO  14:55:30,514 - #43 jedan
+INFO  14:55:30,514 - #38 ]
+INFO  14:55:30,514 - #38 ]
+INFO  14:55:30,514 - #17 =
+INFO  14:55:30,514 - #43 niz
+INFO  14:55:30,514 - #37 [
+INFO  14:55:30,514 - #43 niz
+INFO  14:55:30,514 - #37 [
+INFO  14:55:30,514 - #40 0
+INFO  14:55:30,514 - #38 ]
+INFO  14:55:30,515 - #38 ]
+INFO  14:55:30,515 - #24 *
+INFO  14:55:30,515 - #40 3
+INFO  14:55:30,515 - #31 ;
+INFO  14:55:30,515 - #43 bodovi
+INFO  14:55:30,515 - #17 =
+INFO  14:55:30,515 - #43 niz
+INFO  14:55:30,515 - #37 [
+INFO  14:55:30,515 - #40 2
+INFO  14:55:30,515 - #38 ]
+INFO  14:55:30,515 - #25 /
+INFO  14:55:30,515 - #43 niz
+INFO  14:55:30,516 - #37 [
+INFO  14:55:30,517 - #40 0
+INFO  14:55:30,517 - #38 ]
+INFO  14:55:30,517 - #31 ;
+INFO  14:55:30,517 - #3 print
+INFO  14:55:30,517 - #35 (
+INFO  14:55:30,517 - #43 bodovi
+INFO  14:55:30,517 - #36 )
+INFO  14:55:30,518 - #31 ;
+INFO  14:55:30,518 - #3 print
+INFO  14:55:30,518 - #35 (
+INFO  14:55:30,518 - #43 niz
+INFO  14:55:30,518 - #37 [
+INFO  14:55:30,518 - #40 2
+INFO  14:55:30,518 - #38 ]
+INFO  14:55:30,518 - #36 )
+INFO  14:55:30,518 - #31 ;
+INFO  14:55:30,518 - #43 nizch
+INFO  14:55:30,518 - #17 =
+INFO  14:55:30,518 - #9 new
+INFO  14:55:30,518 - #43 char
+INFO  14:55:30,518 - #37 [
+INFO  14:55:30,518 - #40 3
+INFO  14:55:30,518 - #38 ]
+INFO  14:55:30,518 - #31 ;
+INFO  14:55:30,518 - #43 nizch
+INFO  14:55:30,518 - #37 [
+INFO  14:55:30,518 - #40 0
+INFO  14:55:30,519 - #38 ]
+INFO  14:55:30,519 - #17 =
+INFO  14:55:30,519 - #42 a
+INFO  14:55:30,519 - #31 ;
+INFO  14:55:30,519 - #43 nizch
+INFO  14:55:30,519 - #37 [
+INFO  14:55:30,519 - #43 jedan
+INFO  14:55:30,519 - #38 ]
+INFO  14:55:30,519 - #17 =
+INFO  14:55:30,519 - #42 b
+INFO  14:55:30,519 - #31 ;
+INFO  14:55:30,519 - #43 nizch
+INFO  14:55:30,519 - #37 [
+INFO  14:55:30,519 - #43 pet
+INFO  14:55:30,519 - #23 -
+INFO  14:55:30,519 - #40 3
+INFO  14:55:30,520 - #38 ]
+INFO  14:55:30,520 - #17 =
+INFO  14:55:30,520 - #42 c
+INFO  14:55:30,520 - #31 ;
+INFO  14:55:30,520 - #3 print
+INFO  14:55:30,520 - #35 (
+INFO  14:55:30,520 - #43 nizch
+INFO  14:55:30,520 - #37 [
+INFO  14:55:30,520 - #40 1
+INFO  14:55:30,520 - #38 ]
+INFO  14:55:30,520 - #36 )
+INFO  14:55:30,520 - #31 ;
+INFO  14:55:30,520 - #3 print
+INFO  14:55:30,520 - #35 (
+INFO  14:55:30,520 - #43 nizch
+INFO  14:55:30,520 - #37 [
+INFO  14:55:30,521 - #43 jedan
+INFO  14:55:30,521 - #24 *
+INFO  14:55:30,521 - #40 2
+INFO  14:55:30,521 - #38 ]
+INFO  14:55:30,521 - #36 )
+INFO  14:55:30,521 - #31 ;
+INFO  14:55:30,521 - #10 read
+INFO  14:55:30,521 - #35 (
+INFO  14:55:30,521 - #43 bodovi
+INFO  14:55:30,521 - #36 )
+INFO  14:55:30,521 - #31 ;
+INFO  14:55:30,521 - #43 bodovi
+INFO  14:55:30,521 - #17 =
+INFO  14:55:30,521 - #23 -
+INFO  14:55:30,521 - #43 bodovi
+INFO  14:55:30,521 - #13 +
+INFO  14:55:30,521 - #35 (
+INFO  14:55:30,521 - #43 pet
+INFO  14:55:30,521 - #24 *
+INFO  14:55:30,521 - #43 a
+INFO  14:55:30,521 - #25 /
+INFO  14:55:30,521 - #40 2
+INFO  14:55:30,522 - #23 -
+INFO  14:55:30,522 - #43 jedan
+INFO  14:55:30,522 - #36 )
+INFO  14:55:30,522 - #24 *
+INFO  14:55:30,522 - #43 bodovi
+INFO  14:55:30,522 - #23 -
+INFO  14:55:30,522 - #35 (
+INFO  14:55:30,522 - #40 3
+INFO  14:55:30,522 - #26 %
+INFO  14:55:30,522 - #40 2
+INFO  14:55:30,522 - #13 +
+INFO  14:55:30,523 - #40 3
+INFO  14:55:30,523 - #24 *
+INFO  14:55:30,523 - #40 2
+INFO  14:55:30,523 - #23 -
+INFO  14:55:30,523 - #40 3
+INFO  14:55:30,523 - #36 )
+INFO  14:55:30,523 - #31 ;
+INFO  14:55:30,523 - #3 print
+INFO  14:55:30,523 - #35 (
+INFO  14:55:30,523 - #43 bodovi
+INFO  14:55:30,523 - #36 )
+INFO  14:55:30,523 - #31 ;
+INFO  14:55:30,523 - #34 }
+INFO  14:55:30,523 - #34 }
+INFO  14:55:30,533 - Program(
   ProgName(
    test301
   ) [ProgName]
@@ -355,25 +247,8 @@ INFO  21:32:32,112 - Program(
         Declarations(
           Declarations(
             Declarations(
-              Declarations(
-                NoDecl(
-                ) [NoDecl]
-                DeclConst(
-                  ConstDecl(
-                    Type(
-                     int
-                    ) [Type]
-                    GlobalConst(
-                      ConstName(
-                       nula
-                        NumConst(
-                         0
-                        ) [NumConst]
-                      ) [ConstName]
-                    ) [GlobalConst]
-                  ) [ConstDecl]
-                ) [DeclConst]
-              ) [Declarations]
+              NoDecl(
+              ) [NoDecl]
               DeclConst(
                 ConstDecl(
                   Type(
@@ -381,9 +256,9 @@ INFO  21:32:32,112 - Program(
                   ) [Type]
                   GlobalConst(
                     ConstName(
-                     jedan
+                     nula
                       NumConst(
-                       1
+                       0
                       ) [NumConst]
                     ) [ConstName]
                   ) [GlobalConst]
@@ -397,9 +272,9 @@ INFO  21:32:32,112 - Program(
                 ) [Type]
                 GlobalConst(
                   ConstName(
-                   pet
+                   jedan
                     NumConst(
-                     5
+                     1
                     ) [NumConst]
                   ) [ConstName]
                 ) [GlobalConst]
@@ -409,60 +284,61 @@ INFO  21:32:32,112 - Program(
           DeclConst(
             ConstDecl(
               Type(
-               char
+               int
               ) [Type]
               GlobalConst(
                 ConstName(
-                 c
-                  CharConst(
-                   c
-                  ) [CharConst]
+                 pet
+                  NumConst(
+                   5
+                  ) [NumConst]
                 ) [ConstName]
               ) [GlobalConst]
             ) [ConstDecl]
           ) [DeclConst]
         ) [Declarations]
-        DeclVar(
-          VarDeclaration(
+        DeclConst(
+          ConstDecl(
             Type(
-             int
+             char
             ) [Type]
-            VarNameDecls(
-              VarList(
-                VarListEntries(
-                  VarListEntries(
-                    VarListEntrySingle(
-                      VarArrayName(
-                       niz
-                      ) [VarArrayName]
-                    ) [VarListEntrySingle]
-                    VarArrayName(
-                     niz2
-                    ) [VarArrayName]
-                  ) [VarListEntries]
-                  VarSingleName(
-                   a
-                  ) [VarSingleName]
-                ) [VarListEntries]
-                VarSingleName(
-                 b
-                ) [VarSingleName]
-              ) [VarList]
-            ) [VarNameDecls]
-          ) [VarDeclaration]
-        ) [DeclVar]
+            GlobalConst(
+              ConstName(
+               c
+                CharConst(
+                 c
+                ) [CharConst]
+              ) [ConstName]
+            ) [GlobalConst]
+          ) [ConstDecl]
+        ) [DeclConst]
       ) [Declarations]
       DeclVar(
         VarDeclaration(
           Type(
-           char
+           int
           ) [Type]
           VarNameDecls(
-            SingleVar(
-              VarArrayName(
-               nizch
-              ) [VarArrayName]
-            ) [SingleVar]
+            VarList(
+              VarListEntries(
+                VarListEntries(
+                  VarListEntrySingle(
+                    VarArrayName(
+                     niz
+                    ) [VarArrayName]
+                  ) [VarListEntrySingle]
+                  VarArrayName(
+                   niz2
+                  ) [VarArrayName]
+                ) [VarListEntries]
+                VarSingleName(
+                 a
+                ) [VarSingleName]
+              ) [VarListEntries]
+              VarSingleName(
+               b
+              ) [VarSingleName]
+            ) [VarList]
           ) [VarNameDecls]
         ) [VarDeclaration]
       ) [DeclVar]
@@ -470,13 +346,13 @@ INFO  21:32:32,112 - Program(
     DeclVar(
       VarDeclaration(
         Type(
-         int
+         char
         ) [Type]
         VarNameDecls(
           SingleVar(
-            VarMatrixName(
-             mat
-            ) [VarMatrixName]
+            VarArrayName(
+             nizch
+            ) [VarArrayName]
           ) [SingleVar]
         ) [VarNameDecls]
       ) [VarDeclaration]
@@ -540,172 +416,21 @@ INFO  21:32:32,112 - Program(
                                               Statements(
                                                 Statements(
                                                   Statements(
-                                                    Statements(
-                                                      Statements(
-                                                        Statements(
-                                                          Statements(
-                                                            Statements(
-                                                              Statements(
-                                                                Statements(
-                                                                  NoStmt(
-                                                                  ) [NoStmt]
-                                                                  SingleStatement(
-                                                                    Assignment(
-                                                                      Desig(
-                                                                       bodovi
-                                                                      ) [Desig]
-                                                                      AssignExpr(
-                                                                        TermExpr(
-                                                                          TermSingle(
-                                                                            Const(
-                                                                              NumConst(
-                                                                               0
-                                                                              ) [NumConst]
-                                                                            ) [Const]
-                                                                          ) [TermSingle]
-                                                                        ) [TermExpr]
-                                                                      ) [AssignExpr]
-                                                                    ) [Assignment]
-                                                                  ) [SingleStatement]
-                                                                ) [Statements]
-                                                                SingleStatement(
-                                                                  Incr(
-                                                                    Desig(
-                                                                     bodovi
-                                                                    ) [Desig]
-                                                                  ) [Incr]
-                                                                ) [SingleStatement]
-                                                              ) [Statements]
-                                                              SingleStatement(
-                                                                Assignment(
-                                                                  Desig(
-                                                                   bodovi
-                                                                  ) [Desig]
-                                                                  AssignExpr(
-                                                                    AddExpr(
-                                                                      TermExpr(
-                                                                        TermSingle(
-                                                                          Var(
-                                                                            Desig(
-                                                                             bodovi
-                                                                            ) [Desig]
-                                                                          ) [Var]
-                                                                        ) [TermSingle]
-                                                                      ) [TermExpr]
-                                                                      AddsOp(
-                                                                      ) [AddsOp]
-                                                                      TermSingle(
-                                                                        Var(
-                                                                          Desig(
-                                                                           jedan
-                                                                          ) [Desig]
-                                                                        ) [Var]
-                                                                      ) [TermSingle]
-                                                                    ) [AddExpr]
-                                                                  ) [AssignExpr]
-                                                                ) [Assignment]
-                                                              ) [SingleStatement]
-                                                            ) [Statements]
-                                                            SingleStatement(
-                                                              Assignment(
-                                                                Desig(
-                                                                 bodovi
-                                                                ) [Desig]
-                                                                AssignExpr(
-                                                                  TermExpr(
-                                                                    MulTerm(
-                                                                      TermSingle(
-                                                                        Var(
-                                                                          Desig(
-                                                                           bodovi
-                                                                          ) [Desig]
-                                                                        ) [Var]
-                                                                      ) [TermSingle]
-                                                                      MulsOp(
-                                                                      ) [MulsOp]
-                                                                      Var(
-                                                                        Desig(
-                                                                         pet
-                                                                        ) [Desig]
-                                                                      ) [Var]
-                                                                    ) [MulTerm]
-                                                                  ) [TermExpr]
-                                                                ) [AssignExpr]
-                                                              ) [Assignment]
-                                                            ) [SingleStatement]
-                                                          ) [Statements]
-                                                          SingleStatement(
-                                                            Decr(
-                                                              Desig(
-                                                               bodovi
-                                                              ) [Desig]
-                                                            ) [Decr]
-                                                          ) [SingleStatement]
-                                                        ) [Statements]
-                                                        Print(
-                                                          PrintE(
-                                                            TermExpr(
-                                                              TermSingle(
-                                                                Var(
-                                                                  Desig(
-                                                                   bodovi
-                                                                  ) [Desig]
-                                                                ) [Var]
-                                                              ) [TermSingle]
-                                                            ) [TermExpr]
-                                                          ) [PrintE]
-                                                        ) [Print]
-                                                      ) [Statements]
-                                                      SingleStatement(
-                                                        Assignment(
-                                                          Desig(
-                                                           niz
-                                                          ) [Desig]
-                                                          AssignExpr(
-                                                            TermExpr(
-                                                              TermSingle(
-                                                                NewArray(
-                                                                  Type(
-                                                                   int
-                                                                  ) [Type]
-                                                                  TermExpr(
-                                                                    TermSingle(
-                                                                      Const(
-                                                                        NumConst(
-                                                                         3
-                                                                        ) [NumConst]
-                                                                      ) [Const]
-                                                                    ) [TermSingle]
-                                                                  ) [TermExpr]
-                                                                ) [NewArray]
-                                                              ) [TermSingle]
-                                                            ) [TermExpr]
-                                                          ) [AssignExpr]
-                                                        ) [Assignment]
-                                                      ) [SingleStatement]
-                                                    ) [Statements]
+                                                    NoStmt(
+                                                    ) [NoStmt]
                                                     SingleStatement(
                                                       Assignment(
-                                                        ArrayDesignator(
-                                                         niz
-                                                          TermExpr(
-                                                            TermSingle(
-                                                              Var(
-                                                                Desig(
-                                                                 nula
-                                                                ) [Desig]
-                                                              ) [Var]
-                                                            ) [TermSingle]
-                                                          ) [TermExpr]
-                                                        ) [ArrayDesignator]
+                                                        Desig(
+                                                         bodovi
+                                                        ) [Desig]
                                                         AssignExpr(
                                                           TermExpr(
                                                             TermSingle(
-                                                              Var(
-                                                                Desig(
-                                                                 jedan
-                                                                ) [Desig]
-                                                              ) [Var]
+                                                              Const(
+                                                                NumConst(
+                                                                 0
+                                                                ) [NumConst]
+                                                              ) [Const]
                                                             ) [TermSingle]
                                                           ) [TermExpr]
                                                         ) [AssignExpr]
@@ -713,93 +438,39 @@ INFO  21:32:32,112 - Program(
                                                     ) [SingleStatement]
                                                   ) [Statements]
                                                   SingleStatement(
-                                                    Assignment(
-                                                      ArrayDesignator(
-                                                       niz
-                                                        TermExpr(
-                                                          TermSingle(
-                                                            Const(
-                                                              NumConst(
-                                                               1
-                                                              ) [NumConst]
-                                                            ) [Const]
-                                                          ) [TermSingle]
-                                                        ) [TermExpr]
-                                                      ) [ArrayDesignator]
-                                                      AssignExpr(
-                                                        TermExpr(
-                                                          TermSingle(
-                                                            Const(
-                                                              NumConst(
-                                                               2
-                                                              ) [NumConst]
-                                                            ) [Const]
-                                                          ) [TermSingle]
-                                                        ) [TermExpr]
-                                                      ) [AssignExpr]
-                                                    ) [Assignment]
+                                                    Incr(
+                                                      Desig(
+                                                       bodovi
+                                                      ) [Desig]
+                                                    ) [Incr]
                                                   ) [SingleStatement]
                                                 ) [Statements]
                                                 SingleStatement(
                                                   Assignment(
-                                                    ArrayDesignator(
-                                                     niz
-                                                      TermExpr(
-                                                        TermSingle(
-                                                          Var(
-                                                            ArrayDesignator(
-                                                             niz
-                                                              TermExpr(
-                                                                TermSingle(
-                                                                  Var(
-                                                                    Desig(
-                                                                     jedan
-                                                                    ) [Desig]
-                                                                  ) [Var]
-                                                                ) [TermSingle]
-                                                              ) [TermExpr]
-                                                            ) [ArrayDesignator]
-                                                          ) [Var]
-                                                        ) [TermSingle]
-                                                      ) [TermExpr]
-                                                    ) [ArrayDesignator]
+                                                    Desig(
+                                                     bodovi
+                                                    ) [Desig]
                                                     AssignExpr(
-                                                      TermExpr(
-                                                        MulTerm(
+                                                      AddExpr(
+                                                        TermExpr(
                                                           TermSingle(
                                                             Var(
-                                                              ArrayDesignator(
-                                                               niz
-                                                                TermExpr(
-                                                                  TermSingle(
-                                                                    Var(
-                                                                      ArrayDesignator(
-                                                                       niz
-                                                                        TermExpr(
-                                                                          TermSingle(
-                                                                            Const(
-                                                                              NumConst(
-                                                                               0
-                                                                              ) [NumConst]
-                                                                            ) [Const]
-                                                                          ) [TermSingle]
-                                                                        ) [TermExpr]
-                                                                      ) [ArrayDesignator]
-                                                                    ) [Var]
-                                                                  ) [TermSingle]
-                                                                ) [TermExpr]
-                                                              ) [ArrayDesignator]
+                                                              Desig(
+                                                               bodovi
+                                                              ) [Desig]
                                                             ) [Var]
                                                           ) [TermSingle]
-                                                          MulsOp(
-                                                          ) [MulsOp]
-                                                          Const(
-                                                            NumConst(
-                                                             3
-                                                            ) [NumConst]
-                                                          ) [Const]
-                                                        ) [MulTerm]
-                                                      ) [TermExpr]
+                                                        ) [TermExpr]
+                                                        AddsOp(
+                                                        ) [AddsOp]
+                                                        TermSingle(
+                                                          Var(
+                                                            Desig(
+                                                             jedan
+                                                            ) [Desig]
+                                                          ) [Var]
+                                                        ) [TermSingle]
+                                                      ) [AddExpr]
                                                     ) [AssignExpr]
                                                   ) [Assignment]
                                                 ) [SingleStatement]
@@ -814,35 +485,17 @@ INFO  21:32:32,112 - Program(
                                                       MulTerm(
                                                         TermSingle(
                                                           Var(
-                                                            ArrayDesignator(
-                                                             niz
-                                                              TermExpr(
-                                                                TermSingle(
-                                                                  Const(
-                                                                    NumConst(
-                                                                     2
-                                                                    ) [NumConst]
-                                                                  ) [Const]
-                                                                ) [TermSingle]
-                                                              ) [TermExpr]
-                                                            ) [ArrayDesignator]
+                                                            Desig(
+                                                             bodovi
+                                                            ) [Desig]
                                                           ) [Var]
                                                         ) [TermSingle]
-                                                        DivOp(
-                                                        ) [DivOp]
+                                                        MulsOp(
+                                                        ) [MulsOp]
                                                         Var(
-                                                          ArrayDesignator(
-                                                           niz
-                                                            TermExpr(
-                                                              TermSingle(
-                                                                Const(
-                                                                  NumConst(
-                                                                   0
-                                                                  ) [NumConst]
-                                                                ) [Const]
-                                                              ) [TermSingle]
-                                                            ) [TermExpr]
-                                                          ) [ArrayDesignator]
+                                                          Desig(
+                                                           pet
+                                                          ) [Desig]
                                                         ) [Var]
                                                       ) [MulTerm]
                                                     ) [TermExpr]
@@ -850,37 +503,22 @@ INFO  21:32:32,112 - Program(
                                                 ) [Assignment]
                                               ) [SingleStatement]
                                             ) [Statements]
-                                            Print(
-                                              PrintE(
-                                                TermExpr(
-                                                  TermSingle(
-                                                    Var(
-                                                      Desig(
-                                                       bodovi
-                                                      ) [Desig]
-                                                    ) [Var]
-                                                  ) [TermSingle]
-                                                ) [TermExpr]
-                                              ) [PrintE]
-                                            ) [Print]
+                                            SingleStatement(
+                                              Decr(
+                                                Desig(
+                                                 bodovi
+                                                ) [Desig]
+                                              ) [Decr]
+                                            ) [SingleStatement]
                                           ) [Statements]
                                           Print(
                                             PrintE(
                                               TermExpr(
                                                 TermSingle(
                                                   Var(
-                                                    ArrayDesignator(
-                                                     niz
-                                                      TermExpr(
-                                                        TermSingle(
-                                                          Const(
-                                                            NumConst(
-                                                             2
-                                                            ) [NumConst]
-                                                          ) [Const]
-                                                        ) [TermSingle]
-                                                      ) [TermExpr]
-                                                    ) [ArrayDesignator]
+                                                    Desig(
+                                                     bodovi
+                                                    ) [Desig]
                                                   ) [Var]
                                                 ) [TermSingle]
                                               ) [TermExpr]
@@ -890,12 +528,12 @@ INFO  21:32:32,112 - Program(
                                         SingleStatement(
                                           Assignment(
                                             Desig(
-                                             mat
+                                             niz
                                             ) [Desig]
                                             AssignExpr(
                                               TermExpr(
                                                 TermSingle(
-                                                  NewMatrix(
+                                                  NewArray(
                                                     Type(
                                                      int
                                                     ) [Type]
@@ -903,21 +541,12 @@ INFO  21:32:32,112 - Program(
                                                       TermSingle(
                                                         Const(
                                                           NumConst(
-                                                           2
+                                                           3
                                                           ) [NumConst]
                                                         ) [Const]
                                                       ) [TermSingle]
                                                     ) [TermExpr]
-                                                    TermExpr(
-                                                      TermSingle(
-                                                        Const(
-                                                          NumConst(
-                                                           2
-                                                          ) [NumConst]
-                                                        ) [Const]
-                                                      ) [TermSingle]
-                                                    ) [TermExpr]
-                                                  ) [NewMatrix]
+                                                  ) [NewArray]
                                                 ) [TermSingle]
                                               ) [TermExpr]
                                             ) [AssignExpr]
@@ -926,43 +555,27 @@ INFO  21:32:32,112 - Program(
                                       ) [Statements]
                                       SingleStatement(
                                         Assignment(
-                                          MatrixDesignator(
-                                           mat
+                                          ArrayDesignator(
+                                            Desig(
+                                             niz
+                                            ) [Desig]
                                             TermExpr(
                                               TermSingle(
-                                                Const(
-                                                  NumConst(
-                                                   0
-                                                  ) [NumConst]
-                                                ) [Const]
+                                                Var(
+                                                  Desig(
+                                                   nula
+                                                  ) [Desig]
+                                                ) [Var]
                                               ) [TermSingle]
                                             ) [TermExpr]
-                                            TermExpr(
-                                              TermSingle(
-                                                Const(
-                                                  NumConst(
-                                                   0
-                                                  ) [NumConst]
-                                                ) [Const]
-                                              ) [TermSingle]
-                                            ) [TermExpr]
-                                          ) [MatrixDesignator]
+                                          ) [ArrayDesignator]
                                           AssignExpr(
                                             TermExpr(
                                               TermSingle(
                                                 Var(
-                                                  ArrayDesignator(
-                                                   niz
-                                                    TermExpr(
-                                                      TermSingle(
-                                                        Var(
-                                                          Desig(
-                                                           nula
-                                                          ) [Desig]
-                                                        ) [Var]
-                                                      ) [TermSingle]
-                                                    ) [TermExpr]
-                                                  ) [ArrayDesignator]
+                                                  Desig(
+                                                   jedan
+                                                  ) [Desig]
                                                 ) [Var]
                                               ) [TermSingle]
                                             ) [TermExpr]
@@ -972,45 +585,20 @@ INFO  21:32:32,112 - Program(
                                     ) [Statements]
                                     SingleStatement(
                                       Assignment(
-                                        MatrixDesignator(
-                                         mat
+                                        ArrayDesignator(
+                                          Desig(
+                                           niz
+                                          ) [Desig]
                                           TermExpr(
                                             TermSingle(
                                               Const(
                                                 NumConst(
-                                                 0
+                                                 1
                                                 ) [NumConst]
                                               ) [Const]
                                             ) [TermSingle]
                                           ) [TermExpr]
-                                          TermExpr(
-                                            TermSingle(
-                                              Var(
-                                                MatrixDesignator(
-                                                 mat
-                                                  TermExpr(
-                                                    TermSingle(
-                                                      Const(
-                                                        NumConst(
-                                                         0
-                                                        ) [NumConst]
-                                                      ) [Const]
-                                                    ) [TermSingle]
-                                                  ) [TermExpr]
-                                                  TermExpr(
-                                                    TermSingle(
-                                                      Const(
-                                                        NumConst(
-                                                         0
-                                                        ) [NumConst]
-                                                      ) [Const]
-                                                    ) [TermSingle]
-                                                  ) [TermExpr]
-                                                ) [MatrixDesignator]
-                                              ) [Var]
-                                            ) [TermSingle]
-                                          ) [TermExpr]
-                                        ) [MatrixDesignator]
+                                        ) [ArrayDesignator]
                                         AssignExpr(
                                           TermExpr(
                                             TermSingle(
@@ -1027,56 +615,71 @@ INFO  21:32:32,112 - Program(
                                   ) [Statements]
                                   SingleStatement(
                                     Assignment(
-                                      MatrixDesignator(
-                                       mat
+                                      ArrayDesignator(
+                                        Desig(
+                                         niz
+                                        ) [Desig]
                                         TermExpr(
-                                          TermSingle(
-                                            Const(
-                                              NumConst(
-                                               1
-                                              ) [NumConst]
-                                            ) [Const]
-                                          ) [TermSingle]
-                                        ) [TermExpr]
-                                        AddExpr(
-                                          TermExpr(
-                                            TermSingle(
-                                              Var(
-                                                Desig(
-                                                 jedan
-                                                ) [Desig]
-                                              ) [Var]
-                                            ) [TermSingle]
-                                          ) [TermExpr]
-                                          SubOp(
-                                          ) [SubOp]
                                           TermSingle(
                                             Var(
                                               ArrayDesignator(
-                                               niz
+                                                Desig(
+                                                 niz
+                                                ) [Desig]
                                                 TermExpr(
                                                   TermSingle(
-                                                    Const(
-                                                      NumConst(
-                                                       0
-                                                      ) [NumConst]
-                                                    ) [Const]
+                                                    Var(
+                                                      Desig(
+                                                       jedan
+                                                      ) [Desig]
+                                                    ) [Var]
                                                   ) [TermSingle]
                                                 ) [TermExpr]
                                               ) [ArrayDesignator]
                                             ) [Var]
                                           ) [TermSingle]
-                                        ) [AddExpr]
-                                      ) [MatrixDesignator]
+                                        ) [TermExpr]
+                                      ) [ArrayDesignator]
                                       AssignExpr(
                                         TermExpr(
-                                          TermSingle(
+                                          MulTerm(
+                                            TermSingle(
+                                              Var(
+                                                ArrayDesignator(
+                                                  Desig(
+                                                   niz
+                                                  ) [Desig]
+                                                  TermExpr(
+                                                    TermSingle(
+                                                      Var(
+                                                        ArrayDesignator(
+                                                          Desig(
+                                                           niz
+                                                          ) [Desig]
+                                                          TermExpr(
+                                                            TermSingle(
+                                                              Const(
+                                                                NumConst(
+                                                                 0
+                                                                ) [NumConst]
+                                                              ) [Const]
+                                                            ) [TermSingle]
+                                                          ) [TermExpr]
+                                                        ) [ArrayDesignator]
+                                                      ) [Var]
+                                                    ) [TermSingle]
+                                                  ) [TermExpr]
+                                                ) [ArrayDesignator]
+                                              ) [Var]
+                                            ) [TermSingle]
+                                            MulsOp(
+                                            ) [MulsOp]
                                             Const(
                                               NumConst(
-                                               5
+                                               3
                                               ) [NumConst]
                                             ) [Const]
-                                          ) [TermSingle]
+                                          ) [MulTerm]
                                         ) [TermExpr]
                                       ) [AssignExpr]
                                     ) [Assignment]
@@ -1084,60 +687,37 @@ INFO  21:32:32,112 - Program(
                                 ) [Statements]
                                 SingleStatement(
                                   Assignment(
-                                    MatrixDesignator(
-                                     mat
-                                      TermExpr(
-                                        TermSingle(
-                                          Const(
-                                            NumConst(
-                                             1
-                                            ) [NumConst]
-                                          ) [Const]
-                                        ) [TermSingle]
-                                      ) [TermExpr]
-                                      TermExpr(
-                                        TermSingle(
-                                          Const(
-                                            NumConst(
-                                             1
-                                            ) [NumConst]
-                                          ) [Const]
-                                        ) [TermSingle]
-                                      ) [TermExpr]
-                                    ) [MatrixDesignator]
+                                    Desig(
+                                     bodovi
+                                    ) [Desig]
                                     AssignExpr(
                                       TermExpr(
                                         MulTerm(
                                           TermSingle(
                                             Var(
-                                              MatrixDesignator(
-                                               mat
+                                              ArrayDesignator(
+                                                Desig(
+                                                 niz
+                                                ) [Desig]
                                                 TermExpr(
                                                   TermSingle(
                                                     Const(
                                                       NumConst(
-                                                       0
+                                                       2
                                                       ) [NumConst]
                                                     ) [Const]
                                                   ) [TermSingle]
                                                 ) [TermExpr]
-                                                TermExpr(
-                                                  TermSingle(
-                                                    Const(
-                                                      NumConst(
-                                                       0
-                                                      ) [NumConst]
-                                                    ) [Const]
-                                                  ) [TermSingle]
-                                                ) [TermExpr]
-                                              ) [MatrixDesignator]
+                                              ) [ArrayDesignator]
                                             ) [Var]
                                           ) [TermSingle]
-                                          MulsOp(
-                                          ) [MulsOp]
+                                          DivOp(
+                                          ) [DivOp]
                                           Var(
-                                            MatrixDesignator(
-                                             mat
+                                            ArrayDesignator(
+                                              Desig(
+                                               niz
+                                              ) [Desig]
                                               TermExpr(
                                                 TermSingle(
                                                   Const(
@@ -1147,16 +727,7 @@ INFO  21:32:32,112 - Program(
                                                   ) [Const]
                                                 ) [TermSingle]
                                               ) [TermExpr]
-                                              TermExpr(
-                                                TermSingle(
-                                                  Const(
-                                                    NumConst(
-                                                     1
-                                                    ) [NumConst]
-                                                  ) [Const]
-                                                ) [TermSingle]
-                                              ) [TermExpr]
-                                            ) [MatrixDesignator]
+                                            ) [ArrayDesignator]
                                           ) [Var]
                                         ) [MulTerm]
                                       ) [TermExpr]
@@ -1169,27 +740,9 @@ INFO  21:32:32,112 - Program(
                                   TermExpr(
                                     TermSingle(
                                       Var(
-                                        MatrixDesignator(
-                                         mat
-                                          TermExpr(
-                                            TermSingle(
-                                              Const(
-                                                NumConst(
-                                                 1
-                                                ) [NumConst]
-                                              ) [Const]
-                                            ) [TermSingle]
-                                          ) [TermExpr]
-                                          TermExpr(
-                                            TermSingle(
-                                              Const(
-                                                NumConst(
-                                                 0
-                                                ) [NumConst]
-                                              ) [Const]
-                                            ) [TermSingle]
-                                          ) [TermExpr]
-                                        ) [MatrixDesignator]
+                                        Desig(
+                                         bodovi
+                                        ) [Desig]
                                       ) [Var]
                                     ) [TermSingle]
                                   ) [TermExpr]
@@ -1201,27 +754,20 @@ INFO  21:32:32,112 - Program(
                                 TermExpr(
                                   TermSingle(
                                     Var(
-                                      MatrixDesignator(
-                                       mat
+                                      ArrayDesignator(
+                                        Desig(
+                                         niz
+                                        ) [Desig]
                                         TermExpr(
                                           TermSingle(
                                             Const(
                                               NumConst(
-                                               1
+                                               2
                                               ) [NumConst]
                                             ) [Const]
                                           ) [TermSingle]
                                         ) [TermExpr]
-                                        TermExpr(
-                                          TermSingle(
-                                            Const(
-                                              NumConst(
-                                               1
-                                              ) [NumConst]
-                                            ) [Const]
-                                          ) [TermSingle]
-                                        ) [TermExpr]
-                                      ) [MatrixDesignator]
+                                      ) [ArrayDesignator]
                                     ) [Var]
                                   ) [TermSingle]
                                 ) [TermExpr]
@@ -1259,7 +805,9 @@ INFO  21:32:32,112 - Program(
                         SingleStatement(
                           Assignment(
                             ArrayDesignator(
-                             nizch
+                              Desig(
+                               nizch
+                              ) [Desig]
                               TermExpr(
                                 TermSingle(
                                   Const(
@@ -1287,7 +835,9 @@ INFO  21:32:32,112 - Program(
                       SingleStatement(
                         Assignment(
                           ArrayDesignator(
-                           nizch
+                            Desig(
+                             nizch
+                            ) [Desig]
                             TermExpr(
                               TermSingle(
                                 Var(
@@ -1315,7 +865,9 @@ INFO  21:32:32,112 - Program(
                     SingleStatement(
                       Assignment(
                         ArrayDesignator(
-                         nizch
+                          Desig(
+                           nizch
+                          ) [Desig]
                           AddExpr(
                             TermExpr(
                               TermSingle(
@@ -1357,7 +909,9 @@ INFO  21:32:32,112 - Program(
                         TermSingle(
                           Var(
                             ArrayDesignator(
-                             nizch
+                              Desig(
+                               nizch
+                              ) [Desig]
                               TermExpr(
                                 TermSingle(
                                   Const(
@@ -1380,7 +934,9 @@ INFO  21:32:32,112 - Program(
                       TermSingle(
                         Var(
                           ArrayDesignator(
-                           nizch
+                            Desig(
+                             nizch
+                            ) [Desig]
                             TermExpr(
                               MulTerm(
                                 TermSingle(
@@ -1561,82 +1117,66 @@ INFO  21:32:32,112 - Program(
     ) [Meth]
   ) [GlobalMethods]
 ) [Program]
-INFO  21:32:32,114 - ===================================
-INFO  21:32:32,116 - Deklarisana konstanta nula na liniji 5
-INFO  21:32:32,116 - Deklarisana konstanta jedan na liniji 6
-INFO  21:32:32,116 - Deklarisana konstanta pet na liniji 7
-INFO  21:32:32,116 - Deklarisana konstanta c na liniji 8
-INFO  21:32:32,116 - Deklarisana nizovna promenljiva niz na liniji 9
-INFO  21:32:32,116 - Deklarisana nizovna promenljiva niz2 na liniji 9
-INFO  21:32:32,116 - Deklarisana promenljiva a na liniji 9
-INFO  21:32:32,117 - Deklarisana promenljiva b na liniji 9
-INFO  21:32:32,117 - Deklarisana nizovna promenljiva nizch na liniji 10
-INFO  21:32:32,117 - Deklarisana matricna promenljiva mat na liniji 11
-INFO  21:32:32,117 - Obradjuje se funkcija main na liniji 14
-INFO  21:32:32,117 - Deklarisana promenljiva bodovi na liniji 15
-INFO  21:32:32,117 - Deklarisana promenljiva bt na liniji 16
-INFO  21:32:32,117 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 18
-INFO  21:32:32,117 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 19
-INFO  21:32:32,117 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 20
-INFO  21:32:32,117 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 20
-INFO  21:32:32,117 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 20
-INFO  21:32:32,117 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 21
-INFO  21:32:32,117 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 21
-INFO  21:32:32,117 - Pronadjeno pet rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 21
-INFO  21:32:32,117 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 22
-INFO  21:32:32,117 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 23
-INFO  21:32:32,117 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 26
-INFO  21:32:32,117 - Tip niza 1 na liniji 26
-INFO  21:32:32,117 - Pronadjeno nula rs.etf.pp1.symboltable.concepts.Obj@7e6cbb7a na liniji 27
-INFO  21:32:32,117 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 27
-INFO  21:32:32,117 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 27
-INFO  21:32:32,118 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 28
-INFO  21:32:32,118 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 29
-INFO  21:32:32,118 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 29
-INFO  21:32:32,118 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 29
-INFO  21:32:32,118 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 29
-INFO  21:32:32,118 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 29
-INFO  21:32:32,118 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 30
-INFO  21:32:32,118 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 30
-INFO  21:32:32,118 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 30
-INFO  21:32:32,118 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 31
-INFO  21:32:32,118 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 32
-INFO  21:32:32,118 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 34
-INFO  21:32:32,118 - Tip matrice 1 na liniji 34
-INFO  21:32:32,118 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 35
-INFO  21:32:32,118 - Pronadjeno nula rs.etf.pp1.symboltable.concepts.Obj@7e6cbb7a na liniji 35
-INFO  21:32:32,118 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 35
-INFO  21:32:32,118 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 36
-INFO  21:32:32,118 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 36
-INFO  21:32:32,118 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 37
-INFO  21:32:32,118 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 37
-INFO  21:32:32,118 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 37
-INFO  21:32:32,118 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 38
-INFO  21:32:32,118 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 38
-INFO  21:32:32,118 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 38
-INFO  21:32:32,118 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 39
-INFO  21:32:32,118 - Pronadjeno mat rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 40
-INFO  21:32:32,119 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 42
-INFO  21:32:32,119 - Tip niza 2 na liniji 42
-INFO  21:32:32,119 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 43
-INFO  21:32:32,119 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 44
-INFO  21:32:32,119 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 44
-INFO  21:32:32,119 - Pronadjeno pet rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 45
-INFO  21:32:32,119 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 45
-INFO  21:32:32,119 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 46
-INFO  21:32:32,119 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 47
-INFO  21:32:32,119 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 47
-INFO  21:32:32,119 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 50
-INFO  21:32:32,119 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 51
-INFO  21:32:32,119 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 51
-INFO  21:32:32,119 - Pronadjeno pet rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 51
-INFO  21:32:32,119 - Pronadjeno a rs.etf.pp1.symboltable.concepts.Obj@7eda2dbb na liniji 51
-INFO  21:32:32,119 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 51
-INFO  21:32:32,119 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 51
-INFO  21:32:32,119 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 52
-INFO  21:32:32,119 - ===================================
-INFO  21:32:32,119 -  Deklarisanih globalnih konstanti ima = 4
-INFO  21:32:32,119 -  Deklarisanih lokalnih promenljivih ima = 2
-INFO  21:32:32,119 -  Deklarisanih globalnih promenljivih ima = 6
-INFO  21:32:32,119 - ===================================
-INFO  21:32:32,124 - Parsiranje uspesno zavrseno!
+INFO  14:55:30,534 - ===================================
+INFO  14:55:30,538 - Deklarisana konstanta nula na liniji 5
+INFO  14:55:30,538 - Deklarisana konstanta jedan na liniji 6
+INFO  14:55:30,538 - Deklarisana konstanta pet na liniji 7
+INFO  14:55:30,538 - Deklarisana konstanta c na liniji 8
+INFO  14:55:30,538 - Deklarisana nizovna promenljiva niz na liniji 9
+INFO  14:55:30,538 - Deklarisana nizovna promenljiva niz2 na liniji 9
+INFO  14:55:30,538 - Deklarisana promenljiva a na liniji 9
+INFO  14:55:30,538 - Deklarisana promenljiva b na liniji 9
+INFO  14:55:30,538 - Deklarisana nizovna promenljiva nizch na liniji 10
+INFO  14:55:30,538 - Obradjuje se funkcija main na liniji 13
+INFO  14:55:30,538 - Deklarisana promenljiva bodovi na liniji 14
+INFO  14:55:30,539 - Deklarisana promenljiva bt na liniji 15
+INFO  14:55:30,539 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 17
+INFO  14:55:30,539 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 18
+INFO  14:55:30,539 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 19
+INFO  14:55:30,539 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 19
+INFO  14:55:30,539 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 19
+INFO  14:55:30,539 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 20
+INFO  14:55:30,539 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 20
+INFO  14:55:30,539 - Pronadjeno pet rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 20
+INFO  14:55:30,540 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 21
+INFO  14:55:30,540 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 22
+INFO  14:55:30,540 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 25
+INFO  14:55:30,540 - Tip niza 1 na liniji 25
+INFO  14:55:30,540 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 26
+INFO  14:55:30,540 - Pronadjeno nula rs.etf.pp1.symboltable.concepts.Obj@7e6cbb7a na liniji 26
+INFO  14:55:30,540 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 26
+INFO  14:55:30,540 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 27
+INFO  14:55:30,540 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 28
+INFO  14:55:30,540 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 28
+INFO  14:55:30,540 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 28
+INFO  14:55:30,540 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 28
+INFO  14:55:30,540 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 28
+INFO  14:55:30,540 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 29
+INFO  14:55:30,540 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 29
+INFO  14:55:30,540 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 29
+INFO  14:55:30,540 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 30
+INFO  14:55:30,541 - Pronadjeno niz rs.etf.pp1.symboltable.concepts.Obj@37a71e93 na liniji 31
+INFO  14:55:30,541 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 33
+INFO  14:55:30,541 - Tip niza 2 na liniji 33
+INFO  14:55:30,541 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 34
+INFO  14:55:30,541 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 35
+INFO  14:55:30,541 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 35
+INFO  14:55:30,541 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 36
+INFO  14:55:30,541 - Pronadjeno pet rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 36
+INFO  14:55:30,541 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 37
+INFO  14:55:30,541 - Pronadjeno nizch rs.etf.pp1.symboltable.concepts.Obj@7c3df479 na liniji 38
+INFO  14:55:30,541 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 38
+INFO  14:55:30,541 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 41
+INFO  14:55:30,541 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 42
+INFO  14:55:30,541 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 42
+INFO  14:55:30,541 - Pronadjeno pet rs.etf.pp1.symboltable.concepts.Obj@6e2c634b na liniji 42
+INFO  14:55:30,541 - Pronadjeno a rs.etf.pp1.symboltable.concepts.Obj@7106e68e na liniji 42
+INFO  14:55:30,541 - Pronadjeno jedan rs.etf.pp1.symboltable.concepts.Obj@49097b5d na liniji 42
+INFO  14:55:30,542 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 42
+INFO  14:55:30,542 - Pronadjeno bodovi rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 43
+INFO  14:55:30,542 - ===================================
+INFO  14:55:30,542 -  Deklarisanih globalnih konstanti ima = 4
+INFO  14:55:30,542 -  Deklarisanih lokalnih promenljivih ima = 2
+INFO  14:55:30,542 -  Deklarisanih globalnih promenljivih ima = 5
+INFO  14:55:30,542 - ===================================
+INFO  14:55:30,548 - Parsiranje uspesno zavrseno!

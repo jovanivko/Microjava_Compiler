@@ -127,8 +127,6 @@ VarListEntry ::= (VarListEntries) VarListEntry VarName:varName COMMA
 VarName ::= (VarSingleName)	IDENT:name
 			|
 			(VarArrayName)	IDENT:name LBOX RBOX
-			|
-			(VarMatrixName)	IDENT:name LBOX RBOX LBOX RBOX
 			;
 
 
@@ -215,15 +213,11 @@ Factor ::= (Const) ConstVal
 		   (ArgCall) LPAREN Expr RPAREN
 		   |
 		   (NewArray) NEW Type LBOX Expr:e RBOX
-		   |
-		   (NewMatrix) NEW Type LBOX Expr:e1 RBOX LBOX Expr:e2 RBOX
 		   ;
 		   
 Designator ::= 	(Desig) IDENT:name
 				|
-				(ArrayDesignator) IDENT:name LBOX Expr:e RBOX
-				|
-				(MatrixDesignator) IDENT:name LBOX Expr:e1 RBOX LBOX Expr:e2 RBOX
+				(ArrayDesignator) Designator:name LBOX Expr:e RBOX
 				;
 	
 RelOp ::=	(EqOp) EQUAL

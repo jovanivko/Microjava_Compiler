@@ -19,14 +19,12 @@ import rs.ac.bg.etf.pp1.ast.Desig;
 import rs.ac.bg.etf.pp1.ast.GlobalConst;
 import rs.ac.bg.etf.pp1.ast.GlobalConstDeclList;
 import rs.ac.bg.etf.pp1.ast.Incr;
-import rs.ac.bg.etf.pp1.ast.MatrixDesignator;
 import rs.ac.bg.etf.pp1.ast.MethodDecl;
 import rs.ac.bg.etf.pp1.ast.MethodNonVoidName;
 import rs.ac.bg.etf.pp1.ast.MethodVoidName;
 import rs.ac.bg.etf.pp1.ast.MulTerm;
 import rs.ac.bg.etf.pp1.ast.NegTermExpr;
 import rs.ac.bg.etf.pp1.ast.NewArray;
-import rs.ac.bg.etf.pp1.ast.NewMatrix;
 import rs.ac.bg.etf.pp1.ast.NumConst;
 import rs.ac.bg.etf.pp1.ast.Print;
 import rs.ac.bg.etf.pp1.ast.PrintE;
@@ -45,7 +43,6 @@ import rs.ac.bg.etf.pp1.ast.VarDeclaration;
 import rs.ac.bg.etf.pp1.ast.VarList;
 import rs.ac.bg.etf.pp1.ast.VarListEntries;
 import rs.ac.bg.etf.pp1.ast.VarListEntrySingle;
-import rs.ac.bg.etf.pp1.ast.VarMatrixName;
 import rs.ac.bg.etf.pp1.ast.VarSingleName;
 import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
 import rs.etf.pp1.symboltable.Tab;
@@ -245,11 +242,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		this.varName = var.getName();
 	}
 
-	public void visit(VarMatrixName var) {
-		this.varKind = 2;
-		this.varName = var.getName();
-	}
-
 	public void visit(MethodDecl methodDecl) {
 		if (!returnFound && currentMethod.getType() != Tab.noType) {
 			report_error("Semanticka greska na liniji " + methodDecl.getLine() + ": funcija " + currentMethod.getName()
@@ -382,16 +374,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 	}
 
-	public void visit(NewMatrix mat) {
-		if (mat.getExpr().struct != Tab.intType || mat.getExpr1().struct != Tab.intType) {
-			report_error("Vrednost velicine dimenzija matrice mora biti tipa int!", mat);
-			mat.struct = Tab.noType;
-		} else {
-			report_info("Tip matrice " + mat.getType().struct.getKind(), mat.getType());
-			mat.struct = new Struct(Struct.Array, new Struct(Struct.Array, mat.getType().struct));
-		}
-	}
-
 	public void visit(Desig designator) {
 		Obj obj = Tab.find(designator.getName());
 		if (obj == Tab.noObj) {
@@ -404,35 +386,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 
 	public void visit(ArrayDesignator designator) {
-		Obj obj = Tab.find(designator.getName());
-		if (obj == Tab.noObj) {
-			report_error("Greska na liniji " + designator.getLine() + " : ime " + designator.getName()
-					+ " nije deklarisano! ", null);
-		} else {
-			report_info("Pronadjeno " + designator.getName() + " " + obj.toString(), designator);
-		}
-		if (designator.getExpr().struct != Tab.intType) {
+		if (designator.getDesignator().obj.getType().getKind() != Struct.Array) {
+			report_error("Promenljiva mora biti tipa niza!", designator);
+			designator.obj = Tab.noObj;
+		} else if (designator.getExpr().struct != Tab.intType) {
 			report_error("Vrednost pozicije elementa niza mora biti tipa int!", designator);
 			designator.obj = Tab.noObj;
 		} else {
-			designator.obj = new Obj(Obj.Elem, obj.getName(), obj.getType().getElemType());
-		}
-	}
-
-	public void visit(MatrixDesignator designator) {
-		Obj obj = Tab.find(designator.getName());
-		if (obj == Tab.noObj) {
-			report_error("Greska na liniji " + designator.getLine() + " : ime " + designator.getName()
-					+ " nije deklarisano! ", null);
-		} else {
-			report_info("Pronadjeno " + designator.getName() + " " + obj.toString(), designator);
-		}
-		if (designator.getExpr().struct != Tab.intType || designator.getExpr1().struct != Tab.intType) {
-			report_error("Vrednosti pozicija elemenata matrice mora biti tipa int!", designator);
-			designator.obj = Tab.noObj;
-		} else {
-			designator.obj = new Obj(Obj.Elem, obj.getName(), obj.getType().getElemType().getElemType());
-			;
+			designator.obj = new Obj(Obj.Elem, designator.getDesignator().obj.getName(),
+					designator.getDesignator().obj.getType().getElemType(), designator.getDesignator().obj.getAdr(),
+					designator.getDesignator().obj.getLevel());
 		}
 	}
 

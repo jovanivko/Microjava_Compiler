@@ -4,6 +4,7 @@ import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
 import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
 import rs.ac.bg.etf.pp1.ast.AddExpr;
 import rs.ac.bg.etf.pp1.ast.AddsOp;
+import rs.ac.bg.etf.pp1.ast.ArrayDesignator;
 import rs.ac.bg.etf.pp1.ast.Assignment;
 import rs.ac.bg.etf.pp1.ast.BoolConst;
 import rs.ac.bg.etf.pp1.ast.CharConst;
@@ -17,7 +18,6 @@ import rs.ac.bg.etf.pp1.ast.MulTerm;
 import rs.ac.bg.etf.pp1.ast.MulsOp;
 import rs.ac.bg.etf.pp1.ast.NegTermExpr;
 import rs.ac.bg.etf.pp1.ast.NewArray;
-import rs.ac.bg.etf.pp1.ast.NewMatrix;
 import rs.ac.bg.etf.pp1.ast.NumConst;
 import rs.ac.bg.etf.pp1.ast.Print;
 import rs.ac.bg.etf.pp1.ast.PrintNum;
@@ -124,6 +124,12 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 
+	public void visit(ArrayDesignator des) {
+		Code.load(des.getDesignator().obj);
+		Code.put(Code.dup_x1);
+		Code.put(Code.pop);
+	}
+
 	public void visit(AddExpr addExpr) {
 		if (addExpr.getAddOp() instanceof AddsOp)
 			Code.put(Code.add);
@@ -163,16 +169,6 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(NewArray newa) {
 		Code.put(Code.newarray);
 		if (newa.getType().struct.equals(Tab.charType))
-			Code.put(0);
-		else
-			Code.put(1);
-	}
-
-	public void visit(NewMatrix newm) {
-		// matrica je niz sa d1*d2 elemenata a oni su vec na ExprStack-u
-		Code.put(Code.mul);
-		Code.put(Code.newarray);
-		if (newm.getType().struct.equals(Tab.charType))
 			Code.put(0);
 		else
 			Code.put(1);
