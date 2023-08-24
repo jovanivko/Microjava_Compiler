@@ -64,7 +64,7 @@ terminal Integer NUMCONST;
 terminal Boolean BOOLCONST;
 terminal Character CHARCONST;
 terminal String IDENT;
-terminal IF, ELSE, WHILE, FOREACH;
+terminal IF, ELSE, WHILE, FOREACH, FINDANY;
 
 nonterminal MethodDeclList MethodDeclList;
 nonterminal DeclList DeclList;
@@ -188,6 +188,8 @@ Statement ::=	(SingleStatement) DesignatorStatement:D1 {: RESULT=new SingleState
 				(Read) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new Read(D1); RESULT.setLine(D1left); :}
 				|
 				(Print) PRINT LPAREN PrintExpr:P1 RPAREN SEMI {: RESULT=new Print(P1); RESULT.setLine(P1left); :}
+				|
+				(FindAny) Designator:result ASSIGN Designator:array DOT FINDANY LPAREN Expr:E1 RPAREN SEMI {: RESULT=new FindAny(result, array, E1); RESULT.setLine(resultleft); :}
 				;
 			
 PrintExpr ::=	(PrintE) Expr:E1 {: RESULT=new PrintE(E1); RESULT.setLine(E1left); :}
@@ -201,6 +203,7 @@ DesignatorStatement ::= (Assignment) Designator:dest ASSIGN AssExpr:A1 {: RESULT
 			  			|
 			  			(Decr) Designator:D1 DECR SEMI {: RESULT=new Decr(D1); RESULT.setLine(D1left); :}
 					  	;
+
 
 AssExpr ::= (AssignExpr) Expr:e SEMI {: RESULT=new AssignExpr(e); RESULT.setLine(eleft); :}
 			|

@@ -11,6 +11,7 @@ import rs.ac.bg.etf.pp1.ast.CharConst;
 import rs.ac.bg.etf.pp1.ast.Decr;
 import rs.ac.bg.etf.pp1.ast.Designator;
 import rs.ac.bg.etf.pp1.ast.DivOp;
+import rs.ac.bg.etf.pp1.ast.FindAny;
 import rs.ac.bg.etf.pp1.ast.Incr;
 import rs.ac.bg.etf.pp1.ast.MethodDecl;
 import rs.ac.bg.etf.pp1.ast.MethodVoidName;
@@ -42,7 +43,8 @@ public class CodeGenerator extends VisitorAdaptor {
 			w = ((PrintNum) printStmt.getPrintExpr()).getN2().intValue();
 		}
 
-		if (printStmt.getPrintExpr().struct == Tab.intType) {
+		if (printStmt.getPrintExpr().struct == Tab.intType
+				|| printStmt.getPrintExpr().struct == SemanticAnalyzer.boolType) {
 			if (w == 0) {
 				w = 5;
 			}
@@ -50,17 +52,10 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.print);
 		} else if (printStmt.getPrintExpr().struct == Tab.charType) {
 			if (w == 0) {
-				w = 1;
+				w = 2;
 			}
 			Code.loadConst(w);
 			Code.put(Code.bprint);
-		} else {
-			if (w == 0) {
-				w = 5;
-			}
-			if (w == 0) {
-				w = 5;
-			}
 		}
 	}
 
@@ -147,15 +142,17 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 
 	public void visit(Incr inc) {
-		Code.put(Code.inc);
-		Code.put(inc.getDesignator().obj.getAdr());
-		Code.put(1);
+		Code.load(inc.getDesignator().obj);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.store(inc.getDesignator().obj);
 	}
 
 	public void visit(Decr dec) {
-		Code.put(Code.inc);
-		Code.put(dec.getDesignator().obj.getAdr());
-		Code.put(-1);
+		Code.load(dec.getDesignator().obj);
+		Code.loadConst(1);
+		Code.put(Code.sub);
+		Code.store(dec.getDesignator().obj);
 	}
 
 	public void visit(NegTermExpr neg) {
@@ -172,5 +169,47 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(0);
 		else
 			Code.put(1);
+	}
+
+	public void visit(FindAny find) {
+		Code.put(Code.enter);
+		Code.put(0);
+		Code.put(3);
+		Code.put(Code.store_n);
+		Code.load(find.getDesignator1().obj);
+		Code.put(Code.store_1);
+		// na n registru se nalazi vrednost koju pretrazujemo, na registru 1 adresa
+		// niza, a na registru 2 tekuci indeks
+		// pocetak petlje dok ne prodjemo ceo niz
+		int loopTop = Code.pc;
+		Code.put(Code.load_1);
+		Code.put(Code.arraylength);
+		Code.put(Code.load_2);
+		Code.putFalseJump(Code.gt, 0);
+		int frwadr = Code.pc - 2;
+		Code.put(Code.load_1);
+		Code.put(Code.load_2);
+		if (find.getDesignator1().obj.getType() == Tab.charType) {
+			Code.put(Code.baload);
+		} else {
+			Code.put(Code.aload);
+		}
+		Code.put(Code.load_n);
+		Code.putFalseJump(Code.ne, 0);
+		int trueadr = Code.pc - 2;
+		Code.put(Code.inc);
+		Code.put(2);
+		Code.put(1);
+		Code.putJump(loopTop);
+		Code.fixup(trueadr);
+		Code.loadConst(1);
+		Code.putJump(0);
+		int btmadr = Code.pc - 2;
+		Code.fixup(frwadr);
+		Code.loadConst(0);
+		Code.fixup(btmadr);
+		int bottom = Code.pc;
+		Code.put(Code.exit);
+		Code.store(find.getDesignator().obj);
 	}
 }

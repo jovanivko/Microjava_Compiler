@@ -5,14 +5,14 @@ program test301
 	const int nula = 0;
 	const int jedan = 1;
 	const int pet = 5;
-	const char c = 'c';
+
 	int niz[], niz2[], a, b;
 	char nizch[];
 	
 {
 	void main()	
 		int bodovi;
-		bool bt;
+		bool br;
 	{
 		bodovi = 0;
 		bodovi++;
@@ -23,12 +23,17 @@ program test301
 			
 		
 		niz = new int[3];
-		niz[nula] = jedan;
-		niz[1] = 2;
-		niz[niz[jedan]] = niz[niz[0]] * 3;
+		niz[nula] = jedan;  
+		niz[1] = 2;			
+		niz[niz[jedan]] = niz[niz[0]] * 3; 
 		bodovi = niz[2]/niz[0];
 		print(bodovi);
 		print(niz[2]);
+		
+		br = niz.findAny(jedan + pet);
+		print(br);
+		br = niz.findAny(8);
+		print(br);
 		
 		nizch = new char[3];
 		nizch[0] = 'a';
@@ -38,7 +43,7 @@ program test301
 		print(nizch[jedan * 2]);
 			
 		
-		read(bodovi);
+		//read(bodovi);
 		bodovi = -bodovi + (pet * a / 2 - jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
 		print(bodovi);
 			

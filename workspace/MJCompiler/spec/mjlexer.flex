@@ -53,6 +53,7 @@ import java_cup.runtime.Symbol;
 "if" 		{ return new_symbol(sym.IF, yytext()); }
 "else" 		{ return new_symbol(sym.ELSE, yytext()); }
 "foreach" 	{ return new_symbol(sym.FOREACH, yytext()); }
+"findAny" 	{ return new_symbol(sym.FINDANY, yytext()); }
 
 "=>"        { return new_symbol(sym.DBLARROW, yytext()); }
 "++"  		{ return new_symbol(sym.INCR, yytext()); }

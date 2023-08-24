@@ -16,6 +16,7 @@ import rs.ac.bg.etf.pp1.ast.ConstDecl;
 import rs.ac.bg.etf.pp1.ast.ConstName;
 import rs.ac.bg.etf.pp1.ast.Decr;
 import rs.ac.bg.etf.pp1.ast.Desig;
+import rs.ac.bg.etf.pp1.ast.FindAny;
 import rs.ac.bg.etf.pp1.ast.GlobalConst;
 import rs.ac.bg.etf.pp1.ast.GlobalConstDeclList;
 import rs.ac.bg.etf.pp1.ast.Incr;
@@ -421,6 +422,18 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public boolean passed() {
 		return !errorDetected;
+	}
+
+	public void visit(FindAny find) {
+		if (!find.getDesignator().obj.getType().equals(boolType) || find.getDesignator().obj.getKind() != Obj.Var) {
+			report_error("Designator sa leve strane mora biti promenljiva tipa bool!", find);
+		}
+		if (find.getDesignator1().obj.getType().getKind() != Struct.Array
+				&& (find.getDesignator1().obj.getType().getElemType() != Tab.charType
+						|| find.getDesignator1().obj.getType().getElemType() != Tab.intType
+						|| find.getDesignator1().obj.getType().getElemType() != boolType)) {
+			report_error("Designator sa desne strane jednakosti mora biti niz ugradjenog tipa!", find);
+		}
 	}
 
 }
