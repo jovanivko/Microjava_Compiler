@@ -1,0 +1,180 @@
+INFO  15:56:55,693 - Compiling source file: C:\Users\jovanivko\Desktop\PP1\workspace\MJCompiler\test\test.mj
+INFO  15:56:55,718 - #2 program
+INFO  15:56:55,718 - #43 prog
+INFO  15:56:55,718 - #8 const
+INFO  15:56:55,719 - #43 int
+INFO  15:56:55,719 - #43 size
+INFO  15:56:55,719 - #17 =
+INFO  15:56:55,719 - #40 10
+INFO  15:56:55,720 - #31 ;
+INFO  15:56:55,720 - #8 const
+INFO  15:56:55,721 - #43 char
+INFO  15:56:55,721 - #43 ch
+INFO  15:56:55,721 - #17 =
+INFO  15:56:55,721 - #42 a
+INFO  15:56:55,721 - #32 ,
+INFO  15:56:55,721 - #43 ma
+INFO  15:56:55,722 - #17 =
+INFO  15:56:55,722 - #42 b
+INFO  15:56:55,722 - #31 ;
+INFO  15:56:55,722 - #43 int
+INFO  15:56:55,722 - #43 rows
+INFO  15:56:55,722 - #32 ,
+INFO  15:56:55,722 - #43 columns
+INFO  15:56:55,723 - #31 ;
+INFO  15:56:55,723 - #33 {
+INFO  15:56:55,723 - #5 void
+INFO  15:56:55,723 - #43 main
+INFO  15:56:55,723 - #35 (
+INFO  15:56:55,723 - #36 )
+INFO  15:56:55,723 - #43 int
+INFO  15:56:55,724 - #43 x
+INFO  15:56:55,724 - #31 ;
+INFO  15:56:55,724 - #33 {
+INFO  15:56:55,724 - #10 read
+INFO  15:56:55,724 - #35 (
+INFO  15:56:55,724 - #43 x
+INFO  15:56:55,724 - #36 )
+INFO  15:56:55,725 - #31 ;
+INFO  15:56:55,725 - #3 print
+INFO  15:56:55,725 - #35 (
+INFO  15:56:55,725 - #43 x
+INFO  15:56:55,725 - #36 )
+INFO  15:56:55,725 - #31 ;
+INFO  15:56:55,725 - #34 }
+INFO  15:56:55,725 - #34 }
+INFO  15:56:55,732 - Program(
+  ProgName(
+   prog
+  ) [ProgName]
+  Declarations(
+    Declarations(
+      Declarations(
+        NoDecl(
+        ) [NoDecl]
+        DeclConst(
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+            GlobalConst(
+              ConstName(
+               size
+                NumConst(
+                 10
+                ) [NumConst]
+              ) [ConstName]
+            ) [GlobalConst]
+          ) [ConstDecl]
+        ) [DeclConst]
+      ) [Declarations]
+      DeclConst(
+        ConstDecl(
+          Type(
+           char
+          ) [Type]
+          GlobalConstDeclList(
+            GlobalConst(
+              ConstName(
+               ch
+                CharConst(
+                 a
+                ) [CharConst]
+              ) [ConstName]
+            ) [GlobalConst]
+            ConstName(
+             ma
+              CharConst(
+               b
+              ) [CharConst]
+            ) [ConstName]
+          ) [GlobalConstDeclList]
+        ) [ConstDecl]
+      ) [DeclConst]
+    ) [Declarations]
+    DeclVar(
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarNameDecls(
+          VarList(
+            VarListEntrySingle(
+              VarSingleName(
+               rows
+              ) [VarSingleName]
+            ) [VarListEntrySingle]
+            VarSingleName(
+             columns
+            ) [VarSingleName]
+          ) [VarList]
+        ) [VarNameDecls]
+      ) [VarDeclaration]
+    ) [DeclVar]
+  ) [Declarations]
+  GlobalMethods(
+    Meth(
+      MethodDecl(
+        MethodVoidName(
+         main
+        ) [MethodVoidName]
+        VarDeclarations(
+          NoVars(
+          ) [NoVars]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            VarNameDecls(
+              SingleVar(
+                VarSingleName(
+                 x
+                ) [VarSingleName]
+              ) [SingleVar]
+            ) [VarNameDecls]
+          ) [VarDeclaration]
+        ) [VarDeclarations]
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            Read(
+              Desig(
+               x
+              ) [Desig]
+            ) [Read]
+          ) [Statements]
+          Print(
+            PrintE(
+              TermExpr(
+                TermSingle(
+                  Var(
+                    Desig(
+                     x
+                    ) [Desig]
+                  ) [Var]
+                ) [TermSingle]
+              ) [TermExpr]
+            ) [PrintE]
+          ) [Print]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [Meth]
+  ) [GlobalMethods]
+) [Program]
+INFO  15:56:55,732 - ===================================
+INFO  15:56:55,734 - Deklarisana konstanta size na liniji 2
+INFO  15:56:55,735 - Deklarisana konstanta ch na liniji 3
+INFO  15:56:55,735 - Deklarisana konstanta ma na liniji 3
+INFO  15:56:55,735 - Deklarisana promenljiva rows na liniji 4
+INFO  15:56:55,735 - Deklarisana promenljiva columns na liniji 4
+INFO  15:56:55,735 - Obradjuje se funkcija main na liniji 6
+INFO  15:56:55,735 - Deklarisana promenljiva x na liniji 6
+INFO  15:56:55,735 - Pronadjeno x rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 8
+INFO  15:56:55,735 - Pronadjeno x rs.etf.pp1.symboltable.concepts.Obj@378fd1ac na liniji 10
+INFO  15:56:55,735 - ===================================
+INFO  15:56:55,735 -  Deklarisanih globalnih konstanti ima = 3
+INFO  15:56:55,735 -  Deklarisanih lokalnih promenljivih ima = 1
+INFO  15:56:55,735 -  Deklarisanih globalnih promenljivih ima = 2
+INFO  15:56:55,735 - ===================================
+INFO  15:56:55,741 - Parsiranje uspesno zavrseno!

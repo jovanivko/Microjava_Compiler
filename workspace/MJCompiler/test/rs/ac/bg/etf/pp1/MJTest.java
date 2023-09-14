@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
+import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
@@ -22,6 +23,10 @@ public class MJTest {
 	public static void main(String[] args) throws IOException {
 		Logger log = Logger.getLogger(MJTest.class);
 		Reader br = null;
+		Scanner sc= new Scanner(System.in);    //System.in is a standard input stream  
+		System.out.print("Enter first number- ");  
+		int a= sc.nextInt(); 
+		System.out.println(a);
 		try {
 
 			File sourceCode = new File("test/test301.mj");
